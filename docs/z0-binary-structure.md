@@ -71,9 +71,22 @@ Read linearly, this accounts for all 39 bits:
 
 The document frames this as syntactic rather than decorative: the quark signatures are found sitting in the Z0 binary string as whole words, with edge bits and a central `000` gap.
 
+## Orientation Coverage Note
+
+The legacy system did not treat this forward reading as the only interesting structure. The Z0 evidence must preserve the four canonical orientation views used elsewhere in the project: forward, reverse, inverse, and inverse-reverse.
+
+| orientation | bit string |
+|---|---|
+| forward | `101011110110110111000000110001011110101` |
+| reverse | `101011110100011000000111011011011110101` |
+| inverse | `010100001001001000111111001110100001010` |
+| inverse-reverse | `010100001011100111111000100100100001010` |
+
+The chart below is therefore **one representative forward-orientation layout**, not the complete legacy evidence set. The other three orientation structures should be restored as first-class evidence from the legacy source or reproduced by code, not silently ignored.
+
 ## Manual Line Break Layout
 
-The source then manually inserts line breaks and spaces around the same Z0 bits. The resulting shape is not calculated by a physics engine; it is a visual reading of the string according to the quark-word segmentation.
+The source then manually inserts line breaks and spaces around the forward Z0 bits. The resulting shape is not calculated by a physics engine; it is a visual reading of the string according to the quark-word segmentation.
 
 ```text
 10
