@@ -114,6 +114,9 @@ The project now keeps the full pre-2019 source and derived binary evidence in-tr
 - [Legacy Physics Token Catalog](docs/tokens/legacy-physics-token-catalog.md)
   preserves the non-CODATA quark/hadron/convenience rows that BigCalc2 appended
   to its local NIST file so they could be treated like named bit tokens.
+- [Z0 Orientation Geometry Report](docs/reports/z0-orientation-geometry.md)
+  preserves the four canonical Z0 orientations, the known forward manual layout,
+  and candidate natural traversals without treating them as proof.
 
 The conversion rule intentionally uses the published value mantissa only:
 
@@ -236,6 +239,9 @@ python -m unittest discover -s tests -p "test_*.py"
 - [Legacy Physics Token Catalog](docs/tokens/legacy-physics-token-catalog.md)
   calls out the appended quark and hadron rows from BigCalc2, including their
   values, significant digits, and binary strings.
+- [Z0 Orientation Geometry Report](docs/reports/z0-orientation-geometry.md)
+  makes fixed bits, orientation, layout, traversal, and interpretation explicit
+  before later quark genetic sequence decomposition work.
 - [Z0 Binary Structure](docs/z0-binary-structure.md) captures the 2019 PDF/RTF
   observation that the characteristic impedance bits already contain whole
   quark mass-signature words, arrange naturally into a gluon-like chart, and
