@@ -76,6 +76,25 @@ Report token length with every hit table. Separate raw-token scans from
 closure-word scans. Compare apparent groupings against shuffled, same-length,
 and same-density controls before calling a pattern meaningful.
 
+## Genetic Decomposition Discipline
+
+Quark work is not only substring counting. Preserve the legacy BigCalc2 idea of
+"genetic sequence" as compression and recipe-finding: a target constant may be
+represented by a short sequence of quark tokens, official constant tokens,
+Z0 facets, literal leftovers, and later XOR-run fragments.
+
+Before implementing this, read `docs/experiments/quark-genetic-sequence.md`.
+Keep these views separate in code and reports:
+
+- Direct genetic material view: decompose target bits into named token strings.
+- Run-tape view: evolve a seed by circular XOR and scan emitted tape fragments.
+- Comparison view: ask whether constants/tokens found in the decomposition also
+  appear in the XOR run output.
+
+Every genetic decomposition report must state allowed token catalogs,
+orientation/transform rules, whether overlaps/circular wrap were allowed,
+literal leftovers, coverage percentage, token count, and controls used.
+
 ## Chain-Of-Evidence Rules
 
 - Keep raw/source/generated artifacts separate.
@@ -94,6 +113,8 @@ and same-density controls before calling a pattern meaningful.
   loop implementation.
 - `docs/codata/README.md` - official CODATA evidence-chain documentation.
 - `docs/tokens/legacy-physics-token-catalog.md` - legacy appended-token catalog.
+- `docs/experiments/quark-genetic-sequence.md` - next experiment design note for
+  quark genetic compression and XOR run comparison.
 - `docs/z0-binary-structure.md` - Z0 quark/gluon bit-structure observation.
 - `docs/legacy-genetic-sequence-analysis.md` - BigCalc2 gene/run-tape analysis.
 - `docs/information-first-position.md` - information-first position statement.
