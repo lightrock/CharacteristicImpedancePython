@@ -71,6 +71,38 @@ The method does not have to be exact. Remainders are expected and should be
 reported, not hidden. The point is to ask how much named genetic material can be
 peeled out of a target over a few disciplined passes.
 
+## Genetic Notation And Orientation Marks
+
+A GeneZip recipe must show not only which token was detected, but how it was
+seen. The same token may appear forward, backward/reverse, inverse, or
+inverse-reverse.
+
+Use compact visual notation in recipe strings:
+
+```text
+(Q_UP)      forward token match
+(PU_Q)      reverse/backward token match, shown by reversing the token label
+(!Q_UP)     inverse token match
+(!PU_Q)     inverse-reverse token match
+```
+
+The report table must also include machine-readable fields for the same fact:
+
+```text
+token_name       Q_UP
+orientation      forward | reverse | inverse | inverse_reverse
+matched_bits     exact bits matched in the target/remainder
+canonical_bits   forward token bits
+```
+
+The parenthesized recipe string is for human reading. The orientation field is
+for tests, sorting, and later controls. Do not rely only on label spelling for
+machine logic.
+
+Default first-pass GeneZip should still be forward-only unless an experiment
+explicitly enables reverse/inverse modes. When reverse/inverse modes are enabled,
+reports must say so.
+
 ## Catalog Boundaries
 
 Every run must state which token catalogs were allowed:
@@ -191,6 +223,7 @@ Minimum content:
 - token catalogs allowed
 - decomposition settings
 - recursion depth, usually 3 or 4 levels for recursive GeneZip
+- orientation modes enabled, defaulting to forward-only unless stated otherwise
 - top exact decompositions
 - top near decompositions
 - per-level remainders for recursive decompositions
