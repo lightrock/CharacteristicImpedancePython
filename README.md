@@ -10,8 +10,22 @@ This is an early research instrument, not a completed proof. The project begins
 with one strong legacy observation and turns it into code, tests, baselines, and
 failure conditions.
 
-The current code reproduces the pre-2019 `Z0` circular-XOR loop result and
-provides the scaffolding for broader catalog and control tests.
+Current project state:
+
+- The pre-2019 `Z0` circular-XOR loop result is reproduced in tested Python code.
+- The information-first thesis and legacy BigCalc2 observations are captured in
+  GitHub-readable Markdown notes, with companion HTML versions for local/static
+  viewing.
+- A pre-2019 CODATA 2014 evidence chain exists under `docs/codata/`, including
+  source rows, derived binary rows, and a bits-only corpus.
+- CODATA documentation generation tools exist under `tools/codata/`.
+- Unit tests cover the Z0 anchor, core bit operations, XOR loop behavior, and
+  CODATA document generation.
+- GitHub Actions runs the Python unit test suite on push and pull request.
+
+The next major implementation step is catalog-level experimentation: scanning
+all constants, building randomized controls, and producing reproducible reports
+from code outputs rather than hand-written observations.
 
 ## Claim Under Test
 
@@ -79,6 +93,31 @@ closed_loop = true
 
 This is the first anchor result. The project should not make stronger claims
 until the catalog-level and randomized-control tests are implemented.
+
+## Evidence Chain
+
+The project now keeps the pre-2019 source and derived binary evidence in-tree:
+
+- [CODATA Evidence Chain](docs/codata/README.md) explains the conversion rule
+  and rebuild process.
+- [Pre-2019 CODATA 2014 Source](docs/codata/pre-2019-codata-2014-source.md)
+  preserves the named/value/unit rows currently used by the project.
+- [Pre-2019 CODATA 2014 Binary](docs/codata/pre-2019-codata-2014-binary.md)
+  preserves the same rows with significant digits and binary forms.
+- [Pre-2019 CODATA 2014 Bits Only](docs/codata/pre-2019-codata-2014-bits-only.txt)
+  is the stripped corpus for pure bit experiments.
+
+The conversion rule intentionally uses the published value mantissa only:
+
+```text
+376.730 313 461... -> 376730313461 -> binary
+6.626 070 040 e-34 -> 6626070040   -> binary
+299 792 458        -> 299792458    -> binary
+```
+
+That rule ignores sign, decimal point, digit-grouping spaces, ellipsis,
+uncertainty, unit, and exponent marker. This is not an accident; it is the
+information-object hypothesis made explicit and testable.
 
 ## Falsification Criteria
 
@@ -186,12 +225,34 @@ source code unless GitHub Pages or another static host is used.
 
 ## Roadmap
 
-- Reproduce the legacy `Z0` XOR-ring period result. Done.
-- Add catalog loading for pre-2019 CODATA constants.
-- Add orientation, period, and orbit scans across the full constants catalog.
+### Done
+
+- Reproduce the legacy `Z0` XOR-ring period result.
+- Add core bit helpers: significant digits to bits, reverse, invert, canonical
+  orientations, XOR ring step, and XOR ring run.
+- Add Apache 2.0 licensing, notice, package metadata, and GitHub Actions tests.
+- Capture the information-first thesis in project docs.
+- Capture the Z0 quark/gluon binary-structure observation in project docs.
+- Analyze and document the legacy BigCalc2 genetic-sequence machinery.
+- Add a pre-2019 CODATA 2014 evidence chain with generated binary and bits-only
+  files.
+- Add tests for the CODATA conversion and document rebuild path.
+
+### Next
+
+- Move CODATA records from documentation artifacts into importable Python catalog
+  objects.
+- Add catalog-wide orientation, period, orbit, and run-tape scans.
+- Port the legacy token/gene decomposer as clean Python modules:
+  `tokens`, `decompose`, `z0_substrate`, and `run_tape`.
 - Add shuffled-bit, random-seed, and alternate-constant baselines.
+- Generate reproducible Markdown/HTML reports directly from Python outputs.
+
+### Later
+
 - Add unit-translation and precision-cut experiments.
-- Generate reproducible Markdown/HTML reports from code outputs.
+- Compare pre-2019 CODATA against post-2019 and alternate CODATA editions.
+- Add stability-basin scans for uncertain quark mass signatures.
 - Publish null results and failed variants alongside positive results.
 
 ## References
