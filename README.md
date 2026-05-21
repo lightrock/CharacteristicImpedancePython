@@ -52,15 +52,15 @@ result before expanding the test space.
 
 ## Initial Notes
 
-- [Information-First Position](docs/information-first-position.html) states the
+- [Information-First Position](https://lightrock.github.io/CharacteristicImpedancePython/information-first-position.html) states the
   adversarial thesis: physical constants are compressed information artifacts
   before they are physics classroom objects, and unit objections must be tested
   as encoding transformations rather than used as a dismissal.
-- [Legacy Genetic Sequence Analysis](docs/legacy-genetic-sequence-analysis.html)
+- [Legacy Genetic Sequence Analysis](https://lightrock.github.io/CharacteristicImpedancePython/legacy-genetic-sequence-analysis.html)
   explains what the old BigCalc2 "gene" machinery was doing: circular tape
   decomposition, Z0-facet compression, ablation controls, and Z0-as-running-tape
   scans.
-- [Z0 Binary Structure](docs/z0-binary-structure.html) captures the 2019 PDF/RTF
+- [Z0 Binary Structure](https://lightrock.github.io/CharacteristicImpedancePython/z0-binary-structure.html) captures the 2019 PDF/RTF
   observation that the characteristic impedance bits already contain whole
   quark mass-signature words, arrange naturally into a gluon-like chart, and
   come from a prime significant-digit integer with a primitive Pythagorean
