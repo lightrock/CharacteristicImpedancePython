@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Legacy Genetic Sequence Analysis</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #121a17;
+      --muted: #5b6762;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --line: #cbd8d2;
+      --accent: #1b6a50;
+      --blue: #285a77;
+      --warn: #8a5b12;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.58;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 44px 24px 72px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.14;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      margin-top: 42px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      font-size: 25px;
+    }
+
+    h3 {
+      margin-top: 22px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 14px 0 0;
+    }
+
+    code, pre {
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    pre {
+      margin: 16px 0 0;
+      padding: 16px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f4f7f5;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 16px;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    th, td {
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #eef2f0;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .lede {
+      margin-top: 16px;
+      max-width: 900px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .source {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent);
+      background: #eef7f2;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .label {
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .callout {
+      margin-top: 18px;
+      padding: 16px;
+      border: 1px solid #b8d5c6;
+      border-radius: 8px;
+      background: #f0f8f4;
+    }
+
+    .warning {
+      border-color: #d6bf83;
+      background: #fff8e6;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        padding: 30px 16px 52px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Legacy Genetic Sequence Analysis</h1>
+  <p class="lede">
+    What the BigCalc2 “gene” machinery was trying to do: treat constants as
+    circular tapes, ask whether one tape can spell another with very simple bit
+    transforms, then ask whether the XOR-running Z0 tape emits useful words from
+    the larger constants catalog.
+  </p>
+
+  <div class="source">
+    Source files: <code>BigCalc2/GeneSequence.cs</code>,
+    <code>GeneSequence2.cs</code>, <code>GeneSequence3.cs</code>,
+    <code>GeneSequence4.cs</code>, <code>GeneSequence6.cs</code>,
+    <code>GeneSequence7.cs</code>, plus generated CSV outputs in the legacy
+    project.
+  </div>
+
+  <h2>Core Interpretation</h2>
+  <p>
+    The old code was not merely searching for cute substrings. It was building a
+    compression grammar over binary constants. Each published constant becomes a
+    circular bit tape. Other constants become named tokens. The decomposer asks:
+    how many literal bits remain if this source tape is spelled with known
+    tokens under only simple transforms?
+  </p>
+  <pre>constant bits -> circular tape
+catalog constants -> token words
+allowed transforms -> forward, reverse, inverse, inverse-reverse, rotation
+score -> literal bits left + token penalty</pre>
+  <p>
+    In this language, “genetic sequence” means a recipe for expressing one
+    constant as a small sequence of named bit-words from other constants.
+  </p>
+
+  <h2>Algorithm Layers</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Layer</th>
+        <th>Legacy file</th>
+        <th>What it does</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>General decomposer</td>
+        <td><code>GeneSequence.cs</code></td>
+        <td>Builds token variants from the whole catalog, including F/R/I/IR and all rotations; uses Aho-Corasick plus dynamic programming to minimize literal bits.</td>
+      </tr>
+      <tr>
+        <td>Z0-restricted named tokens</td>
+        <td><code>GeneSequence2.cs</code></td>
+        <td>Allows only named catalog-token variants that also appear contiguously on the Z0 ring in some orientation.</td>
+      </tr>
+      <tr>
+        <td>Z0 facets</td>
+        <td><code>GeneSequence3.cs</code></td>
+        <td>Adds raw Z0 substrings as tokens, so Z0 itself becomes a substrate or alphabet of facets.</td>
+      </tr>
+      <tr>
+        <td>Number collider</td>
+        <td><code>GeneSequence4.cs</code></td>
+        <td>Tries small edits around a number: tail trims, zero pads, and tail-bit flips, then asks whether nearby values compress better against Z0 facets.</td>
+      </tr>
+      <tr>
+        <td>Ablation bench</td>
+        <td><code>GeneSequence6.cs</code></td>
+        <td>Compares observed decompositions against shuffled baselines and removes token classes to see what is carrying the signal.</td>
+      </tr>
+      <tr>
+        <td>Z0 run tape</td>
+        <td><code>GeneSequence7.cs</code></td>
+        <td>Runs <code>S = S XOR RotL1(S)</code>, emits one tapped bit per step, and scans the emitted tape for catalog patterns.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Direct Tape Compression</h2>
+  <p>
+    The first mode asks whether one constant can be expressed by other constant
+    tokens on a circular tape. The output field <code>GeneString</code> is the
+    proposed recipe.
+  </p>
+  <pre>Source: characteristic impedance of vacuum
+BitsLen: 39
+BestOrientation: Reverse
+LiteralsCost_Bits: 0
+TokensUsed: 4
+GeneString:
+  {Q_DOWN|F|rot=0}
+  {AME20 35Mg(p,n)35Al Q_cKeV|R|rot=3}
+  {Q_DOWN|F|rot=0}
+  {Q_38MeV|R|rot=4}</pre>
+  <p>
+    This says Z0 itself was found as a zero-literal recipe in named words under
+    simple transforms. That is interesting, but by itself it is not the strongest
+    evidence because a rich catalog can overfit.
+  </p>
+
+  <h2>Z0 As Substrate</h2>
+  <p>
+    The Z0-facet mode is more radical. It lets raw contiguous substrings of the
+    Z0 ring become available as tokens. Then it asks whether other constants can
+    be spelled from pieces of Z0.
+  </p>
+  <div class="grid">
+    <div class="card">
+      <div class="label">Z0 facet output</div>
+      <p><code>880</code> rows inspected.</p>
+      <p><code>877</code> had zero literal bits.</p>
+      <p><code>342</code> had zero literal bits using two tokens or fewer.</p>
+    </div>
+    <div class="card">
+      <div class="label">Interpretation</div>
+      <p>
+        This is best read as “Z0 is an extremely permissive substring substrate”
+        unless controlled carefully. It is powerful, but power alone is not
+        proof.
+      </p>
+    </div>
+  </div>
+  <p>
+    Example from the legacy output:
+  </p>
+  <pre>weak mixing angle -> {Characteristic impedance of vacuum|F|rot=25}
+                     {Characteristic impedance of vacuum|F|rot=1}
+
+Q_UP              -> {Characteristic impedance of vacuum|F|rot=7}
+Q_DOWN            -> {Characteristic impedance of vacuum|F|rot=2}
+Q_STRANGE         -> {Characteristic impedance of vacuum|F|rot=16}
+Q_CHARM           -> {Characteristic impedance of vacuum|I|rot=19}</pre>
+
+  <h2>Ablation Result</h2>
+  <p>
+    The ablation output is the most honest legacy warning. For the AME
+    proton-neutron threshold cohort:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Pass</th>
+        <th>Count</th>
+        <th>Zero-literal</th>
+        <th>Mean literal bits</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Observed (Z0 + named)</td>
+        <td>2222</td>
+        <td>71</td>
+        <td>6.78308</td>
+      </tr>
+      <tr>
+        <td>Shuffle baseline (256x)</td>
+        <td>568832</td>
+        <td>16192</td>
+        <td>6.86395</td>
+      </tr>
+      <tr>
+        <td>Ablate Q_UP/Q_DOWN/Q_38MeV</td>
+        <td>2222</td>
+        <td>71</td>
+        <td>6.78308</td>
+      </tr>
+      <tr>
+        <td>Ablate Z0 facets (named only)</td>
+        <td>2222</td>
+        <td>0</td>
+        <td>11.3474</td>
+      </tr>
+      <tr>
+        <td>Z0 facets only</td>
+        <td>2222</td>
+        <td>71</td>
+        <td>6.78308</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="callout warning">
+    The ablation says the signal in that run is carried almost entirely by Z0
+    facets, not by the named quark tokens. That does not kill the idea. It tells
+    the Python port to measure Z0-substrate power separately from quark-name
+    interpretation.
+  </div>
+
+  <h2>Z0 As Running Program</h2>
+  <p>
+    The run-tape mode is closest to the “simplest possible Turing tape” idea.
+    Start with the Z0 seed. Each step replaces the state with its XOR against a
+    one-bit rotation. Tap one emitted bit per step. The result is a generated
+    tape.
+  </p>
+  <pre>S_next = S XOR RotL1(S)
+emit   = S_next[0]</pre>
+  <p>
+    This is a very small machine: one state string, one rotation, one XOR, one
+    tap. The research question becomes:
+  </p>
+  <pre>Does this running Z0 tape emit substrings that reconstruct other physical constants better than chance?</pre>
+  <p>
+    In the filtered legacy run output (<code>min token length &gt; 20</code>):
+  </p>
+  <div class="grid">
+    <div class="card">
+      <div class="label">rows</div>
+      <strong>115</strong>
+      <p>Filtered constants inspected.</p>
+    </div>
+    <div class="card">
+      <div class="label">anchored in run</div>
+      <strong>65</strong>
+      <p>Had at least one long token found at a concrete run position.</p>
+    </div>
+    <div class="card">
+      <div class="label">zero literal</div>
+      <strong>7</strong>
+      <p>Fully represented by run tokens under the current settings.</p>
+    </div>
+    <div class="card">
+      <div class="label">mean literal bits</div>
+      <strong>10.77</strong>
+      <p>Average leftover literal cost in the filtered output.</p>
+    </div>
+  </div>
+  <p>
+    This is the cleaner direction: not merely “Z0 contains substrings,” but
+    “Z0, when run as a minimal machine, emits tape fragments that anchor other
+    constants.”
+  </p>
+
+  <h2>What Should Be Ported First</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Python module</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>tokens.py</code></td>
+        <td>Named bit tokens, orientations, rotations, and labels.</td>
+      </tr>
+      <tr>
+        <td><code>decompose.py</code></td>
+        <td>Dynamic-programming decomposition with literal cost and token penalty.</td>
+      </tr>
+      <tr>
+        <td><code>z0_substrate.py</code></td>
+        <td>Z0 facet generation and strict substrate scoring.</td>
+      </tr>
+      <tr>
+        <td><code>run_tape.py</code></td>
+        <td>Minimal XOR running tape: seed, evolve, emit, scan.</td>
+      </tr>
+      <tr>
+        <td><code>baselines.py</code></td>
+        <td>Shuffles, random seeds, alternate constants, and unit/precision variants.</td>
+      </tr>
+      <tr>
+        <td><code>reports.py</code></td>
+        <td>Reproducible HTML summaries generated from Python outputs.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Porting Discipline</h2>
+  <p>
+    The old C# was an exploratory bench. The Python version should separate four
+    questions that were blurred together:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Question</th>
+        <th>Why separate it?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Does Z0 contain a target directly?</td>
+        <td>Substring containment is the weakest claim and needs strong baselines.</td>
+      </tr>
+      <tr>
+        <td>Can Z0 facets compress a target?</td>
+        <td>This measures substrate expressiveness, but can become too permissive.</td>
+      </tr>
+      <tr>
+        <td>Can named physical tokens compress a target?</td>
+        <td>This tests whether the recipe has semantic physics labels, not just bits.</td>
+      </tr>
+      <tr>
+        <td>Does a running Z0 tape emit target pieces?</td>
+        <td>This is the strongest “minimal program” hypothesis and should become the primary experiment.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    Summary: the legacy “genetic sequence” machinery was a compression and
+    generative-tape experiment. The next Python step should not be a GUI port.
+    It should be a clean implementation of token decomposition plus Z0 run-tape
+    scoring against adversarial controls.
+  </div>
+</main>
+</body>
+</html>
