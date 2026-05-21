@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z0 Binary Structure</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14201b;
+      --muted: #58655f;
+      --line: #ccd8d2;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --green: #1c6b4f;
+      --gold: #946c16;
+      --blue: #245c88;
+      --red: #9c3b33;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 42px 24px 72px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-top: 42px;
+      font-size: 25px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 22px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 14px 0 0;
+    }
+
+    .lede {
+      max-width: 900px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-top: 14px;
+    }
+
+    .source {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--green);
+      background: #eef6f1;
+      color: #20352c;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+
+    code, pre {
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    pre {
+      overflow-x: auto;
+      white-space: pre;
+      margin: 16px 0 0;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f5f7f6;
+    }
+
+    .bits {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .segmentation {
+      display: grid;
+      grid-template-columns: repeat(7, auto);
+      gap: 0;
+      align-items: stretch;
+      width: fit-content;
+      max-width: 100%;
+      overflow-x: auto;
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .segment {
+      padding: 12px 10px;
+      border-right: 1px solid var(--line);
+      min-width: 84px;
+    }
+
+    .segment:last-child {
+      border-right: 0;
+    }
+
+    .segment strong {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 4px;
+      white-space: nowrap;
+    }
+
+    .segment code {
+      display: block;
+      font-size: 17px;
+      color: var(--ink);
+    }
+
+    .edge {
+      background: #f6f0dd;
+    }
+
+    .down {
+      background: #eaf4fb;
+    }
+
+    .up {
+      background: #eef7eb;
+    }
+
+    .strange {
+      background: #fbefee;
+    }
+
+    .gluon {
+      background: #f0eef8;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #eef2f0;
+      font-weight: 650;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .callout {
+      margin-top: 18px;
+      padding: 16px;
+      border: 1px solid #b8d5c6;
+      border-radius: 8px;
+      background: #f0f8f4;
+    }
+
+    .warning {
+      border-color: #dbc58b;
+      background: #fff8e6;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        padding: 28px 16px 48px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Z0 Binary Structure</h1>
+  <p class="lede">
+    Extraction and clarification of the 2019 observation in
+    <em>The Fundamental Constants in binary</em>: the significant digits of the
+    characteristic impedance of vacuum form a 39-bit information object that
+    already contains whole quark mass-signature words and visually arranges into
+    a gluon-like diagram.
+  </p>
+
+  <div class="source">
+    Source material: <code>E:\physics\ObservationsOfTheFundamentalConstantsInBinary.pdf</code>,
+    with matching text recovered from
+    <code>E:\physics\ObservationsOfTheFundamentalConstantsInBinary.rtf</code>.
+    The core source range is the “QUARKS”, “CHARACTERISTIC IMPEDANCE OF VACUUM”,
+    “GLUONS”, and “Atom from 39 bits” section.
+  </div>
+
+  <h2>Claim Being Preserved</h2>
+  <p>
+    The document is not claiming that the unit ohm is sacred. It is claiming
+    that the published significant digits of a mature physical constant are an
+    information object. When the pre-2019 characteristic impedance value is
+    reduced to significant digits and encoded in binary, the resulting bit
+    string appears to contain the quark mass signatures as intact words.
+  </p>
+  <div class="callout">
+    The strongest formulation: <strong>Z0 is not merely a number here; it is a
+    compact binary substrate whose native segmentation looks syntactic.</strong>
+  </div>
+
+  <h2>Primary Object</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="label">constant</div>
+      <strong>Characteristic impedance of vacuum</strong>
+    </div>
+    <div class="card">
+      <div class="label">significant digits</div>
+      <code>376730313461</code>
+    </div>
+    <div class="card">
+      <div class="label">binary length</div>
+      <code>39 bits</code>
+    </div>
+  </div>
+  <pre class="bits">101011110110110111000000110001011110101</pre>
+
+  <h2>Prime And Triple Facts</h2>
+  <p>
+    The source document identifies <code>376730313461</code> as prime and notes
+    that it is the hypotenuse of a primitive Pythagorean triple. Local arithmetic
+    checks confirm the stated identity:
+  </p>
+  <pre>376730313461^2 = 233635311620^2 + 295533873261^2
+gcd(233635311620, 295533873261, 376730313461) = 1
+376730313461 mod 4 = 1</pre>
+  <p>
+    That matters because odd primes congruent to <code>1 mod 4</code> can appear
+    as the hypotenuse in a primitive Pythagorean triple. In this framing, the Z0
+    significant-digit integer is not just a 39-bit seed; it is a prime seed with
+    a geometric sum-of-squares identity.
+  </p>
+
+  <h2>Quark Words</h2>
+  <p>
+    The source converts quark mass values to binary using significant digits and
+    ignoring units and decimal placement for the initial information experiment.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Quark</th>
+        <th>Digits</th>
+        <th>Native bits</th>
+        <th>Whole-word form used in Z0 reading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>UP</td>
+        <td><code>22</code></td>
+        <td><code>10110</code></td>
+        <td><code>101101</code>, forward plus backward closure</td>
+      </tr>
+      <tr>
+        <td>DOWN</td>
+        <td><code>47</code></td>
+        <td><code>101111</code></td>
+        <td><code>10111101</code>, forward plus backward closure</td>
+      </tr>
+      <tr>
+        <td>STRANGE</td>
+        <td><code>96</code></td>
+        <td><code>1100000</code></td>
+        <td><code>1100000011</code>, forward plus backward closure</td>
+      </tr>
+      <tr>
+        <td>CHARM</td>
+        <td><code>128</code></td>
+        <td><code>10000000</code></td>
+        <td>not part of the first native Z0 segmentation</td>
+      </tr>
+      <tr>
+        <td>BOTTOM</td>
+        <td><code>418</code></td>
+        <td><code>110100010</code></td>
+        <td>not part of the first native Z0 segmentation</td>
+      </tr>
+      <tr>
+        <td>TOP</td>
+        <td><code>1731</code></td>
+        <td><code>11011000011</code></td>
+        <td>not part of the first native Z0 segmentation</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Whole-Word Segmentation</h2>
+  <p>
+    The key observation is that the Z0 bits can be split into intact chunks
+    without scrambling or overlapping the first quark words:
+  </p>
+  <div class="segmentation" aria-label="Z0 bit segmentation">
+    <div class="segment edge"><strong>edge</strong><code>10</code></div>
+    <div class="segment down"><strong>DOWN word</strong><code>10111101</code></div>
+    <div class="segment up"><strong>UP word</strong><code>101101</code></div>
+    <div class="segment strange"><strong>STRANGE word</strong><code>1100000011</code></div>
+    <div class="segment gluon"><strong>gluon gap</strong><code>000</code></div>
+    <div class="segment down"><strong>DOWN word</strong><code>10111101</code></div>
+    <div class="segment edge"><strong>edge</strong><code>01</code></div>
+  </div>
+  <p>
+    Read linearly, this accounts for all 39 bits:
+  </p>
+  <pre>10 10111101 101101 1100000011 000 10111101 01</pre>
+  <p>
+    The document frames this as syntactic rather than decorative: the quark
+    signatures are found sitting in the Z0 binary string as whole words, with
+    edge bits and a central <code>000</code> gap.
+  </p>
+
+  <h2>Manual Line Break Layout</h2>
+  <p>
+    The source then manually inserts line breaks and spaces around the same
+    Z0 bits. The resulting shape is not calculated by a physics engine; it is a
+    visual reading of the string according to the quark-word segmentation.
+  </p>
+  <pre>10
+10111101
+101101
+1100000011
+000
+10111101
+01</pre>
+  <p>
+    Re-arranged as 3-bit groupings, the same material produces the chart-like
+    visual form:
+  </p>
+  <pre>        1 0
+
+101     111     101
+101             101
+110   0 0 0 0   011
+       0 0 0
+101     111     101
+
+        0 1</pre>
+  <p>
+    This is the section behind the claim that the Z0 bits, once spaced by their
+    own suggested words, resemble common quark/gluon chart structures. The point
+    to preserve is not that the chart proves the Standard Model; it is that the
+    bit string invites a Standard-Model-like reading with almost no machinery.
+  </p>
+
+  <h2>Gluon Interpretation</h2>
+  <p>
+    The source notes that eight gluons can be indexed by three bits:
+    <code>000</code> through <code>111</code>. Once Z0 is viewed in 3-bit
+    clusters, the document proposes that pions may be interpreted as one-of-three
+    or two-of-three bit selections inside a gluon index.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Concept</th>
+        <th>Binary reading</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>8 gluons</td>
+        <td>Indexed by three bits: <code>000</code> through <code>111</code></td>
+      </tr>
+      <tr>
+        <td>1/3 pion</td>
+        <td>One selected bit of a 3-bit gluon index</td>
+      </tr>
+      <tr>
+        <td>2/3 pion</td>
+        <td>Two selected bits of a 3-bit gluon index</td>
+      </tr>
+      <tr>
+        <td>Quark charge</td>
+        <td>Read as a pion/gluon bit-selection relationship rather than as a free-standing decimal value</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Atom From 39 Bits</h2>
+  <p>
+    The later summary section accepts four pieces as evidence: quark
+    mass-signatures in binary, the 39-bit characteristic impedance structure,
+    3-bit indexing for eight gluons, and the visual fit between the impedance
+    layout and Standard-Model-like diagrams.
+  </p>
+  <div class="callout warning">
+    The speculative leap is explicit: the impedance structure is proposed as an
+    archetypal atom-like information object, with pions acting as links or
+    pointers between such structures.
+  </div>
+  <p>
+    In the research program this should become a testable model, not merely a
+    drawing. The Python implementation should preserve the exact bit evidence,
+    reproduce the segmentation, then test whether comparable constants or
+    randomized controls produce similarly whole-word, chart-like structures.
+  </p>
+
+  <h2>Implementation Hooks</h2>
+  <p>
+    The current Python package already includes the seed and the XOR-ring
+    mechanics. The next useful modules are:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Module</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>segmentation</code></td>
+        <td>Represent named bit words and exact non-overlapping decompositions.</td>
+      </tr>
+      <tr>
+        <td><code>catalog</code></td>
+        <td>Load pre-2019 CODATA and quark/gluon signature records with provenance.</td>
+      </tr>
+      <tr>
+        <td><code>baselines</code></td>
+        <td>Compare Z0 against shuffled, random, and other-constant controls.</td>
+      </tr>
+      <tr>
+        <td><code>reports</code></td>
+        <td>Generate reproducible HTML evidence pages from code, not hand layout.</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+</body>
+</html>

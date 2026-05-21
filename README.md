@@ -50,6 +50,14 @@ The legacy C# project recorded a forward exact loop for this seed with period
 `4095`. The Python implementation should reproduce, isolate, and harden that
 result before expanding the test space.
 
+## Initial Notes
+
+- [Z0 Binary Structure](docs/z0-binary-structure.html) captures the 2019 PDF/RTF
+  observation that the characteristic impedance bits already contain whole
+  quark mass-signature words, arrange naturally into a gluon-like chart, and
+  come from a prime significant-digit integer with a primitive Pythagorean
+  triple identity.
+
 ## Design Posture
 
 - Treat constants as information artifacts with provenance.
