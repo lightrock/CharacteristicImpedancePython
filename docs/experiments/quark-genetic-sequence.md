@@ -28,6 +28,49 @@ What is the quark genetic sequence that compresses this constant?
 
 These are compression/generation questions, not just hit-count questions.
 
+## Recursive GeneZip Model
+
+The first useful decomposer should support multiple passes, not only a flat
+single-pass recipe. A target may contain a named token, and the leftover material
+may itself contain another named token after the first token is removed or
+marked.
+
+Example shape:
+
+```text
+level 0 target:    111011010110111
+level 1 recipe:    11(Q_UP)010110111
+level 1 remainder: 11010110111
+level 2 recipe:    1101(Q_DOWN)11
+level 2 remainder: 110111
+```
+
+This is GeneZip by copy-paste semantics:
+
+1. Find named token spans inside the current string.
+2. Record those spans as genetic material.
+3. Remove or mark the matched spans.
+4. Concatenate the remaining unmatched material in natural order.
+5. Run the next pass on that remainder.
+6. Stop at a configured maximum depth, usually 3 or 4 levels, or when no useful
+   token is found.
+
+The output is a tree or stack of decompositions, not merely a list of hits. Each
+level must preserve:
+
+- input bits for that level
+- token spans found
+- literal spans remaining
+- remainder bits passed to the next level
+- token catalog used
+- token lengths and high-noise flags
+- score for that level
+- cumulative score across levels
+
+The method does not have to be exact. Remainders are expected and should be
+reported, not hidden. The point is to ask how much named genetic material can be
+peeled out of a target over a few disciplined passes.
+
 ## Catalog Boundaries
 
 Every run must state which token catalogs were allowed:
@@ -69,10 +112,12 @@ A genetic decomposition should report at least:
 - whether overlaps were allowed
 - whether circular wrap was allowed
 - whether the recipe is exact or approximate
+- recursion depth and per-level remainders when recursive GeneZip is enabled
 
 A first implementation should prefer exact, non-overlapping decompositions with
-explicit literal leftovers. More permissive modes may come later, but must be
-reported as such.
+explicit literal leftovers. Recursive GeneZip may then peel named material out of
+successive remainders for three or four levels. More permissive modes may come
+later, but must be reported as such.
 
 ## Quark Priority Rule
 
@@ -145,8 +190,10 @@ Minimum content:
 - catalog used
 - token catalogs allowed
 - decomposition settings
+- recursion depth, usually 3 or 4 levels for recursive GeneZip
 - top exact decompositions
 - top near decompositions
+- per-level remainders for recursive decompositions
 - constants grouped by quark-heavy recipes
 - comparison to shuffled controls
 - notes about whether groupings make human physics sense
