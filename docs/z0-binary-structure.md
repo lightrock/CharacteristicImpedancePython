@@ -36,6 +36,12 @@ gcd(233635311620, 295533873261, 376730313461) = 1
 
 That matters because odd primes congruent to `1 mod 4` can appear as the hypotenuse in a primitive Pythagorean triple. In this framing, the Z0 significant-digit integer is not just a 39-bit seed; it is a prime seed with a geometric sum-of-squares identity.
 
+## Proto-Geometry Note
+
+If a fundamental constant of physics is truly fundamental, then a structural or geometric trace inside its information form would not be absurd in advance. In this reading, Z0 is not only a numeric seed; it also looks like proto-geometry: a compact binary object with edge bits, interior word-structure, a central gap, and orientation-dependent layouts.
+
+Informally, the forward layout has a minimal tetrahedral flavor — a kind of binary `d4` in tabletop terms. That image should be treated as an interpretive clue, not as proof. The research task is to turn the visual/geometric hunch into explicit segmentation rules, generated layouts, and controls.
+
 ## Quark Words
 
 The source converts quark mass values to binary using significant digits and ignoring units and decimal placement for the initial information experiment.
