@@ -16,8 +16,9 @@ Current project state:
 - The information-first thesis and legacy BigCalc2 observations are captured in
   GitHub-readable Markdown notes, with companion HTML versions for local/static
   viewing.
-- A pre-2019 CODATA 2014 evidence chain exists under `docs/codata/`, including
-  source rows, derived binary rows, and a bits-only corpus.
+- A complete pre-2019 CODATA 2014 evidence chain exists under `docs/codata/`,
+  including the raw NIST-style source text, 336 parsed official rows, derived
+  binary rows, and a bits-only corpus.
 - CODATA documentation generation tools exist under `tools/codata/`.
 - Unit tests cover the Z0 anchor, core bit operations, XOR loop behavior, and
   CODATA document generation.
@@ -96,12 +97,14 @@ until the catalog-level and randomized-control tests are implemented.
 
 ## Evidence Chain
 
-The project now keeps the pre-2019 source and derived binary evidence in-tree:
+The project now keeps the full pre-2019 source and derived binary evidence in-tree:
 
 - [CODATA Evidence Chain](docs/codata/README.md) explains the conversion rule
   and rebuild process.
+- [Pre-2019 CODATA 2014 Raw Text](docs/codata/pre-2019-codata-2014-raw.txt)
+  preserves the raw NIST-style all-values text used as the import source.
 - [Pre-2019 CODATA 2014 Source](docs/codata/pre-2019-codata-2014-source.md)
-  preserves the named/value/unit rows currently used by the project.
+  preserves 336 official named/value/unit rows currently used by the project.
 - [Pre-2019 CODATA 2014 Binary](docs/codata/pre-2019-codata-2014-binary.md)
   preserves the same rows with significant digits and binary forms.
 - [Pre-2019 CODATA 2014 Bits Only](docs/codata/pre-2019-codata-2014-bits-only.txt)
@@ -164,7 +167,25 @@ controls.
 
 ## Install And Run
 
-From the repository root:
+No virtual environment is checked into the repository. You can either run the
+tests directly from the checkout, or create your own local `.venv`.
+
+Quick local test from the repository root:
+
+Windows PowerShell:
+
+```powershell
+$env:PYTHONPATH = "$PWD\src"
+python -m unittest discover -s tests -p "test_*.py"
+```
+
+Linux/macOS:
+
+```bash
+PYTHONPATH="$PWD/src" python -m unittest discover -s tests -p "test_*.py"
+```
+
+Editable install, optional local virtual environment:
 
 ```bash
 python -m venv .venv
@@ -175,7 +196,7 @@ Windows PowerShell:
 ```powershell
 .venv\Scripts\Activate.ps1
 pip install -e .
-python -m unittest
+python -m unittest discover -s tests -p "test_*.py"
 ```
 
 Windows cmd:
@@ -183,7 +204,7 @@ Windows cmd:
 ```bat
 .venv\Scripts\activate.bat
 pip install -e .
-python -m unittest
+python -m unittest discover -s tests -p "test_*.py"
 ```
 
 Linux/macOS:
@@ -191,7 +212,7 @@ Linux/macOS:
 ```bash
 source .venv/bin/activate
 pip install -e .
-python -m unittest
+python -m unittest discover -s tests -p "test_*.py"
 ```
 
 ## Initial Notes
@@ -234,8 +255,8 @@ source code unless GitHub Pages or another static host is used.
 - Capture the information-first thesis in project docs.
 - Capture the Z0 quark/gluon binary-structure observation in project docs.
 - Analyze and document the legacy BigCalc2 genetic-sequence machinery.
-- Add a pre-2019 CODATA 2014 evidence chain with generated binary and bits-only
-  files.
+- Add a complete pre-2019 CODATA 2014 evidence chain with raw source, 336 parsed
+  official rows, generated binary rows, and bits-only files.
 - Add tests for the CODATA conversion and document rebuild path.
 
 ### Next

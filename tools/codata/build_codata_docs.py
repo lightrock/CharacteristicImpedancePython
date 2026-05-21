@@ -90,6 +90,53 @@ def read_source_table(path: Path) -> list[CodataRecord]:
     return records
 
 
+def parse_nist_ascii(path: Path) -> list[CodataRecord]:
+    """Parse a NIST all-values ASCII listing into canonical CODATA records.
+
+    The legacy BigCalc2 source file includes a few project-specific rows after
+    the official CODATA table. This parser stops before those local additions.
+    """
+    records: list[CodataRecord] = []
+    stop_names = {"FIXED_PlanckTime", "Q_CesiumSecond"}
+
+    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        raw = line.strip()
+        if not raw:
+            continue
+        if raw.startswith(("Fundamental", "From:", "Quantity", "---")):
+            continue
+
+        parts = re.split(r"\s{2,}", raw)
+        if len(parts) < 3:
+            continue
+
+        quantity = parts[0].replace("_", "-")
+        if quantity in stop_names or quantity.startswith("Q_"):
+            break
+
+        value = parts[1]
+        uncertainty = parts[2]
+        unit = parts[3] if len(parts) > 3 else ""
+
+        # Guard against non-data prose accidentally parsed as rows.
+        value_mantissa_digits(value)
+
+        records.append(
+            CodataRecord(
+                index=len(records) + 1,
+                quantity=quantity,
+                value=value,
+                uncertainty=uncertainty,
+                unit=unit,
+            )
+        )
+
+    if not records:
+        raise ValueError(f"No CODATA rows parsed from {path}")
+
+    return records
+
+
 def value_mantissa_digits(value: str) -> str:
     normalized = value.replace("−", "-").replace("×", "x")
     normalized = re.sub(r"\([^)]*\)", "", normalized).strip()
@@ -136,12 +183,50 @@ def write_bits_only(records: list[CodataRecord], path: Path) -> None:
     path.write_text("\n".join(record.bits for record in records) + "\n", encoding="utf-8")
 
 
+def write_source_markdown(records: list[CodataRecord], path: Path, raw_source_name: str | None = None) -> None:
+    source_line = (
+        f"Generated from `{raw_source_name}` by `tools/codata/build_codata_docs.py --nist-ascii`."
+        if raw_source_name
+        else "Versioned local source table used by the repository pipeline."
+    )
+    lines = [
+        "# Pre-2019 CODATA 2014 Source Copy",
+        "",
+        source_line,
+        "",
+        "Source: NIST CODATA 2014 Fundamental Physical Constants, Complete Listing.",
+        "Canonical URL: https://physics.nist.gov/cuu/Constants/ArchiveASCII/allascii_2014.txt",
+        "",
+        "Evidence-chain rule: this file is the named/value/unit source. The generated binary files must be rebuilt from this table by `tools/codata/build_codata_docs.py`, not hand-edited.",
+        "",
+        "| index | quantity | value | uncertainty | unit |",
+        "|---:|---|---:|---:|---|",
+    ]
+    for record in records:
+        lines.append(
+            f"| {record.index} | {record.quantity} | {record.value} | "
+            f"{record.uncertainty} | {record.unit} |"
+        )
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def build(source: Path, out_dir: Path) -> None:
     records = read_source_table(source)
     out_dir.mkdir(parents=True, exist_ok=True)
     binary_name = "pre-2019-codata-2014-binary.md"
     bits_name = "pre-2019-codata-2014-bits-only.txt"
     write_binary_markdown(records, out_dir / binary_name, source.name, bits_name)
+    write_bits_only(records, out_dir / bits_name)
+
+
+def build_from_nist_ascii(nist_ascii: Path, out_dir: Path) -> None:
+    records = parse_nist_ascii(nist_ascii)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    source_name = "pre-2019-codata-2014-source.md"
+    binary_name = "pre-2019-codata-2014-binary.md"
+    bits_name = "pre-2019-codata-2014-bits-only.txt"
+    write_source_markdown(records, out_dir / source_name, nist_ascii.name)
+    write_binary_markdown(records, out_dir / binary_name, source_name, bits_name)
     write_bits_only(records, out_dir / bits_name)
 
 
@@ -154,13 +239,21 @@ def main() -> None:
         help="Markdown source table to convert.",
     )
     parser.add_argument(
+        "--nist-ascii",
+        type=Path,
+        help="Optional NIST all-values ASCII file. When provided, rebuilds the source table and generated artifacts from this raw file.",
+    )
+    parser.add_argument(
         "--out-dir",
         type=Path,
         default=Path("docs/codata"),
         help="Directory for generated binary files.",
     )
     args = parser.parse_args()
-    build(args.source, args.out_dir)
+    if args.nist_ascii:
+        build_from_nist_ascii(args.nist_ascii, args.out_dir)
+    else:
+        build(args.source, args.out_dir)
 
 
 if __name__ == "__main__":
