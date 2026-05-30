@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z0 As A ZFA-Runnable Object</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14201b;
+      --muted: #58655f;
+      --line: #ccd8d2;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --green: #1c6b4f;
+      --gold: #946c16;
+      --blue: #245c88;
+      --soft: #eef6f1;
+      --code: #f4f7f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.58;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 42px 24px 72px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 920px;
+      font-size: 40px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-top: 42px;
+      font-size: 25px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 14px 0 0;
+    }
+
+    a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 16px;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--soft);
+    }
+
+    code,
+    pre {
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    pre {
+      margin: 16px 0 0;
+      padding: 16px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--code);
+      white-space: pre;
+    }
+
+    .lede {
+      max-width: 900px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-top: 14px;
+    }
+
+    .source {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--green);
+      background: var(--soft);
+      color: #20352c;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      min-height: 100%;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: #f7eed9;
+      color: #6f4f12;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      margin-top: 44px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 860px) {
+      main {
+        padding: 28px 16px 56px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="index.html">Back to docs index</a></p>
+
+    <h1>Z0 As A ZFA-Runnable Object</h1>
+    <p class="lede">
+      This page translates the pre-2019 characteristic impedance bitstring into
+      a compact object that a ZFA-style process can run: fixed seed, canonical
+      views, evolution rule, tap stream, and named-word segmentation.
+    </p>
+
+    <div class="source">
+      This is a machine-facing handoff shape, not a proof. It says what ZFA can
+      operate on without changing the underlying Z0 bits.
+    </div>
+
+    <h2>Core Translation</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Seed</span>
+        <h3>Fixed information object</h3>
+        <p>
+          Z0 enters as the pre-2019 CODATA significant-digit integer converted
+          to binary.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Views</span>
+        <h3>Canonical orientations</h3>
+        <p>
+          Forward, reverse, inverse, and inverse-reverse are explicit views of
+          the same object.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Operators</span>
+        <h3>Minimal executable rule</h3>
+        <p>
+          The circular XOR-left-rotation rule turns the seed into a running
+          finite tape.
+        </p>
+      </article>
+    </div>
+
+    <h2>ZFA Input Package</h2>
+    <pre>{
+  "object": "Z0_PRE_2019",
+  "type": "finite_circular_binary_seed",
+  "name": "characteristic impedance of vacuum",
+  "digits": "376730313461",
+  "bits": "101011110110110111000000110001011110101",
+  "length": 39,
+  "source": "pre-2019 CODATA significant digits",
+  "evolution": {
+    "rule": "xor_with_left_rotation",
+    "rotation": 1,
+    "wrap": "circular",
+    "tap": 0,
+    "known_period": 4095
+  },
+  "read_modes": [
+    "linear",
+    "circular_substrings",
+    "orientation_scan",
+    "xor_run_tape",
+    "word_segmentation"
+  ]
+}</pre>
+
+    <h2>Canonical Views</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>View</th>
+          <th>Bits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>forward</td>
+          <td><code>101011110110110111000000110001011110101</code></td>
+        </tr>
+        <tr>
+          <td>reverse</td>
+          <td><code>101011110100011000000111011011011110101</code></td>
+        </tr>
+        <tr>
+          <td>inverse</td>
+          <td><code>010100001001001000111111001110100001010</code></td>
+        </tr>
+        <tr>
+          <td>inverse-reverse</td>
+          <td><code>010100001011100111111000100100100001010</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Run Rule And Result</h2>
+    <pre>state_next[i] = state[i] XOR state[(i + 1) mod 39]
+emit          = state_next[0]</pre>
+
+    <table>
+      <tbody>
+        <tr>
+          <th>Seed length</th>
+          <td><code>39</code> bits</td>
+        </tr>
+        <tr>
+          <th>Halted</th>
+          <td><code>false</code></td>
+        </tr>
+        <tr>
+          <th>Closed loop</th>
+          <td><code>true</code></td>
+        </tr>
+        <tr>
+          <th>Period</th>
+          <td><code>4095</code> steps</td>
+        </tr>
+        <tr>
+          <th>Concatenated orbit length</th>
+          <td><code>159705</code> bits, equal to <code>4095 * 39</code></td>
+        </tr>
+        <tr>
+          <th>Tap-0 prefix, first 64 emitted bits</th>
+          <td><code>1000100101010010110111010101101010100000111000001001100001111000</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Known Forward Word Segmentation</h2>
+    <p>
+      The known forward segmentation is preserved as a named reading, not as a
+      proof. It gives ZFA a first set of words to test against orientation scans,
+      circular substrings, and run-tape output.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Segment</th>
+          <th>Bits</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>edge</td>
+          <td><code>10</code></td>
+          <td>outer bit pair</td>
+        </tr>
+        <tr>
+          <td>DOWN closure word</td>
+          <td><code>10111101</code></td>
+          <td>longer closure-style quark word</td>
+        </tr>
+        <tr>
+          <td>UP closure word</td>
+          <td><code>101101</code></td>
+          <td>short closure-style quark word</td>
+        </tr>
+        <tr>
+          <td>STRANGE closure word</td>
+          <td><code>1100000011</code></td>
+          <td>longer closure-style quark word</td>
+        </tr>
+        <tr>
+          <td>gluon gap</td>
+          <td><code>000</code></td>
+          <td>central three-bit gap</td>
+        </tr>
+        <tr>
+          <td>DOWN closure word</td>
+          <td><code>10111101</code></td>
+          <td>repeated longer closure word</td>
+        </tr>
+        <tr>
+          <td>edge</td>
+          <td><code>01</code></td>
+          <td>outer bit pair</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <pre>10 10111101 101101 1100000011 000 10111101 01</pre>
+
+    <h2>What ZFA Should Do With It</h2>
+    <ol>
+      <li>Load Z0 as a fixed 39-bit circular seed.</li>
+      <li>Generate the four canonical orientation views.</li>
+      <li>Run the XOR-left-rotation evolution until closure.</li>
+      <li>Emit the tapped run tape from a declared tap position.</li>
+      <li>Scan linear, circular, orientation, segmentation, and run-tape views for named tokens.</li>
+      <li>Report catalog boundaries: official CODATA only, legacy tokens only, or combined.</li>
+      <li>Compare every positive-looking result against shuffled, same-length, same-density, and alternate-constant controls.</li>
+    </ol>
+
+    <h2>Interpretation Boundary</h2>
+    <p>
+      This page defines a runnable object and records the first computed results.
+      It does not claim that Z0's bit behavior has physical meaning. The claim
+      only becomes stronger if Z0's runnable forms outperform fair controls and
+      reproduce legacy observations under explicit settings.
+    </p>
+
+    <footer>
+      Values on this page are generated from the current Python helpers in
+      <code>src/characteristic_impedance/core.py</code> and aligned with the
+      preserved Z0 binary-structure notes.
+    </footer>
+  </main>
+</body>
+</html>
