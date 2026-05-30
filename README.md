@@ -1,4 +1,4 @@
-# NOTE: The idea is right, the semi-salad framing is not entirely right yet in terms of what to prove, the obervations otherwise are good.
+# NOTE: The idea is right, the machine-salad framing is not entirely right yet in terms of what to prove, the obervations otherwise are good. Haven't had time to finish moving this over yet.
 
 # Characteristic Impedance Python
 
