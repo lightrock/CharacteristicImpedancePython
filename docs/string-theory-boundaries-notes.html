@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>String Theory Boundary Notes</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14201b;
+      --muted: #58655f;
+      --line: #ccd8d2;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --green: #1c6b4f;
+      --gold: #946c16;
+      --blue: #245c88;
+      --soft: #eef6f1;
+      --warn: #fff6db;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.58;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 42px 24px 72px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 920px;
+      font-size: 40px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-top: 42px;
+      font-size: 25px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 14px 0 0;
+    }
+
+    a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .lede {
+      max-width: 900px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-top: 14px;
+    }
+
+    .source,
+    .warning {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-left: 4px solid var(--green);
+      background: var(--soft);
+      color: #20352c;
+    }
+
+    .warning {
+      border-left-color: var(--gold);
+      background: var(--warn);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      min-height: 100%;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      background: #f7eed9;
+      color: #6f4f12;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #ffffff;
+    }
+
+    code {
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    footer {
+      margin-top: 44px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 860px) {
+      main {
+        padding: 28px 16px 56px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="index.html">Back to docs index</a></p>
+
+    <h1>String Theory, Boundaries, Spheres, and Limits</h1>
+    <p class="lede">
+      Notes preserved from a broad string-theory and boundary-themed video.
+      These are idea notes for later research framing, not evidence for the Z0
+      claim and not a substitute for technical sources.
+    </p>
+
+    <div class="source">
+      Source video:
+      <a href="https://www.youtube.com/watch?v=bRrvM2Og1Qg">https://www.youtube.com/watch?v=bRrvM2Og1Qg</a>
+    </div>
+
+    <div class="warning">
+      The transcript is popular-level and contains many automatic-transcription
+      errors. Preserve the useful motifs, but verify technical claims from
+      primary or expert sources before using them as physics evidence.
+    </div>
+
+    <h2>Why This Belongs Here</h2>
+    <p>
+      The Characteristic Impedance project is not a string-theory project. The
+      useful overlap is the language of boundaries, finite encodings, dual
+      descriptions, compact forms, and the way simple constraints can generate
+      structured behavior.
+    </p>
+    <p>
+      The project's Z0 hypothesis already treats a published constant as an
+      information object. The video is useful because it keeps circling the same
+      family of questions: what does a boundary do, what happens when a model is
+      finite rather than infinite, and how can hidden structure become visible
+      through a different representation?
+    </p>
+
+    <h2>Useful Motifs</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Boundary conditions</span>
+        <h3>Edges select allowed behavior</h3>
+        <p>
+          A vibrating system changes when its ends or allowed domain are fixed.
+          This maps cleanly to the project's interest in finite bitstrings,
+          circular rings, and allowed transformations.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Finite but unbounded</span>
+        <h3>Spheres and loops</h3>
+        <p>
+          A finite surface can have no hard edge. This is a useful metaphor for
+          circular binary seeds: the object is finite, but its traversal wraps.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Duality</span>
+        <h3>Different descriptions, same structure</h3>
+        <p>
+          The video's string-theory duality discussion is useful as analogy:
+          reverse, inverse, and inverse-reverse orientations may be different
+          encodings of related information objects.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Compactification</span>
+        <h3>Hidden structure inside a small object</h3>
+        <p>
+          Compact dimensions are not evidence for this project, but the motif is
+          useful: a compact representation may carry structure that is not
+          obvious until transformed.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Horizon</span>
+        <h3>Limits of observation</h3>
+        <p>
+          Event horizons and cosmic horizons are boundaries of access. In this
+          project, the analogous boundary is methodological: what the current
+          tests can and cannot see.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Model limits</span>
+        <h3>A theory has a domain</h3>
+        <p>
+          A useful result must survive controls and domain checks. Z0 structure
+          should be tested against other constants, shuffled strings, random
+          controls, unit translations, and precision cuts.
+        </p>
+      </article>
+    </div>
+
+    <h2>Project Translation</h2>
+    <div class="note">
+      <h3>Boundary as an information rule</h3>
+      <p>
+        In the Z0 experiment, the boundary is not a cosmic wall. It is the rule
+        that turns a published significant-digit string into a finite binary
+        object. That rule decides what information enters the system and what is
+        excluded: sign, decimal point, exponent, unit label, uncertainty, and
+        formatting are all treated as outside the initial object.
+      </p>
+    </div>
+
+    <div class="note">
+      <h3>Sphere as circular tape</h3>
+      <p>
+        The video's sphere language is useful if kept disciplined. Z0's circular
+        XOR ring is not a physical sphere, but it behaves like a finite closed
+        traversal: there is no terminal edge, only wraparound adjacency.
+      </p>
+    </div>
+
+    <div class="note">
+      <h3>Dual description as orientation scan</h3>
+      <p>
+        Forward, reverse, inverse, and inverse-reverse orientations should be
+        treated as explicit alternate encodings. If one orientation appears
+        special, the report must say so and compare it against the others.
+      </p>
+    </div>
+
+    <div class="note">
+      <h3>Limit as falsification boundary</h3>
+      <p>
+        The project should not merely collect resonant metaphors. The boundary
+        that matters scientifically is the falsification boundary: if randomized
+        controls, alternate constants, unit translations, or precision variants
+        behave comparably, the Z0 claim weakens.
+      </p>
+    </div>
+
+    <h2>Claims To Keep Separate</h2>
+    <ul>
+      <li>String theory is background context, not evidence for the Z0 binary claim.</li>
+      <li>Boundary metaphors are useful only when translated into explicit tests.</li>
+      <li>Spheres and realities are conceptual imagery, not physics proof.</li>
+      <li>Duality analogies do not imply physical equivalence between bit orientations.</li>
+      <li>Any future technical string-theory reference should be checked against reliable sources.</li>
+    </ul>
+
+    <h2>Possible Follow-Up Work</h2>
+    <ul>
+      <li>Add a short Markdown version of these notes if GitHub-readable prose is needed.</li>
+      <li>Use the boundary-condition motif when writing reports about circular XOR rings.</li>
+      <li>Compare finite/open/closed bitstring evolution rules as explicit experiment variants.</li>
+      <li>Define a "boundary vocabulary" for the project: source boundary, encoding boundary, scan boundary, proof boundary, and interpretation boundary.</li>
+      <li>Find primary references for any string-theory ideas before citing them outside inspiration notes.</li>
+    </ul>
+
+    <footer>
+      Preserved as project memory because the ideas are useful. Not treated as
+      source evidence for physical claims.
+    </footer>
+  </main>
+</body>
+</html>
