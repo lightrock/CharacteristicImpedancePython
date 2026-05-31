@@ -8,6 +8,7 @@ it is admissible only when positive/action and negative/lift twists balance.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from html import escape
 
 from .core import Z0_PRE_2019_BITS, xor_ring_run
 from .zfa import z0_tap_tape
@@ -191,6 +192,186 @@ def render_qlf_admissibility_markdown(report: QlfAdmissibilityReport) -> str:
         ]
     )
     return "\n".join(lines) + "\n"
+
+
+def render_qlf_admissibility_html(report: QlfAdmissibilityReport) -> str:
+    """Render a standalone HTML report for the QLF/ZFA admissibility layer."""
+    admissible_count = sum(1 for result in report.candidates if result.admissible)
+    rows = "\n".join(
+        "<tr>"
+        f"<td>{escape(result.candidate.name)}</td>"
+        f"<td><code>{result.candidate.bits}</code></td>"
+        f"<td><code>{escape(result.candidate.twists)}</code></td>"
+        f"<td>{result.positive_count}</td>"
+        f"<td>{result.negative_count}</td>"
+        f"<td>{result.spectral_gap}</td>"
+        f"<td>{'yes' if result.admissible else 'no'}</td>"
+        "</tr>"
+        for result in report.candidates
+    )
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z0 QLF / ZFA Admissibility Probe</title>
+  <style>
+    :root {{
+      --ink: #14201b;
+      --muted: #58655f;
+      --line: #ccd8d2;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --soft: #eef6f1;
+      --blue: #245c88;
+    }}
+    body {{
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
+    }}
+    main {{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 20px 64px;
+    }}
+    h1 {{
+      margin: 0;
+      font-size: 38px;
+      line-height: 1.1;
+    }}
+    h2 {{
+      margin-top: 36px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      font-size: 24px;
+    }}
+    p {{
+      max-width: 860px;
+    }}
+    a {{
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }}
+    .back-link {{
+      display: inline-block;
+      margin-bottom: 18px;
+    }}
+    .lede {{
+      color: var(--muted);
+      font-size: 18px;
+    }}
+    .note {{
+      padding: 14px 16px;
+      border-left: 4px solid var(--blue);
+      background: var(--soft);
+    }}
+    .facts {{
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }}
+    .fact {{
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }}
+    .fact strong {{
+      display: block;
+      font-size: 22px;
+    }}
+    table {{
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: var(--panel);
+      font-size: 14px;
+    }}
+    th,
+    td {{
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }}
+    th {{
+      background: #edf3ef;
+    }}
+    code {{
+      font-family: Consolas, "Courier New", monospace;
+    }}
+    @media (max-width: 800px) {{
+      .facts {{
+        grid-template-columns: 1fr;
+      }}
+    }}
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../index.html">Back to docs index</a>
+    <h1>Z0 QLF / ZFA Admissibility Probe</h1>
+    <p class="lede">
+      A generated first-pass report that separates Z0 tap-tape observations
+      from interpreted QLF/ZFA candidate objects. Admissible means positive and
+      negative twist counts balance to spectral gap zero.
+    </p>
+
+    <div class="note">
+      This is not a proof. It does not validate a physics claim or establish
+      Jim Scarver's framework experimentally. It only adds an inspectable
+      admissibility scaffold.
+    </div>
+
+    <h2>Probe Settings</h2>
+    <div class="facts">
+      <div class="fact"><span>Period</span><strong>{report.period_steps}</strong></div>
+      <div class="fact"><span>Tap index</span><strong>{report.tap_index}</strong></div>
+      <div class="fact"><span>Windows</span><strong>{len(report.candidates)}</strong></div>
+      <div class="fact"><span>Admissible</span><strong>{admissible_count}</strong></div>
+    </div>
+
+    <h2>Interpretation Boundary</h2>
+    <p>
+      The XOR orbit is the generated substrate. Tap-tape windows are generated
+      observation streams. Named bit tokens are observed words. QLF/ZFA
+      candidates are interpreted process/capability/proof-like structures, and
+      unbalanced candidates are non-admissible under this interpretation rather
+      than bad strings.
+    </p>
+
+    <h2>Candidate Windows</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Bits</th>
+          <th>Twists</th>
+          <th>Positive</th>
+          <th>Negative</th>
+          <th>Spectral gap</th>
+          <th>Admissible</th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
+
+    <h2>Next Scientific Step</h2>
+    <p>
+      The serious next step is comparing admissible candidate rates and
+      compression/reconstruction performance against alternate constants,
+      same-density randomized controls, shuffled seeds, and fake token catalogs.
+    </p>
+  </main>
+</body>
+</html>
+"""
 
 
 def _validate_bits(bits: str) -> None:

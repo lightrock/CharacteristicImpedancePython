@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z0 QLF / ZFA Admissibility Probe</title>
+  <style>
+    :root {
+      --ink: #14201b;
+      --muted: #58655f;
+      --line: #ccd8d2;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --soft: #eef6f1;
+      --blue: #245c88;
+    }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 20px 64px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      line-height: 1.1;
+    }
+    h2 {
+      margin-top: 36px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      font-size: 24px;
+    }
+    p {
+      max-width: 860px;
+    }
+    a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+    .lede {
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .note {
+      padding: 14px 16px;
+      border-left: 4px solid var(--blue);
+      background: var(--soft);
+    }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .fact {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    .fact strong {
+      display: block;
+      font-size: 22px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: var(--panel);
+      font-size: 14px;
+    }
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #edf3ef;
+    }
+    code {
+      font-family: Consolas, "Courier New", monospace;
+    }
+    @media (max-width: 800px) {
+      .facts {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../index.html">Back to docs index</a>
+    <h1>Z0 QLF / ZFA Admissibility Probe</h1>
+    <p class="lede">
+      A generated first-pass report that separates Z0 tap-tape observations
+      from interpreted QLF/ZFA candidate objects. Admissible means positive and
+      negative twist counts balance to spectral gap zero.
+    </p>
+
+    <div class="note">
+      This is not a proof. It does not validate a physics claim or establish
+      Jim Scarver's framework experimentally. It only adds an inspectable
+      admissibility scaffold.
+    </div>
+
+    <h2>Probe Settings</h2>
+    <div class="facts">
+      <div class="fact"><span>Period</span><strong>4095</strong></div>
+      <div class="fact"><span>Tap index</span><strong>0</strong></div>
+      <div class="fact"><span>Windows</span><strong>32</strong></div>
+      <div class="fact"><span>Admissible</span><strong>9</strong></div>
+    </div>
+
+    <h2>Interpretation Boundary</h2>
+    <p>
+      The XOR orbit is the generated substrate. Tap-tape windows are generated
+      observation streams. Named bit tokens are observed words. QLF/ZFA
+      candidates are interpreted process/capability/proof-like structures, and
+      unbalanced candidates are non-admissible under this interpretation rather
+      than bad strings.
+    </p>
+
+    <h2>Candidate Windows</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Bits</th>
+          <th>Twists</th>
+          <th>Positive</th>
+          <th>Negative</th>
+          <th>Spectral gap</th>
+          <th>Admissible</th>
+        </tr>
+      </thead>
+      <tbody><tr><td>z0_tap0_window_0000</td><td><code>100010010101</code></td><td><code>^&lt;\-^&lt;\+v&gt;\+</code></td><td>5</td><td>7</td><td>-2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0001</td><td><code>001011011101</code></td><td><code>v&lt;/-^&gt;\+^&gt;\+</code></td><td>7</td><td>5</td><td>2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0002</td><td><code>010110101010</code></td><td><code>v&gt;\+^&lt;/-^&lt;/-</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0003</td><td><code>000011100000</code></td><td><code>v&lt;\-^&gt;/-v&lt;\-</code></td><td>3</td><td>9</td><td>-6</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0004</td><td><code>100110000111</code></td><td><code>^&lt;\+^&lt;\-v&gt;/+</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0005</td><td><code>100001101101</code></td><td><code>^&lt;\-v&gt;/-^&gt;\+</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0006</td><td><code>110011001001</code></td><td><code>^&gt;\-^&gt;\-^&lt;\+</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0007</td><td><code>010111011101</code></td><td><code>v&gt;\+^&gt;\+^&gt;\+</code></td><td>8</td><td>4</td><td>4</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0008</td><td><code>010000000101</code></td><td><code>v&gt;\-v&lt;\-v&gt;\+</code></td><td>3</td><td>9</td><td>-6</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0009</td><td><code>011101011011</code></td><td><code>v&gt;/+v&gt;\+^&lt;/+</code></td><td>8</td><td>4</td><td>4</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0010</td><td><code>101011010101</code></td><td><code>^&lt;/-^&gt;\+v&gt;\+</code></td><td>7</td><td>5</td><td>2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0011</td><td><code>011110000000</code></td><td><code>v&gt;/+^&lt;\-v&lt;\-</code></td><td>4</td><td>8</td><td>-4</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0012</td><td><code>011101010110</code></td><td><code>v&gt;/+v&gt;\+v&gt;/-</code></td><td>7</td><td>5</td><td>2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0013</td><td><code>111101100010</code></td><td><code>^&gt;/+v&gt;/-v&lt;/-</code></td><td>7</td><td>5</td><td>2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0014</td><td><code>010011010011</code></td><td><code>v&gt;\-^&gt;\+v&lt;/+</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0015</td><td><code>100010111101</code></td><td><code>^&lt;\-^&lt;/+^&gt;\+</code></td><td>7</td><td>5</td><td>2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0016</td><td><code>000000011000</code></td><td><code>v&lt;\-v&lt;\+^&lt;\-</code></td><td>2</td><td>10</td><td>-8</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0017</td><td><code>100000101010</code></td><td><code>^&lt;\-v&lt;/-^&lt;/-</code></td><td>4</td><td>8</td><td>-4</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0018</td><td><code>111001101001</code></td><td><code>^&gt;/-v&gt;/-^&lt;\+</code></td><td>7</td><td>5</td><td>2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0019</td><td><code>110100010110</code></td><td><code>^&gt;\+v&lt;\+v&gt;/-</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0020</td><td><code>001011001001</code></td><td><code>v&lt;/-^&gt;\-^&lt;\+</code></td><td>5</td><td>7</td><td>-2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0021</td><td><code>111111001111</code></td><td><code>^&gt;/+^&gt;\-^&gt;/+</code></td><td>10</td><td>2</td><td>8</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0022</td><td><code>111000111110</code></td><td><code>^&gt;/-v&lt;/+^&gt;/-</code></td><td>8</td><td>4</td><td>4</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0023</td><td><code>001100100101</code></td><td><code>v&lt;/+v&lt;/-v&gt;\+</code></td><td>5</td><td>7</td><td>-2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0024</td><td><code>110101011010</code></td><td><code>^&gt;\+v&gt;\+^&lt;/-</code></td><td>7</td><td>5</td><td>2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0025</td><td><code>100110001101</code></td><td><code>^&lt;\+^&lt;\-^&gt;\+</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0026</td><td><code>011011101111</code></td><td><code>v&gt;/-^&gt;/-^&gt;/+</code></td><td>9</td><td>3</td><td>6</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0027</td><td><code>000011110010</code></td><td><code>v&lt;\-^&gt;/+v&lt;/-</code></td><td>5</td><td>7</td><td>-2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0028</td><td><code>001011000101</code></td><td><code>v&lt;/-^&gt;\-v&gt;\+</code></td><td>5</td><td>7</td><td>-2</td><td>no</td></tr>
+<tr><td>z0_tap0_window_0029</td><td><code>100001110101</code></td><td><code>^&lt;\-v&gt;/+v&gt;\+</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0030</td><td><code>011001101010</code></td><td><code>v&gt;/-v&gt;/-^&lt;/-</code></td><td>6</td><td>6</td><td>0</td><td>yes</td></tr>
+<tr><td>z0_tap0_window_0031</td><td><code>111010101110</code></td><td><code>^&gt;/-^&lt;/-^&gt;/-</code></td><td>8</td><td>4</td><td>4</td><td>no</td></tr></tbody>
+    </table>
+
+    <h2>Next Scientific Step</h2>
+    <p>
+      The serious next step is comparing admissible candidate rates and
+      compression/reconstruction performance against alternate constants,
+      same-density randomized controls, shuffled seeds, and fake token catalogs.
+    </p>
+  </main>
+</body>
+</html>

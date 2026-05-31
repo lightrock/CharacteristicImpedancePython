@@ -4,6 +4,7 @@ from characteristic_impedance import (
     QlfCandidate,
     bits_to_balanced_twists,
     evaluate_candidate,
+    render_qlf_admissibility_html,
     render_qlf_admissibility_markdown,
     run_z0_qlf_admissibility_probe,
     spectral_gap,
@@ -46,6 +47,12 @@ class QlfAdmissibilityTests(unittest.TestCase):
         self.assertIn("not a proof", markdown)
         self.assertIn("spectral gap", markdown)
         self.assertIn("admissible", markdown)
+
+    def test_html_report_links_back_to_docs_index(self):
+        report = run_z0_qlf_admissibility_probe(limit=8)
+        html = render_qlf_admissibility_html(report)
+        self.assertIn("../index.html", html)
+        self.assertIn("Z0 QLF / ZFA Admissibility Probe", html)
 
 
 if __name__ == "__main__":
