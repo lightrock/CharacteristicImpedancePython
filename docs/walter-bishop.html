@@ -112,6 +112,38 @@
       font-weight: 700;
     }
 
+    .big-card {
+      margin-top: 28px;
+      padding: 28px;
+      border: 2px solid var(--gold);
+      border-radius: 16px;
+      background: linear-gradient(135deg, #fff8e7 0%, #ffffff 100%);
+      box-shadow: 0 14px 30px rgba(20, 32, 27, 0.08);
+    }
+
+    .big-card .tag {
+      margin-bottom: 14px;
+    }
+
+    .big-card h2 {
+      margin-top: 0;
+      border-bottom: none;
+      padding-bottom: 0;
+      font-size: 31px;
+    }
+
+    .big-card p {
+      font-size: 18px;
+    }
+
+    .big-card .punchline {
+      max-width: 920px;
+      margin-top: 18px;
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -181,6 +213,18 @@
 
       .grid {
         grid-template-columns: 1fr;
+      }
+
+      .big-card {
+        padding: 22px;
+      }
+
+      .big-card h2 {
+        font-size: 26px;
+      }
+
+      .big-card .punchline {
+        font-size: 21px;
       }
     }
   </style>
@@ -256,6 +300,28 @@ closed_loop: true</div>
       information object, not as a decorative label pasted onto particles after the
       fact.
     </p>
+
+    <section class="big-card" aria-label="Gravity as computational overhead">
+      <span class="tag">For example</span>
+      <h2>Gravity as computational overhead</h2>
+      <p class="punchline">
+        Gravity as an effect, or gravity as a force — either way you look at it,
+        it is a computational overhead issue.
+      </p>
+      <p>
+        In this interpretation, gravity is not first pictured as a marble being
+        pulled through a spatial background. It is treated as the visible cost of
+        maintaining global/local consistency: update delay, constraint propagation,
+        bookkeeping pressure, and loop-rate skew inside the information process
+        that renders distance, inertia, and apparent curvature.
+      </p>
+      <p>
+        That does not prove a theory of gravity. It states the research posture:
+        when a physical effect looks like force, curvature, delay, or resistance,
+        ask what computational overhead the coupled system is paying to keep the
+        event admissible.
+      </p>
+    </section>
 
     <h2>The Walter Bishop Version</h2>
     <div class="grid">
