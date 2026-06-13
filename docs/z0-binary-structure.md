@@ -115,7 +115,7 @@ The source then manually inserts line breaks and spaces around the forward Z0 bi
 01
 ```
 
-Simmply spaced as 3-bit groupings, the same material produces the chart-like visual form:
+Simply spaced as 3-bit groupings, the same material produces the chart-like visual form:
 
 ```text
         1 0
