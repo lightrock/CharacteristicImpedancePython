@@ -731,3 +731,4 @@ That is our first genuinely operational candidate for how the universe itself co
 - Gregory Lawler and Vlada Limic, *Random Walk: A Modern Introduction*: local central-limit and heat-kernel methods.
 - Astrid Eichhorn, Sumati Surya, and Fleur Versteegen, *Induced Spatial Geometry from Causal Structure*.
 - Marián Boguñá and Dmitri Krioukov, *Measuring spatial distances in causal sets via causal overlaps*, Physical Review D 110, 024008 (2024).
+- Jim Scarver, *Quantum Logical Framework*: [Physical Pi — the machines that generate π](https://github.com/jimscarver/quantum-logical-framework/blob/main/Physical_Pi.md), with the machine-checked closure-census construction in [`lean/QLF_PhysicalPi.lean`](https://github.com/jimscarver/quantum-logical-framework/blob/main/lean/QLF_PhysicalPi.lean), developed from [Physical Pi issue #86](https://github.com/jimscarver/quantum-logical-framework/issues/86). This is the direct QLF companion to sections 8–10 above.
