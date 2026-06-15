@@ -454,7 +454,7 @@ Universal connection between them: now sharply stated, but unproved
 
 The weak-force investigation improved the case substantially: the same closure principle survives after leaving electromagnetism. Therefore it is probably not impedance contamination. We now see a credible universal closure engine, but still need to prove that this engine generates geometric π instead of merely having humans label its cycles with π.
 
-## Ok let's see what you can do for that, I think spatial space being emergent might be a complication but I don't now, there is a lot of existing work around all that.  Take your best shot at the geometry bridge issue now.
+## Ok let's see what you can do for that, I think spatial space being emergent might be a complication but I don't know, there is a lot of existing work around all that.  Take your best shot at the geometry bridge issue now.
 Worked for 1m 23s
 
 I think emergent space is not the complication. It is the opportunity. We can derive geometric π without assuming circles exist underneath.
