@@ -144,6 +144,8 @@ A process-first theory owes the bridge from running relation to rendered geometr
 
 It cannot merely announce that space is emergent. It must show how process accounting becomes spatial appearance.
 
+The Dugić/Francom hydrogen-atom work gives a low-energy example of the same issue. The atom is not merely `electron + proton in space`; the operable structure is selected from multiple possible subsystem decompositions by dynamics, environmental coupling, and experimental access. See [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md).
+
 A minimal bridge looks like:
 
 ```text
@@ -267,6 +269,7 @@ A stronger version of this note should eventually do four things:
    phase closure -> fundamentalPi.md
    string renderings -> string-theory-closure-machine.md
    LQG receipt graph -> lqg-closure-machine.md
+   hydrogen structure selection -> quantum-structures-hydrogen-atom.md
    Z0/XOR orbit -> characteristic impedance seed behavior
    ```
 
