@@ -247,6 +247,10 @@ python -m unittest discover -s tests -p "test_*.py"
   central thesis: physical constants are compressed information artifacts before
   they are physics classroom objects, and unit objections must be tested as
   encoding transformations rather than used as a dismissal.
+- [Maxwell Machine Completion Note](docs/references/maxwell-machine-completion-note.md)
+  preserves the project posture that Heaviside gives the public interface of
+  electromagnetism, while Maxwell preserves the unfinished machine question that
+  `Z0` may help turn into testable information-substrate experiments.
 - [Legacy Genetic Sequence Analysis](docs/legacy-genetic-sequence-analysis.md)
   explains what the old BigCalc2 "gene" machinery was doing: circular tape
   decomposition, Z0-facet compression, ablation controls, and Z0-as-running-tape
