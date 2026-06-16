@@ -82,6 +82,7 @@ Win:
 process/computation-first instinct
 simple rules generate rich worlds
 observer samples a slice of larger rule/process space
+ruliad as universal walk through possibility
 ```
 
 Gap:
@@ -89,12 +90,13 @@ Gap:
 ```text
 generates too much
 ruliad is maximal possibility
-needs physical pruning, closure, and admissibility
+universal walk is not physical closure by itself
+needs physical pruning, closure depth, and admissibility
 ```
 
 Compact line:
 
-> Wolfram found the everything-generator, but not the physical pruning rule.
+> Wolfram gives the universal walk. Fundamental Pi supplies early closure before full classical pi.
 
 ### 't Hooft
 
@@ -114,11 +116,12 @@ Gap:
 ```text
 clockwork is not enough
 cellular automaton still needs closure, admissibility, persistence, observer rendering
+update order is not the same as closure depth
 ```
 
 Compact line:
 
-> 't Hooft found the machine-instinct, but not the full closure/accounting machine.
+> 't Hooft gives the update engine. Fundamental Pi supplies the closure-depth test that can recover quantum before classical.
 
 ---
 
@@ -473,9 +476,9 @@ Compact line:
 
 ## Master compact line
 
-> Wolfram gives too much process.
+> Wolfram gives the universal walk; Fundamental Pi gives early closure before classical pi.
 >
-> 't Hooft gives too much hidden clockwork.
+> 't Hooft gives hidden clockwork; Fundamental Pi gives closure depth and quantum-before-classical recovery.
 >
 > String theory gives too much geometric rendering.
 >
