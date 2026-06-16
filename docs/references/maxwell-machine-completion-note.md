@@ -147,6 +147,86 @@ Audit Heaviside by separating physical cycles from their continuum/radian render
 Test Z0 as a possible receipt left by the electromagnetic closure machine.
 ```
 
+## Open Gap Receipts
+
+The obvious gaps between Maxwell's machine question and the Heaviside rendering
+are not accusations. They are places where the compact interface may have hidden
+machine-relevant receipts.
+
+Potential and phase memory:
+
+```text
+field surface: E, B
+machine memory: A / phase accumulator / holonomy
+```
+
+Maxwell's electrotonic-state intuition and the later quantum importance of
+vector potential suggest that the machine may store history in a form not fully
+visible from the local `E` and `B` surface alone.
+
+Displacement continuity:
+
+```text
+not merely: partial D / partial t
+but: how does the substrate preserve current closure when matter current is absent?
+```
+
+Maxwell's displacement current repairs continuity across apparent gaps. In
+machine language, it is a custody-chain receipt for electromagnetic action where
+ordinary conduction current is missing.
+
+Loop receipts versus local operators:
+
+```text
+local rendering: divergence and curl
+machine receipt: phase around a path, flux linkage, induction, boundary closure
+```
+
+Heaviside's local vector operators are powerful, but Faraday/Maxwell-style loop
+thinking may preserve information about global closure that local notation makes
+too easy to overlook.
+
+Pi and continuum rendering:
+
+```text
+physical cycle -> closure test -> rendered as 2pi only later
+```
+
+`fundamentalPi.md` separates the physical closure operation from the radian or
+continuum rendering. That distinction matters because vector calculus can import
+smooth geometry before the substrate has earned it.
+
+Impedance signature:
+
+```text
+Z0 = candidate interface receipt for free-space electric/magnetic coupling
+```
+
+If `Z0` is normalized away, treated as a mere unit convention, or buried inside a
+chosen system of constants, a possible machine signature may disappear from the
+surface description.
+
+Constitutive response:
+
+```text
+D = epsilon E
+B = mu H
+J = sigma E
+```
+
+The four field equations are not the whole physical machine. Material and vacuum
+response laws carry part of the implementation. Any completion of Maxwell has to
+ask where those response rules come from, not only how the public field variables
+relate.
+
+The working PFEM-style audit sentence is:
+
+```text
+Heaviside preserves local field relations, but the receipts for potential,
+phase, closure, displacement continuity, impedance, loop behavior, and
+constitutive response still need explicit custody.
+```
+
 ## Completing Maxwell
 
 To complete Maxwell, in this project's vocabulary, is not to restore his old
