@@ -1,4 +1,4 @@
-# Physics often treats a successful predictive formalism as though it were the machine itself.
+# Physics often treats a successful predictive formalism as though it were the machine itself. Shouldn't we know better than to allow that?
 
 # Characteristic Impedance Python
 
