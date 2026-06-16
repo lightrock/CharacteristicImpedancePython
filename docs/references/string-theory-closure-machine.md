@@ -211,7 +211,75 @@ Holography sharpens this rather than weakening it:
 
 ---
 
-## 8. Follow-up work
+## 8. The repair move
+
+If there is a single move that could suddenly repair string/M-theory, it is this:
+
+> Stop trying to make strings fundamental. Make string theory the holographic codec of a deeper closure machine.
+
+In one sentence:
+
+> String/M-theory becomes the effective boundary/bulk rendering language of finite ZFA-style closure, not the substrate itself.
+
+That reframes the main pieces at once:
+
+```text
+strings        -> gauge-fold closure histories
+branes         -> stable closure boundaries / admissibility surfaces
+extra dims     -> internal twist/phase sectors, not literal hidden space
+duality        -> two encodings of the same closure process
+holography     -> boundary checksum / compression of bulk closure
+landscape      -> unpruned possibility space
+ZFA/PFEM layer  -> admissibility filter + receipts
+π/geometry     -> emergent rendering from closure statistics, not primitive input
+```
+
+The deep repair is to put a selection rule underneath the landscape.
+
+String theory's problem is not that it generates too much. Generating too much is what powerful formalisms do. The problem is that it does not have a clean physical rule saying:
+
+```text
+this possible structure closes
+this one does not
+this one persists
+this one is only formal exhaust
+```
+
+So the repair program is:
+
+```text
+1. Begin with finite closure/admissibility, not spacetime.
+2. Let phase, π, geometry, and dimension emerge as renderings.
+3. Treat strings/branes as stable modes of that closure process.
+4. Treat holography as the real clue: bulk geometry is encoded, not primitive.
+5. Treat the landscape as a generated possibility catalog.
+6. Apply a ZFA-style filter to prune it into physical sectors.
+```
+
+Then string theory stops being:
+
+```text
+tiny strings vibrating in a pre-assumed higher-dimensional geometry
+```
+
+and becomes:
+
+```text
+the large-scale mathematical language of admissible closure histories
+as seen through holographic/geometric rendering
+```
+
+Not "string theory is wrong." More like:
+
+> String theory is a brilliant disassembler output.
+>
+> It found the shapes made by the machine.
+>
+> Now we need the machine.
+
+---
+
+## 9. Follow-up work
 
 A stronger version of this note should eventually do four things:
 
