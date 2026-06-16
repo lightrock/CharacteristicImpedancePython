@@ -1,18 +1,50 @@
-# Physics often treats a successful predictive formalism as though it were the machine itself. Shouldn't we know better than to allow that?
-
 # Characteristic Impedance Python
+
+> Physics often treats a successful predictive formalism as though it were the machine itself. Shouldn't we know better than to allow that?
 
 Python-first research instrument for testing whether the characteristic impedance
 of vacuum behaves like an unusually generative information substrate inside the
 published catalog of fundamental physical constants.
 
-## Status
+## What This Repo Is
 
-This is an early research instrument, not a completed proof. The project begins
-with one strong legacy observation and turns it into code, tests, baselines, and
-failure conditions.
+This repository is a research instrument, not a completed proof.
 
-Current project state:
+It currently provides:
+
+- A tested Python reproduction of the pre-2019 `Z0` circular-XOR loop result.
+- A complete pre-2019 CODATA 2014 evidence chain with raw source text, parsed
+  official rows, derived binary rows, and a bits-only corpus.
+- Legacy BigCalc2 observations translated into GitHub-readable Markdown notes.
+- A process-first / closure-machine doctrine map for interpreting what the code
+  is testing and what it is not allowed to assume.
+- A falsification-first roadmap: randomized controls, catalog-wide scans,
+  precision tests, unit-translation tests, and null-result reporting.
+
+## Start Here
+
+- For the anchor computation, read [Known Verified Result](#known-verified-result).
+- For the evidence files, read [Evidence Chain](#evidence-chain).
+- For the hypothesis, read [Claim Under Test](#claim-under-test) and [Thesis](#thesis).
+- For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
+- For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
+- For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
+
+## Research Posture
+
+```text
+Strong claim under test.
+Small inspectable algorithm.
+Full evidence chain in-tree.
+Randomized controls required.
+Null results welcome.
+```
+
+The project begins with one strong legacy observation and turns it into code,
+tests, baselines, and failure conditions. It should not make stronger claims
+until catalog-level and randomized-control tests are implemented.
+
+## Current State
 
 - The pre-2019 `Z0` circular-XOR loop result is reproduced in tested Python code.
 - The information-first thesis and legacy BigCalc2 observations are captured in
@@ -99,22 +131,20 @@ closed_loop = true
 This is the first anchor result. The project should not make stronger claims
 until the catalog-level and randomized-control tests are implemented.
 
-## QLF / ZFA Admissibility Layer
+## Falsification Criteria
 
-The XOR orbit is only the generated substrate. The admissibility layer treats
-selected generated bit windows as candidate QLF/ZFA objects, separate from raw
-bits, tap-tape observations, and named token hits.
+This claim weakens or fails if:
 
-A candidate is admissible only when positive/action twists and negative/lift
-twists balance to spectral gap zero. This is closer to the QLF / Quantum OS
-idea than substring matching alone because it separates generated observations
-from interpreted process/capability/proof-like objects.
-
-This remains a hypothesis-testing scaffold, not a physics proof.
+- `Z0` does not outperform other constants under the same encoding and evolution.
+- Randomized bitstrings with the same length and density perform comparably.
+- Shuffled catalog controls perform comparably.
+- The observed structure disappears under reasonable precision and unit transformation tests.
+- Post-selection explains the apparent matches.
+- The result depends on undocumented choices that cannot be preregistered and repeated.
 
 ## Evidence Chain
 
-The project now keeps the full pre-2019 source and derived binary evidence in-tree:
+The project keeps the full pre-2019 source and derived binary evidence in-tree:
 
 - [CODATA Evidence Chain](docs/codata/README.md) explains the conversion rule
   and rebuild process.
@@ -148,16 +178,18 @@ information-object hypothesis made explicit and testable.
 Future reports must state which catalog they used: official CODATA only, legacy
 tokens only, or a combined catalog.
 
-## Falsification Criteria
+## QLF / ZFA Admissibility Layer
 
-This claim weakens or fails if:
+The XOR orbit is only the generated substrate. The admissibility layer treats
+selected generated bit windows as candidate QLF/ZFA objects, separate from raw
+bits, tap-tape observations, and named token hits.
 
-- `Z0` does not outperform other constants under the same encoding and evolution.
-- Randomized bitstrings with the same length and density perform comparably.
-- Shuffled catalog controls perform comparably.
-- The observed structure disappears under reasonable precision and unit transformation tests.
-- Post-selection explains the apparent matches.
-- The result depends on undocumented choices that cannot be preregistered and repeated.
+A candidate is admissible only when positive/action twists and negative/lift
+twists balance to spectral gap zero. This is closer to the QLF / Quantum OS
+idea than substring matching alone because it separates generated observations
+from interpreted process/capability/proof-like objects.
+
+This remains a hypothesis-testing scaffold, not a physics proof.
 
 ## Why Pre-2019 Z0 Matters
 
@@ -190,6 +222,74 @@ circular binary seed -> XOR with one-bit rotation -> generated orbit
 If that minimal rule produces non-random reconstruction behavior against a
 catalog of physical constants, the next move is not rhetoric. The next move is
 controls.
+
+## Doctrine Map
+
+### Core Project Notes
+
+- [Information-First Position](docs/information-first-position.md) states the
+  central thesis: physical constants are compressed information artifacts before
+  they are physics classroom objects, and unit objections must be tested as
+  encoding transformations rather than used as a dismissal.
+- [Fundamental Pi](docs/references/fundamentalPi.md) asks what physical machine
+  produces the closure represented by `π`, `2π`, phase, rotation, and emergent
+  geometry, without treating the symbol as the substrate.
+- [Maxwell Machine Completion Note](docs/references/maxwell-machine-completion-note.md)
+  preserves the project posture that Heaviside gives the public interface of
+  electromagnetism, while Maxwell preserves the unfinished machine question that
+  `Z0` may help turn into testable information-substrate experiments.
+
+### Process / Closure Doctrine
+
+- [Process-First Physics](docs/references/process-first-physics.md) captures the
+  doctrine that process is already running, while space and coordinate time are
+  rendered accounting layers of relation, delay, closure, persistence, and
+  observer-facing records.
+- [Computational Process Lineage](docs/references/computational-process-lineage.md)
+  compares Wolfram and 't Hooft as near process-first ancestors: one finds the
+  universal walk / everything-generator, the other the machine-instinct, while
+  both still need closure depth, pruning, persistence, and rendered observer
+  geometry/time.
+- [Quantum Structures of the Hydrogen Atom](docs/references/quantum-structures-hydrogen-atom.md)
+  records the Dugić/Francom/Arsenijević structure-selection point: hydrogen is
+  not merely electron plus proton in space, but a case where environment,
+  operation, and access select the physically usable quantum structure.
+
+### Theory BBQ / Critique Notes
+
+- [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md) is the concise index
+  of process-first critiques and repairs across string theory, LQG, Wolfram,
+  't Hooft, Wheeler, Tegmark, Everett, Einstein/GR, causal sets, thermodynamic
+  gravity, Kitada/Dugić, Friston, Feynman, and related approaches.
+- [String Theory, Holography, and the Closure Machine](docs/references/string-theory-closure-machine.md)
+  argues that string/M-theory is best repaired as a holographic/geometric
+  rendering language for finite closure, not as the substrate itself.
+- [Loop Quantum Gravity and the Closure Machine](docs/references/lqg-closure-machine.md)
+  treats LQG as a serious discrete receipt layer that still needs the deeper
+  event machine: closure, admissibility, persistence, and process ordering.
+
+### Legacy Reports
+
+- [Legacy Genetic Sequence Analysis](docs/legacy-genetic-sequence-analysis.md)
+  explains what the old BigCalc2 "gene" machinery was doing: circular tape
+  decomposition, Z0-facet compression, ablation controls, and Z0-as-running-tape
+  scans.
+- [Legacy Physics Token Catalog](docs/tokens/legacy-physics-token-catalog.md)
+  calls out the appended quark and hadron rows from BigCalc2, including their
+  values, significant digits, and binary strings.
+- [Z0 Orientation Geometry Report](docs/reports/z0-orientation-geometry.md)
+  makes fixed bits, orientation, layout, traversal, and interpretation explicit
+  before later quark genetic sequence decomposition work.
+- [Z0 Binary Structure](docs/z0-binary-structure.md) captures the 2019 PDF/RTF
+  observation that the characteristic impedance bits already contain whole
+  quark mass-signature words, arrange naturally into a gluon-like chart, and
+  come from a prime significant-digit integer with a primitive Pythagorean
+  triple identity.
+
+Note: the Markdown documents linked above are the GitHub-readable versions.
+The companion HTML files in `docs/` are much nicer looking when opened locally
+or through a static site, but GitHub's repository file browser shows them as
+source code unless GitHub Pages or another static host is used.
 
 ## Install And Run
 
@@ -240,62 +340,6 @@ source .venv/bin/activate
 pip install -e .
 python -m unittest discover -s tests -p "test_*.py"
 ```
-
-## Initial Notes
-
-- [Information-First Position](docs/information-first-position.md) states the
-  central thesis: physical constants are compressed information artifacts before
-  they are physics classroom objects, and unit objections must be tested as
-  encoding transformations rather than used as a dismissal.
-- [Process-First Physics](docs/references/process-first-physics.md) captures the
-  doctrine that process is already running, while space and coordinate time are
-  rendered accounting layers of relation, delay, closure, persistence, and
-  observer-facing records.
-- [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md) is the concise index
-  of process-first critiques and repairs across string theory, LQG, Wolfram,
-  't Hooft, Wheeler, Tegmark, Everett, causal sets, thermodynamic gravity,
-  Friston, Feynman, and related approaches.
-- [Quantum Structures of the Hydrogen Atom](docs/references/quantum-structures-hydrogen-atom.md)
-  records the Dugić/Francom/Arsenijević structure-selection point: hydrogen is
-  not merely electron plus proton in space, but a case where environment,
-  operation, and access select the physically usable quantum structure.
-- [Computational Process Lineage](docs/references/computational-process-lineage.md)
-  compares Wolfram and 't Hooft as near process-first ancestors: one finds the
-  everything-generator, the other the machine-instinct, while both still need
-  closure, pruning, persistence, and rendered observer geometry/time.
-- [String Theory, Holography, and the Closure Machine](docs/references/string-theory-closure-machine.md)
-  argues that string/M-theory is best repaired as a holographic/geometric
-  rendering language for finite closure, not as the substrate itself.
-- [Loop Quantum Gravity and the Closure Machine](docs/references/lqg-closure-machine.md)
-  treats LQG as a serious discrete receipt layer that still needs the deeper
-  event machine: closure, admissibility, persistence, and process ordering.
-- [Fundamental Pi](docs/references/fundamentalPi.md) asks what physical machine
-  produces the closure represented by `π`, `2π`, phase, rotation, and emergent
-  geometry, without treating the symbol as the substrate.
-- [Maxwell Machine Completion Note](docs/references/maxwell-machine-completion-note.md)
-  preserves the project posture that Heaviside gives the public interface of
-  electromagnetism, while Maxwell preserves the unfinished machine question that
-  `Z0` may help turn into testable information-substrate experiments.
-- [Legacy Genetic Sequence Analysis](docs/legacy-genetic-sequence-analysis.md)
-  explains what the old BigCalc2 "gene" machinery was doing: circular tape
-  decomposition, Z0-facet compression, ablation controls, and Z0-as-running-tape
-  scans.
-- [Legacy Physics Token Catalog](docs/tokens/legacy-physics-token-catalog.md)
-  calls out the appended quark and hadron rows from BigCalc2, including their
-  values, significant digits, and binary strings.
-- [Z0 Orientation Geometry Report](docs/reports/z0-orientation-geometry.md)
-  makes fixed bits, orientation, layout, traversal, and interpretation explicit
-  before later quark genetic sequence decomposition work.
-- [Z0 Binary Structure](docs/z0-binary-structure.md) captures the 2019 PDF/RTF
-  observation that the characteristic impedance bits already contain whole
-  quark mass-signature words, arrange naturally into a gluon-like chart, and
-  come from a prime significant-digit integer with a primitive Pythagorean
-  triple identity.
-
-Note: the Markdown documents linked above are the GitHub-readable versions.
-The companion HTML files in `docs/` are much nicer looking when opened locally
-or through a static site, but GitHub's repository file browser shows them as
-source code unless GitHub Pages or another static host is used.
 
 ## Design Posture
 
