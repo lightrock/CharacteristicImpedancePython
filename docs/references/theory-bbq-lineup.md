@@ -180,7 +180,8 @@ Gap:
 
 ```text
 branching is structure-relative unless an admissible decomposition is selected
-Dugic/Francom-style objections press exactly here: mutually irreducible subsystem decompositions can block one clean universal branching story
+Dugic/Francom-style objections press exactly here through linear canonical transformations, not prose handwaving
+mutually irreducible subsystem decompositions can allow parallel decoherence while blocking one clean universal branching story
 branching may be a type of closure, but it still needs closure criteria, preferred/admissible structure, persistence, and observer-rendered records
 no physical pruning/admissibility rule if everything persists equally
 ```
@@ -195,6 +196,12 @@ Reference hook:
 J. Jeknic-Dugic, M. Dugic, A. Francom,
 "Quantum Structures of a Model-Universe: An Inconsistency with Everett Interpretation of Quantum Mechanics",
 arXiv:1109.6424.
+
+The point is not an interpretive prose objection. The model-universe argument uses
+linear canonical transformations to exhibit mutually irreducible decompositions
+of the same total system, with parallel occurrence of decoherence. The pressure
+lands on whether Everett branching has an admissible, physically selected
+structure, or whether branching is only defined after choosing a decomposition.
 ```
 
 ### Sorkin / causal sets
