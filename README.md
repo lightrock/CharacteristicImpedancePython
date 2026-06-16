@@ -1,4 +1,4 @@
-# NOTE: The idea is right, the machine-salad framing is not entirely right yet in terms of what to prove, the obervations otherwise are good. Haven't had time to finish moving this over yet.
+# Physics often treats a successful predictive formalism as though it were the machine itself.
 
 # Characteristic Impedance Python
 
