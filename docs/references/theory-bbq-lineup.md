@@ -16,6 +16,7 @@ Longer companion notes already exist for several entries:
 - [`string-theory-closure-machine.md`](string-theory-closure-machine.md)
 - [`lqg-closure-machine.md`](lqg-closure-machine.md)
 - [`computational-process-lineage.md`](computational-process-lineage.md)
+- [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
 - [`fundamentalPi.md`](fundamentalPi.md)
 
 ---
@@ -167,6 +168,8 @@ Compact line:
 
 ### Everett / Deutsch
 
+Companion note: [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
+
 Win:
 
 ```text
@@ -182,6 +185,7 @@ Gap:
 branching is structure-relative unless an admissible decomposition is selected
 Dugic/Francom-style objections press exactly here through linear canonical transformations, not prose handwaving
 mutually irreducible subsystem decompositions can allow parallel decoherence while blocking one clean universal branching story
+the hydrogen-atom companion paper gives the positive example: structure-selection is physical and operational, not merely verbal
 branching may be a type of closure, but it still needs closure criteria, preferred/admissible structure, persistence, and observer-rendered records
 no physical pruning/admissibility rule if everything persists equally
 ```
@@ -199,11 +203,20 @@ International Journal of Theoretical Physics 53, 169-181 (2014),
 DOI: 10.1007/s10773-013-1794-x,
 arXiv:1109.6424.
 
+J. Jeknic-Dugic, M. Dugic, A. Francom, M. Arsenijevic,
+"Quantum Structures of the Hydrogen Atom",
+Open Access Library Journal 1, e501 (2014),
+DOI: 10.4236/oalib.1100501,
+arXiv:1204.3172.
+
 The point is not an interpretive prose objection. The model-universe argument uses
 linear canonical transformations to exhibit mutually irreducible decompositions
 of the same total system, with parallel occurrence of decoherence. The pressure
 lands on whether Everett branching has an admissible, physically selected
 structure, or whether branching is only defined after choosing a decomposition.
+The hydrogen-atom paper supplies the positive side of the same issue: multiple
+quantum structures are available, while environment, operation, and access select
+which structure becomes physically usable.
 ```
 
 ### Sorkin / causal sets
