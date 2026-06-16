@@ -255,6 +255,10 @@ python -m unittest discover -s tests -p "test_*.py"
   of process-first critiques and repairs across string theory, LQG, Wolfram,
   't Hooft, Wheeler, Tegmark, Everett, causal sets, thermodynamic gravity,
   Friston, Feynman, and related approaches.
+- [Quantum Structures of the Hydrogen Atom](docs/references/quantum-structures-hydrogen-atom.md)
+  records the Dugić/Francom/Arsenijević structure-selection point: hydrogen is
+  not merely electron plus proton in space, but a case where environment,
+  operation, and access select the physically usable quantum structure.
 - [Computational Process Lineage](docs/references/computational-process-lineage.md)
   compares Wolfram and 't Hooft as near process-first ancestors: one finds the
   everything-generator, the other the machine-instinct, while both still need
