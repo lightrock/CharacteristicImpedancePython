@@ -1,0 +1,235 @@
+# Process-First Physics
+
+## Working thesis
+
+The core mistake may be that physics keeps waiting for things to happen *in space*.
+
+A process-first view says the opposite:
+
+> Processes are already running. Space is the rendered accounting of running relations.
+
+This is deeper than saying "space is emergent." Many theories now allow that spacetime may be emergent, but then still quietly imagine a pre-spatial something waiting around until space appears. That keeps the old staging error alive.
+
+The sharper claim is:
+
+> Space does not emerge first so processes can run. Processes run, and space is the stable bookkeeping surface they generate.
+
+---
+
+## 1. The staging error
+
+The usual physics picture often looks like this:
+
+```text
+assume space
+place objects in space
+wait for interactions to occur across space
+describe the resulting motion
+```
+
+Even when the theory says spacetime is emergent, the mental picture often remains staged this way:
+
+```text
+pre-geometric substrate
+-> somehow becomes space
+-> then physics happens in that space
+```
+
+That is the category error.
+
+The process-first picture is:
+
+```text
+process is already running
+relation is already updating
+closure/admissibility is already being tested
+delay, persistence, and comparison are already active
+space is the rendered accounting of those running relations
+```
+
+So the issue is not merely continuum space versus discrete space. The issue is whether space is being treated as a stage instead of as an output.
+
+---
+
+## 2. The machine is already running
+
+Nobody is waiting around inside space for physics to happen.
+
+The machine is already running.
+
+Space is what the running process looks like after relation, delay, closure, and persistence are rendered to an internal observer.
+
+That reframes the basic order:
+
+```text
+not:
+space -> objects -> interactions -> dynamics
+
+but:
+running process -> relation -> delay/closure -> persistence -> rendered space
+```
+
+This is why merely saying "space is emergent" is not enough. If the process is still imagined as waiting for a spatial arena, the emergence claim has not gone all the way down.
+
+---
+
+## 3. Relation to Fundamental Pi
+
+[`fundamentalPi.md`](fundamentalPi.md) asks for the machine behind `π`, `2π`, phase, rotation, and closure.
+
+The process-first reading is:
+
+```text
+state
+-> transformation accumulator
+-> return comparison
+-> closure class
+-> rendered phase/geometry
+```
+
+The completed cycle is not fundamental because the symbol `2π` is written down. The completed cycle becomes meaningful because a running process can accumulate transformation, return, compare, and close.
+
+Geometry appears later as a stable rendering of closure statistics and relational propagation.
+
+So the point is not:
+
+> π is stored in matter.
+
+The point is:
+
+> π is one of the stable invariants that appears when running processes return, compare, and render closure under appropriate conditions.
+
+---
+
+## 4. String theory and LQG
+
+This doctrine changes how to read both string theory and Loop Quantum Gravity.
+
+String theory:
+
+```text
+processes are rendered as vibrating objects in higher-dimensional geometry
+```
+
+Loop Quantum Gravity:
+
+```text
+processes are rendered as quantized geometry and spin-network states
+```
+
+Process-first critique:
+
+```text
+geometry itself is the late accounting layer of active relational process
+```
+
+String theory found beautiful renderings and risked mistaking them for the machine.
+
+LQG found the discrete receipt layer and risked mistaking it for the machine.
+
+The machine is not geometry.
+
+The machine is closure, admissibility, and persistent relation.
+
+See also:
+
+- [`string-theory-closure-machine.md`](string-theory-closure-machine.md)
+- [`lqg-closure-machine.md`](lqg-closure-machine.md)
+
+---
+
+## 5. What has to be derived
+
+A process-first theory owes the bridge from running relation to rendered geometry.
+
+It cannot merely announce that space is emergent. It must show how process accounting becomes spatial appearance.
+
+A minimal bridge looks like:
+
+```text
+running relational process
+-> admissible transitions
+-> persistent closure records
+-> delay / reachability structure
+-> return-path statistics
+-> coarse-grained metric behavior
+-> rendered space
+```
+
+Then geometry is not the substrate. Geometry is the stable large-scale interface that internal observers use to summarize running process.
+
+This also changes the meaning of distance:
+
+```text
+distance is not primitive separation in an empty container
+distance is rendered relation, delay, and closure cost
+```
+
+Likewise, gravity is not a force acting across a pre-existing void. It is an effect of the running process as rendered through the relational accounting layer.
+
+---
+
+## 6. Compact form
+
+The short version:
+
+> Physics keeps assuming space, placing things in it, and waiting for processes to happen.
+>
+> But the process is already running.
+>
+> Space is what the running process looks like after relation, delay, closure, and persistence are rendered.
+
+Or even shorter:
+
+> Do not wait for physics to happen in space. Find the process whose accounting appears as space.
+
+---
+
+## 7. Follow-up work
+
+A stronger version of this note should eventually do four things:
+
+1. Define the minimal process primitives:
+
+   ```text
+   state
+   relation
+   transition
+   closure
+   admissibility
+   persistence
+   delay
+   observer rendering
+   ```
+
+2. Connect process accounting to existing notes:
+
+   ```text
+   phase closure -> fundamentalPi.md
+   string renderings -> string-theory-closure-machine.md
+   LQG receipt graph -> lqg-closure-machine.md
+   Z0/XOR orbit -> characteristic impedance seed behavior
+   ```
+
+3. Write acceptance tests for emergent geometry:
+
+   ```text
+   no assumed coordinates
+   no assumed circles
+   no inserted π in the substrate rule
+   recover phase closure separately from geometric π
+   recover spectral dimension from return statistics
+   recover effective distance from delay/reachability
+   ```
+
+4. Separate levels cleanly:
+
+   ```text
+   process substrate
+   closure/admissibility rule
+   evidence/receipt graph
+   rendered geometry
+   observer-facing physics
+   ```
+
+The point is not to add another interpretation on top of physics. The point is to stop treating the rendered stage as the thing that runs the show.
