@@ -169,7 +169,62 @@ Likewise, gravity is not a force acting across a pre-existing void. It is an eff
 
 ---
 
-## 6. Compact form
+## 6. Time as the first process axiom
+
+A second staging error is treating time as something that results only after entropy, coarse-graining, or macroscopic disorder has already appeared.
+
+Those things may explain an arrow of time, thermodynamic irreversibility, or why internal observers remember one direction and not the other. They do not explain why process can run at all.
+
+A process-first theory needs a more primitive distinction:
+
+```text
+time-as-driver != thermodynamic arrow of time
+```
+
+The analogy is a computer clock signal. The clock is not the result of the program's later output. The clock is what lets state transition occur in the first place.
+
+In this doctrine, time is not first introduced as a coordinate inside spacetime. It is the ordering/drive condition for process:
+
+```text
+clock / ordering / tick
+-> state transition
+-> relation update
+-> closure test
+-> persistence or pruning
+-> rendered temporal and spatial observables
+```
+
+Entropy can then appear later as an observer-facing or coarse-grained description of irreversible records, discarded alternatives, and persistent asymmetry. But entropy is not the engine that starts the machine.
+
+The sharper claim:
+
+> Time is not merely an entropy product. Time is the process-driving axiom that lets anything update, close, persist, or be rendered at all.
+
+This does not require treating familiar coordinate time as fundamental. Coordinate time may still be rendered. But the process-ordering primitive cannot be postponed until after geometry, entropy, or observers already exist.
+
+So the order should be:
+
+```text
+process drive / ordering
+-> updates and closure tests
+-> persistent records
+-> thermodynamic arrow
+-> rendered time coordinate
+```
+
+not:
+
+```text
+entropy happens somehow
+-> time appears
+-> processes begin
+```
+
+The machine cannot wait for entropy to grant permission to run. The machine must already be running for entropy, records, and observers to exist.
+
+---
+
+## 7. Compact form
 
 The short version:
 
@@ -183,9 +238,13 @@ Or even shorter:
 
 > Do not wait for physics to happen in space. Find the process whose accounting appears as space.
 
+The time version:
+
+> Do not derive the clock from the exhaust. The ordering drive must be present for entropy, records, and observers to appear at all.
+
 ---
 
-## 7. Follow-up work
+## 8. Follow-up work
 
 A stronger version of this note should eventually do four things:
 
