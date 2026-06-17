@@ -250,6 +250,10 @@ controls.
   universal walk / everything-generator, the other the machine-instinct, while
   both still need closure depth, pruning, persistence, and rendered observer
   geometry/time.
+- [Friston, Free Energy, and the Closure Machine](docs/references/friston-free-energy-closure-machine.md)
+  treats Markov blankets, active inference, and free-energy minimization as
+  serious persistence machinery that still begins after an admissible system has
+  already formed.
 - [Quantum Structures of the Hydrogen Atom](docs/references/quantum-structures-hydrogen-atom.md)
   records the Dugić/Francom/Arsenijević structure-selection point: hydrogen is
   not merely electron plus proton in space, but a case where environment,
