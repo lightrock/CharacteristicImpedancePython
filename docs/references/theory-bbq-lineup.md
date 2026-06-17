@@ -16,6 +16,7 @@ Longer companion notes already exist for several entries:
 - [`string-theory-closure-machine.md`](string-theory-closure-machine.md)
 - [`lqg-closure-machine.md`](lqg-closure-machine.md)
 - [`computational-process-lineage.md`](computational-process-lineage.md)
+- [`friston-free-energy-closure-machine.md`](friston-free-energy-closure-machine.md)
 - [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
 - [`fundamentalPi.md`](fundamentalPi.md)
 
@@ -600,25 +601,40 @@ Compact line:
 
 ### Friston
 
+Longer note: [`friston-free-energy-closure-machine.md`](friston-free-energy-closure-machine.md)
+
 Win:
 
 ```text
 free energy principle
 active inference
+Markov blankets
 persistence through boundary
 self-maintaining systems
+perception and action as one loop
 ```
 
 Gap:
 
 ```text
-often framed biologically/cognitively
-needs physics-first closure substrate
+often framed biologically/cognitively rather than physics-first
+free-energy minimization begins after a system already exists
+Markov blanket partition is not automatically an admissibility proof
+surprise minimization is not the process drive
+a thermostat reading is not the engine
 ```
 
 Compact line:
 
-> Friston found how systems stay real. We need why reality is made of that move.
+> Friston found how systems stay real. Closure explains why there are systems that can stay real.
+
+Friendly nuke:
+
+```text
+Free energy is not the engine.
+It is the thermostat reading of a system already holding together.
+The deeper machine is the closure process that makes a system possible before it can minimize anything.
+```
 
 ### Feynman
 
@@ -708,7 +724,7 @@ Compact line:
 >
 > Dugić + Kitada give system-relative time.
 >
-> Friston gives persistence.
+> Friston gives persistence after system closure, not the root closure machine.
 >
 > Feynman gives the grammar.
 >
