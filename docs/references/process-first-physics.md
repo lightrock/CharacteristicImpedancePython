@@ -101,9 +101,9 @@ The point is:
 
 ---
 
-## 4. String theory and LQG
+## 4. String theory, LQG, E8, and the Tegmark disease
 
-This doctrine changes how to read both string theory and Loop Quantum Gravity.
+This doctrine changes how to read string theory, Loop Quantum Gravity, E8-style exceptional unification, and other beautiful math-first programs.
 
 String theory:
 
@@ -117,22 +117,43 @@ Loop Quantum Gravity:
 processes are rendered as quantized geometry and spin-network states
 ```
 
+E8 / exceptional unification:
+
+```text
+processes are rendered as an exceptional gauge/algebraic symmetry container
+```
+
 Process-first critique:
 
 ```text
 geometry itself is the late accounting layer of active relational process
+symmetry itself is a late accounting layer of admissible comparison
+algebraic containment is not physical execution
 ```
 
 String theory found beautiful renderings and risked mistaking them for the machine.
 
 LQG found the discrete receipt layer and risked mistaking it for the machine.
 
+E8 found a magnificent symmetry cabinet and risked mistaking representation structure for the run button.
+
+The broader BBQ is tracked separately in [`theory-bbq-lineup.md`](theory-bbq-lineup.md). This note should not become the entire BBQ roster; its job is to state the doctrine underneath the BBQ.
+
+The compact diagnosis:
+
+> We think the problem is that everybody has the Tegmark disease, beautiful math, no run button.
+
 The machine is not geometry.
 
-The machine is closure, admissibility, and persistent relation.
+The machine is not symmetry.
+
+The machine is not algebraic elegance.
+
+The machine is closure, admissibility, process drive, and persistent relation.
 
 See also:
 
+- [`theory-bbq-lineup.md`](theory-bbq-lineup.md)
 - [`string-theory-closure-machine.md`](string-theory-closure-machine.md)
 - [`lqg-closure-machine.md`](lqg-closure-machine.md)
 
@@ -283,6 +304,10 @@ The receipt version:
 
 > Do not inflate the receipt into a hidden object and then worship the object as substrate.
 
+The math-disease version:
+
+> Beautiful math is not a run button.
+
 The time version:
 
 > Do not derive the clock from the exhaust. The ordering drive must be present for entropy, records, and observers to appear at all.
@@ -310,6 +335,7 @@ A stronger version of this note should eventually do four things:
 
    ```text
    phase closure -> fundamentalPi.md
+   theory BBQ roster -> theory-bbq-lineup.md
    string renderings -> string-theory-closure-machine.md
    LQG receipt graph -> lqg-closure-machine.md
    hydrogen structure selection -> quantum-structures-hydrogen-atom.md
