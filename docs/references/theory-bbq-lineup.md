@@ -162,21 +162,25 @@ It is the thermostat reading of a system already holding together.
 The deeper machine is the closure process that makes a system possible before it can minimize anything.
 ```
 
-### Carver Mead - Gold star
+---
+
+## Gold star / near the controls
+
+### Carver Mead
 
 Longer note: [`mead-pointer-swap-z0.md`](mead-pointer-swap-z0.md)
 
-Win:
+Gold star reason:
 
 ```text
-collective electrodynamics
 phase-first electromagnetism
 photon as transaction/handshake, not projectile
 vector potential and phase treated as physically central
 quantum matter behavior before Maxwell-form rendering
+strong bridge to pointer-swap closure and Z0
 ```
 
-Gap:
+Remaining gap:
 
 ```text
 phase continuity is not yet substrate
@@ -206,6 +210,42 @@ Keep him near the controls.
 He is strong evidence that projectile/object-first electromagnetism is the wrong picture.
 The remaining question is not whether phase matters.
 The remaining question is what physical closure machine makes phase-handshakes real.
+```
+
+### Lee Smolin - qualified gold star
+
+Gold star reason:
+
+```text
+time is real
+anti-Platonic pressure
+laws may evolve
+background independence
+strong critique of string overreach
+refusal of timeless mathematical object worship
+```
+
+Remaining gap:
+
+```text
+real time still needs the process drive
+evolving laws still need closure/admissibility machinery
+background independence is not yet substrate derivation
+anti-Platonism must become executable process physics
+```
+
+Compact line:
+
+> Smolin gets the gold star for refusing timeless math worship. He still needs the closure machine that makes real time physically operative.
+
+Gold star note:
+
+```text
+Do not collapse Smolin into LQG.
+LQG is the discrete geometric receipt program.
+Smolin is broader: time is real, laws may evolve, and physics should not be timeless Platonism.
+The repair is to give Smolin the missing machine:
+time as process drive -> closure/admissibility -> persistence receipts -> rendered geometry/time.
 ```
 
 ---
@@ -640,28 +680,6 @@ Compact line:
 
 > Penrose saw the shadows were too sharp to be ordinary space. Still too much Plato.
 
-### Smolin
-
-Win:
-
-```text
-background independence
-time is real
-evolving laws / anti-Platonic pressure
-strong critique of string overreach
-```
-
-Gap:
-
-```text
-needs a sharper process/closure machine
-needs admissibility and receipt discipline
-```
-
-Compact line:
-
-> Smolin is close enough that we may be fixing him more than clobbering him.
-
 ### Rovelli
 
 Win:
@@ -719,7 +737,7 @@ Compact line:
 9. Sorkin / causal sets separately
 10. Jacobson + Verlinde + Padmanabhan together
 11. Kitada / Dugić + Kitada, friendly and carefully
-12. Rovelli + Smolin together
+12. Rovelli separately
 13. Gell-Mann separately
 14. Feynman separately, carefully, because he is dangerous in a good way
 ```
@@ -739,6 +757,8 @@ Compact line:
 > Friston gives persistence after system closure, not the root closure machine.
 >
 > Mead gives the phase handshake; closure must explain why the handshake is physically admissible.
+>
+> Smolin says time is real and rejects timeless math worship; closure must make real time physically operative.
 >
 > Wheeler gives the slogan.
 >
