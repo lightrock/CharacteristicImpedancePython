@@ -294,6 +294,97 @@ It is the thermostat reading of a system already holding together.
 The deeper machine is the closure process that makes a system possible before it can minimize anything.
 ```
 
+### Shannon
+
+Win:
+
+```text
+clean information measure
+communication theory without metaphysical noise
+channel/noise/coding discipline
+separation of signal statistics from semantic arguments
+engineering discipline strong enough to build the modern information world
+```
+
+Scope correction:
+
+```text
+Shannon was not foolish for bracketing meaning.
+That bracket was the move that made communication theory exact.
+The BBQ is not that Shannon failed at his stated problem.
+The BBQ is that physics later mistook Shannon information for the substrate.
+```
+
+Gap:
+
+```text
+communication information is not running physical closure
+bits counted are not bits executed
+message length is not causal reach
+entropy measure is not the process engine
+semantics bracketed for engineering can become fatal if promoted into ontology
+receiver ignorance is not the same as physical nonexistence
+```
+
+Closure correction:
+
+```text
+A bit is not only a payload unit.
+A bit can be a trigger, key, index, or admissibility selector.
+If both sides already instantiate the same physical library,
+one communicated bit need not transmit the library.
+It can select the page both copies already have.
+```
+
+Physical-machine version:
+
+```text
+Shannon model:
+source -> encoded message -> channel -> receiver reconstructs message
+
+Closure-machine model:
+running instance A
+running instance B
+shared admissibility grammar already instantiated
+one bit selects / unlocks / coordinates a permitted state
+receiver does not learn the whole library
+receiver enters the matching closure state
+```
+
+Atom / chromodynamic-instance note:
+
+```text
+The atom does not learn hydrogen behavior by receiving a textbook.
+Every hydrogen atom instantiates the same admissible closure structure.
+Every chromodynamic instance already runs the quark/gluon rules that make it an instance.
+Communication between such instances is therefore not pure Shannon novelty.
+It can be coordination among already-running copies.
+```
+
+Relation to Z0 / Fundamental Pi:
+
+```text
+If Z0 carries a real bit-level impedance receipt,
+then the important question is not only how many bits are present.
+The important question is what those bits coordinate.
+A short bit pattern may act less like a payload and more like a key:
+it can confirm or select an admissible closure grammar already available to the machine.
+```
+
+Compact line:
+
+> Shannon measured payload uncertainty. Closure asks what one bit can trigger when the receiving structure is already physically instantiated.
+
+Friendly nuke:
+
+```text
+Do not BBQ Shannon as wrong.
+BBQ the promotion of Shannon's engineering abstraction into metaphysics.
+A bit counted in a channel is not automatically the same thing as a bit that closes a physical process.
+The closure question is not merely: how many bits were sent?
+It is: what already-running physical structure did that bit select?
+```
+
 ---
 
 ## Next targets
@@ -386,28 +477,6 @@ measurement chain still needs admissible subsystem selection
 Compact line:
 
 > Von Neumann gave the measurement chain. We still need the closure event that makes the chain settle.
-
-### Shannon
-
-Win:
-
-```text
-clean information measure
-communication theory without metaphysical noise
-channel/noise/coding discipline
-```
-
-Gap:
-
-```text
-communication information is not running physical closure
-bits counted are not bits executed
-entropy measure is not the process engine
-```
-
-Compact line:
-
-> Shannon measured the message. We need the machine that makes messages physically persist.
 
 ### Landauer
 
@@ -820,7 +889,7 @@ Compact line:
 
 ```text
 1. Bohr / Copenhagen + Von Neumann together
-2. Shannon + Landauer + Zeilinger together
+2. Landauer + Zeilinger together, after the Shannon trigger/index correction
 3. Bell separately
 4. Bekenstein + Hawking + Susskind together
 5. Maldacena + Witten together
@@ -855,6 +924,8 @@ Compact line:
 >
 > Zurek gives pointer states, einselection, and redundant records; closure must select the system and pointer basis before records multiply.
 >
+> Shannon measures payload uncertainty; closure asks what one bit can trigger when the receiving structure is already physically instantiated.
+>
 > Wheeler gives the slogan.
 >
 > Tegmark gives the library.
@@ -862,8 +933,6 @@ Compact line:
 > Copenhagen protects receipts while hiding the machine.
 >
 > Von Neumann gives the measurement chain, not the closure event.
->
-> Shannon measures messages, not running physical closure.
 >
 > Landauer makes information physical, but not yet self-closing.
 >
