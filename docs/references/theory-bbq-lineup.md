@@ -244,36 +244,69 @@ The closure question is not merely: how many bits were sent?
 It is: what already-running physical structure did that bit select?
 ```
 
-### Hermann Weyl - gold star
+### Hermann Weyl - qualified gold star
 
 Gold star reason:
-
-Win: 
 
 ```text
 gauge invariance
 local reference freedom
 phase/reference comparison instead of absolute labels
-connection as the rule between neighboring points
-force as consistency bookkeeping
-ancestor of the Standard Model gauge picture
+connection as comparison bookkeeping
+ancestor of the Standard Model gauge language
+clear warning that absolute labels are not observables
 ```
-Gap:
+
+Scope correction:
 
 ```text
-Gauge invariance is not the machine.
-It is the public accounting rule that says local descriptions may vary
-as long as the connection preserves observable closure.
-The gauge field is not merely a force-object.
-It is a receipt of relational consistency.
-But the deeper machine still has to derive the relation, the comparison,
-the allowed transport, and the physical closure test.
+Weyl is not wrong because gauge freedom is fake.
+That is exactly the point: gauge choice is abstraction-space redundancy.
+The observable lesson is that only closure-preserving receipts survive
+a change of description.
+```
+
+BBQ gap:
+
+```text
+Gauge invariance is not substrate.
+If space is emergent, "local gauge freedom at each point" is already rendered-layer language.
+Neighboring points, fibers, transports, and loops are not first primitives.
+They are the spacetime-facing shadow of a deeper relational process.
+
+On an entanglement-basis / pointer-swap picture,
+gauge symmetry looks like the rule that arbitrary pointer labels,
+phase conventions, and reference addresses cannot count as physical change.
+Gauge fixing is choosing one clipboard for the pointer fuzz.
+Gauge-invariant quantities are the receipts left after fake label motion cancels.
+The gauge field is the rendered connection bookkeeping produced
+when pre-spatial pointer relationships are compressed into a smooth field theory.
+```
+
+Missing derivation:
+
+```text
+derive adjacency before "local"
+derive comparison before connection
+derive allowed pointer transport before gauge field
+derive loop receipts before curvature
+derive closure/admissibility before force law
 ```
 
 Compact line:
 
->Weyl gives gauge connection and local reference freedom; closure must derive the links, comparisons, and loop receipts underneath.
+> Weyl found the abstraction-space bookkeeping rule; closure must derive the pointer-swap machinery that makes comparison, transport, and loop receipts physically admissible.
 
+Friendly nuke:
+
+```text
+Do not worship the gauge.
+Gauge invariance is the statement that the description has redundant pointer labels.
+Useful. Powerful. Standard-Model-grade useful.
+But if spacetime is rendered from entanglement-basis closure,
+then gauges regulate the projected pointer fuzz.
+They do not identify the machine that runs it.
+```
 
 ---
 
@@ -956,6 +989,8 @@ Compact line:
 > Zurek gives pointer states, einselection, and redundant records; closure must select the system and pointer basis before records multiply.
 >
 > Shannon gets half a gold star: he measures payload uncertainty exactly, while closure asks what one bit can trigger when the receiving structure is already physically instantiated.
+>
+> Weyl gives gauge/reference bookkeeping; closure must derive pointer adjacency before "local gauge" means anything.
 >
 > Wheeler gives the slogan.
 >
