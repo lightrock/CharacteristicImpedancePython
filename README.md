@@ -29,7 +29,8 @@ It currently provides:
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
-- Z0 Binary Structure, read [Z0 Binary Structure(https://lightrock.github.io/CharacteristicImpedancePython/z0-binary-structure.html).
+- Z0 Binary Structure, read [Z0 Binary Structure, open
+  [Z0 Binary Structure](https://lightrock.github.io/CharacteristicImpedancePython/z0-binary-structure.html).
 - For the runnable quark/subsystem compression workbench, open
   [Z0 Quark GeneZip Compression](https://lightrock.github.io/CharacteristicImpedancePython/z0-genezip-compression.html).
 
