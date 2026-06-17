@@ -249,6 +249,10 @@ controls.
   doctrine that process is already running, while space and coordinate time are
   rendered accounting layers of relation, delay, closure, persistence, and
   observer-facing records.
+- [QGP, Boundary Receipts, and the Pancake Inversion](docs/references/qgp-boundary-receipts.md)
+  records the high-energy version of the same audit: if the available receipt is
+  sheet-like or boundary-like, reconstructed 3D geometry should not be silently
+  promoted above the receipt as substrate.
 - [Computational Process Lineage](docs/references/computational-process-lineage.md)
   compares Wolfram and 't Hooft as near process-first ancestors: one finds the
   universal walk / everything-generator, the other the machine-instinct, while
