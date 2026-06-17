@@ -17,6 +17,7 @@ Longer companion notes already exist for several entries:
 - [`lqg-closure-machine.md`](lqg-closure-machine.md)
 - [`computational-process-lineage.md`](computational-process-lineage.md)
 - [`friston-free-energy-closure-machine.md`](friston-free-energy-closure-machine.md)
+- [`mead-pointer-swap-z0.md`](mead-pointer-swap-z0.md)
 - [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
 - [`fundamentalPi.md`](fundamentalPi.md)
 
@@ -163,6 +164,8 @@ The deeper machine is the closure process that makes a system possible before it
 
 ### Carver Mead - Gold star
 
+Longer note: [`mead-pointer-swap-z0.md`](mead-pointer-swap-z0.md)
+
 Win:
 
 ```text
@@ -185,6 +188,15 @@ vector-potential reality is not pointer-swap substrate proof
 Compact line:
 
 > Mead found the phase handshake. We still need the machine that makes handshakes physically admissible.
+
+Pointer-swap/Z0 note:
+
+```text
+Mead gives the electromagnetic face of pointer-swap closure:
+photon exchange as phase-handshake receipt, not projectile travel.
+That makes Z0 interesting as a possible catalog-visible impedance receipt
+of the EM phase-matching closure rule, not as a sacred ohm value.
+```
 
 Gold star note:
 
