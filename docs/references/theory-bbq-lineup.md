@@ -124,6 +124,43 @@ Compact line:
 
 > 't Hooft gives the update engine. Fundamental Pi supplies the closure-depth test that can recover quantum before classical.
 
+### Friston
+
+Longer note: [`friston-free-energy-closure-machine.md`](friston-free-energy-closure-machine.md)
+
+Win:
+
+```text
+free energy principle
+active inference
+Markov blankets
+persistence through boundary
+self-maintaining systems
+perception and action as one loop
+```
+
+Gap:
+
+```text
+often framed biologically/cognitively rather than physics-first
+free-energy minimization begins after a system already exists
+Markov blanket partition is not automatically an admissibility proof
+surprise minimization is not the process drive
+a thermostat reading is not the engine
+```
+
+Compact line:
+
+> Friston found how systems stay real. Closure explains why there are systems that can stay real.
+
+Friendly nuke:
+
+```text
+Free energy is not the engine.
+It is the thermostat reading of a system already holding together.
+The deeper machine is the closure process that makes a system possible before it can minimize anything.
+```
+
 ---
 
 ## Next targets
@@ -599,43 +636,6 @@ Compact line:
 
 > Rovelli found relation. We need relation that does work.
 
-### Friston
-
-Longer note: [`friston-free-energy-closure-machine.md`](friston-free-energy-closure-machine.md)
-
-Win:
-
-```text
-free energy principle
-active inference
-Markov blankets
-persistence through boundary
-self-maintaining systems
-perception and action as one loop
-```
-
-Gap:
-
-```text
-often framed biologically/cognitively rather than physics-first
-free-energy minimization begins after a system already exists
-Markov blanket partition is not automatically an admissibility proof
-surprise minimization is not the process drive
-a thermostat reading is not the engine
-```
-
-Compact line:
-
-> Friston found how systems stay real. Closure explains why there are systems that can stay real.
-
-Friendly nuke:
-
-```text
-Free energy is not the engine.
-It is the thermostat reading of a system already holding together.
-The deeper machine is the closure process that makes a system possible before it can minimize anything.
-```
-
 ### Feynman
 
 Win:
@@ -674,8 +674,7 @@ Compact line:
 11. Kitada / Dugić + Kitada, friendly and carefully
 12. Rovelli + Smolin together
 13. Gell-Mann separately
-14. Friston separately
-15. Feynman separately, carefully, because he is dangerous in a good way
+14. Feynman separately, carefully, because he is dangerous in a good way
 ```
 
 ---
@@ -689,6 +688,8 @@ Compact line:
 > String theory gives too much geometric rendering.
 >
 > LQG gives too much geometric accounting.
+>
+> Friston gives persistence after system closure, not the root closure machine.
 >
 > Wheeler gives the slogan.
 >
@@ -723,8 +724,6 @@ Compact line:
 > Kitada gives local clocks.
 >
 > Dugić + Kitada give system-relative time.
->
-> Friston gives persistence after system closure, not the root closure machine.
 >
 > Feynman gives the grammar.
 >
