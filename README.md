@@ -29,6 +29,8 @@ It currently provides:
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
+- For the runnable quark/subsystem compression workbench, open
+  [Z0 Quark GeneZip Compression](docs/z0-genezip-compression.html).
 
 ## Research Posture
 
