@@ -171,7 +171,46 @@ Likewise, gravity is not a force acting across a pre-existing void. It is an eff
 
 ---
 
-## 6. Time as the first process axiom
+## 6. Receipt-first inversion
+
+A related mistake is treating reconstructed geometry as more fundamental than the receipt that produced it.
+
+High-energy QCD gives a useful pressure point. In heavy-ion collisions, much of the usable accounting is transverse, sheet-like, or boundary-like: Lorentz-contracted nuclear pancakes, glasma/color-field sheets, flow harmonics, and detector angular receipts.
+
+The usual interpretation says:
+
+```text
+there is a 3D object
+the collision makes it look pancake-like
+measurements and models use lower-dimensional projections
+```
+
+The process-first inversion says:
+
+```text
+do not assume the hidden 3D object first
+start from the receipt
+if the receipt is pancake-like, sheet-like, or boundary-like,
+then 3D volume may be an observer reconstruction
+```
+
+The compact rule:
+
+> If the machine only gives us pancake receipts, the sphere is an interpretation, not the substrate.
+
+This does not prove that QGP is fundamentally two-dimensional. It does demand evidence discipline:
+
+```text
+running event != reconstructed geometry
+boundary receipt != automatic ontology
+3D hydrodynamic model != automatic substrate
+```
+
+See [`qgp-boundary-receipts.md`](qgp-boundary-receipts.md).
+
+---
+
+## 7. Time as the first process axiom
 
 A second staging error is treating time as something that results only after entropy, coarse-graining, or macroscopic disorder has already appeared.
 
@@ -226,7 +265,7 @@ The machine cannot wait for entropy to grant permission to run. The machine must
 
 ---
 
-## 7. Compact form
+## 8. Compact form
 
 The short version:
 
@@ -240,13 +279,17 @@ Or even shorter:
 
 > Do not wait for physics to happen in space. Find the process whose accounting appears as space.
 
+The receipt version:
+
+> Do not inflate the receipt into a hidden object and then worship the object as substrate.
+
 The time version:
 
 > Do not derive the clock from the exhaust. The ordering drive must be present for entropy, records, and observers to appear at all.
 
 ---
 
-## 8. Follow-up work
+## 9. Follow-up work
 
 A stronger version of this note should eventually do four things:
 
@@ -270,6 +313,7 @@ A stronger version of this note should eventually do four things:
    string renderings -> string-theory-closure-machine.md
    LQG receipt graph -> lqg-closure-machine.md
    hydrogen structure selection -> quantum-structures-hydrogen-atom.md
+   QGP boundary receipts -> qgp-boundary-receipts.md
    Z0/XOR orbit -> characteristic impedance seed behavior
    ```
 
@@ -282,6 +326,7 @@ A stronger version of this note should eventually do four things:
    recover phase closure separately from geometric π
    recover spectral dimension from return statistics
    recover effective distance from delay/reachability
+   distinguish receipts from reconstructed geometry
    ```
 
 4. Separate levels cleanly:
