@@ -102,6 +102,48 @@ what running closure process makes those receipts appear together at all?
 
 ---
 
+## Tesla as post-Maxwell apparatus receipt
+
+Tesla belongs in this paper, but not as mythology. The companion note [Tesla
+Apparatus Receipts](tesla-apparatus-receipts.md) keeps the useful Tesla and throws
+out the fantasy layer.
+
+The sober contribution is:
+
+```text
+Tesla did not replace Maxwell.
+Tesla made Maxwellian phase, induction, resonance, impedance, and boundary
+behavior run as machines.
+```
+
+Through this lens:
+
+```text
+rotating magnetic field -> coordinated phase relation doing mechanical work
+polyphase AC            -> phase-coordinated network process
+induction motor         -> field relation, material response, and load closure
+Tesla coil              -> coupled resonance / admissible oscillatory modes
+high-frequency work     -> capacitance, inductance, radiation, dielectric behavior,
+                           corona, and boundary breakdown become visible
+wireless/tuned coupling -> real frequency-selected coupling, not magic
+```
+
+Tesla's useful place in the Maxwell-completion sequence is:
+
+```text
+Maxwell asks what the electromagnetic machine is.
+Faraday sees field relations.
+Heaviside compresses the equations.
+Tesla builds machines where phase and resonance become undeniable.
+Mead later pushes the interpretation back toward phase-handshake behavior.
+Z0_AsBinary asks whether the vacuum impedance relation left an information receipt.
+```
+
+That is fundamental enough to matter, but sober enough to keep the repo out of
+fantasy land.
+
+---
+
 ## Implementation-neutral posture
 
 This note should not trap the Maxwell completion program inside one experiment,
@@ -463,6 +505,7 @@ The synthesis is:
 Maxwell asks for the machine.
 Heaviside gives the public electromagnetic API.
 Pre-Maxwell experimenters expose the receipts Maxwell must preserve.
+Tesla makes phase, induction, resonance, impedance, and boundary behavior run in apparatus.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -579,10 +622,11 @@ For the current repo, that open program begins with a concrete implementation:
 
 ```text
 Maxwell wanted the engine; the pre-Maxwell experimenters exposed the receipts;
-the BBQ gold-star lineup tells us what a real answer must preserve; Z0_AsBinary
-is the first concrete closure-receipt search that started this investigation,
-but the Maxwell completion program remains open to any method that can expose
-the running machine and survive controls.
+Tesla made phase and resonance run as apparatus; the BBQ gold-star lineup tells
+us what a real answer must preserve; Z0_AsBinary is the first concrete
+closure-receipt search that started this investigation, but the Maxwell
+completion program remains open to any method that can expose the running
+machine and survive controls.
 ```
 
 ---
@@ -590,6 +634,7 @@ the running machine and survive controls.
 ## References for context
 
 - [Pre-Maxwell Electromagnetic Receipt Ledger](pre-maxwell-electromagnetic-receipt-ledger.md)
+- [Tesla Apparatus Receipts](tesla-apparatus-receipts.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
