@@ -6,9 +6,10 @@ This is a general research-position note for completing Maxwell's machine
 question. It lives in `Z0_AsBinary` because that repo produced the first concrete
 shovel: the pre-2019 `Z0` binary/XOR exploration.
 
-It is not a claim that Maxwell, Mead, Smolin, Zurek, Shannon, Weyl, Wolfram, or
-`t Hooft already proved the project's hypothesis. It is also not a claim that
-binary exploration of `Z0` is the only possible path.
+It is not a claim that Maxwell, Mead, Smolin, Zurek, Shannon, Weyl, Wolfram,
+`t Hooft, Boltzmann, Gibbs, Lloyd, Vedral, Seife, or Gleick already proved the
+project's hypothesis. It is also not a claim that binary exploration of `Z0` is
+the only possible path.
 
 The purpose is broader:
 
@@ -18,12 +19,34 @@ Use the BBQ gold-star people as repair lenses.
 Use Mead for phase-first electromagnetism.
 Use Smolin for real time and anti-Platonic pressure.
 Use Zurek for pointer states, einselection, and receipt-copying.
+Use Boltzmann and Gibbs for the exact entropy-to-bits bridge and ensemble controls.
+Use Lloyd, Vedral, Seife, and Gleick as information-physics receipt trail markers.
 Use Shannon for information discipline, while refusing to mistake payload for substrate.
 Use Weyl for gauge/reference bookkeeping, while refusing to mistake gauge for substrate.
 Use Wolfram and 't Hooft as executable-rule / update-engine support.
 Then find any inspectable way to expose the closure machine.
 Z0_AsBinary is one such way, and it is the way that started this investigation.
 ```
+
+---
+
+## Receipt-linking rule for this paper
+
+Any receipt that matters to the Maxwell-completion argument should be linked and
+described here, even when the detailed treatment lives in a companion file.
+
+Companion notes are for depth. This file is the control-room map. If a person,
+book, equation, apparatus, or historical receipt changes the argument, this file
+must say:
+
+```text
+what the receipt is
+where the longer note lives
+why it matters to Maxwell completion
+what guardrail prevents overclaiming
+```
+
+That keeps the paper from becoming a pile of disconnected side notes.
 
 ---
 
@@ -71,8 +94,8 @@ Franklin     -> polarity bookkeeping and lightning as electrical discharge
 Coulomb      -> calibrated static charge force
 Galvani      -> electricity couples to organized living tissue
 Volta        -> sustained current source
-Ørsted       -> current has a magnetic face
-Ampère       -> currents act on currents
+Orsted       -> current has a magnetic face
+Ampere       -> currents act on currents
 Biot/Savart  -> current leaves local magnetic accounting
 Ohm          -> materials regulate current through resistance
 Faraday      -> changing relations induce current; field lines are physical receipts
@@ -252,7 +275,7 @@ The quark model turned a confusing catalog into a generative receipt structure.
 
 For the general Maxwell-completion program, that is methodological. For
 `Z0_AsBinary`, it may be one of the central origin receipts, because the initial
-spark was not simply "Z0 has bits." It was:
+spark was not simply `Z0 has bits`. It was:
 
 ```text
 Z0 bits appear to intersect / compress / organize quark-related signatures in a
@@ -293,7 +316,7 @@ catalog compression is not proof of physical ontology
 ```
 
 Gell-Mann may be central to the original observation, but the lesson is still not
-"believe the pattern." The lesson is:
+`believe the pattern`. The lesson is:
 
 ```text
 treat the quark-facing catalog pattern as classification pressure, then demand
@@ -372,8 +395,8 @@ Compactly:
 ```text
 Noether -> symmetry / conservation custody
 Poynting / Heaviside / Hertz / Lorentz -> EM API, energy flow, wave apparatus, charge-field coupling
-Planck / de Broglie / Schrödinger / Born / Dirac / Aharonov-Bohm / Bell -> quantum exchange, state, phase, correlation
-Boltzmann / Gibbs / Wheeler / Landauer / Bennett -> entropy, information, physical computation
+Planck / de Broglie / Schrodinger / Born / Dirac / Aharonov-Bohm / Bell -> quantum exchange, state, phase, correlation
+Boltzmann / Gibbs / Shannon / Lloyd / Vedral / Seife / Gleick / Wheeler / Landauer / Bennett -> entropy, information, physical computation
 Wilson / Kadanoff -> scale, coarse-graining, effective law
 ```
 
@@ -400,6 +423,74 @@ information entropy measures uncertainty across possible messages/states
 ```
 
 That makes entropy a receipt problem, not merely a heat problem.
+
+---
+
+## Entropy-to-bits receipt: Boltzmann, Gibbs, Lloyd, Vedral, Seife, Gleick
+
+The detailed companion note is [Boltzmann / Gibbs / Wheeler / Landauer / Bennett Receipts](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md).
+This main paper must carry the receipt too, because it is not a side issue.
+It is one of the control layers for interpreting `Z0_AsBinary` at all.
+
+The hard bridge is the same math in different units:
+
+```text
+Boltzmann: S = k_B ln W
+bits:      B = log2 W
+therefore: S = k_B ln 2 * B
+```
+
+and:
+
+```text
+Gibbs:   S = -k_B sum_i p_i ln p_i
+Shannon: H = -sum_i p_i log2 p_i
+therefore: S = k_B ln 2 * H
+```
+
+So Boltzmann/Gibbs are not merely old thermodynamics sitting near modern
+information theory. They give the state-counting and ensemble math that becomes
+information entropy when written in bits.
+
+The book trail matters because it keeps this bridge visible:
+
+```text
+Seth Lloyd, Programming the Universe -> physical systems register/process information
+Vlatko Vedral, Decoding Reality -> quantum information as a reality-level lens
+Charles Seife, Decoding the Universe -> physics read through information theory
+James Gleick, The Information -> information history, Maxwell's demon, entropy tolls
+```
+
+The likely yellow-cover memory is Vedral's `Decoding Reality: The Universe as
+Quantum Information`, with Seife and Gleick as close neighboring receipts.
+All belong in the paper because they keep pointing to the same issue:
+physical entropy and information entropy are not strangers. They share the same
+logarithmic state-counting skeleton.
+
+For `Z0_AsBinary`, the audit consequence is immediate:
+
+```text
+a visible bit pattern is a selection from alternatives
+but a selection only means something after the alternative ensemble is specified
+therefore the first entropy/control question is: what is W?
+```
+
+Guardrail:
+
+```text
+same math is not the same as substrate proof
+information framing is not automatically ontology
+entropy is not the engine
+bits are not magic
+```
+
+The repair is:
+
+```text
+keep the exact Boltzmann/Gibbs/Shannon conversion visible
+state the ensemble before interpreting surprise
+require physical closure, cost, records, and controls before metaphysics
+```
 
 ---
 
@@ -454,7 +545,7 @@ hardware experiments
 mathematical derivations that produce testable receipts
 ```
 
-The rule is not "use Z0 or stop." The rule is:
+The rule is not `use Z0 or stop`. The rule is:
 
 ```text
 show the running closure, preserve the receipts, and survive controls
@@ -475,6 +566,7 @@ The compact map is:
 Mead    -> phase handshake
 Smolin  -> real time / anti-Platonism
 Zurek   -> pointer records / environment as witness
+Boltzmann/Gibbs -> entropy-to-bits state-counting and ensemble discipline
 Shannon -> information discipline, not ontology
 Weyl    -> reference/gauge comparison bookkeeping
 ```
@@ -673,7 +765,7 @@ The gap Weyl leaves open:
 
 ```text
 gauge invariance is not substrate
-"local gauge at each point" already assumes rendered spacetime language
+local gauge at each point already assumes rendered spacetime language
 connection is not yet the pointer-swap machine
 loop receipts still need a pre-geometric closure derivation
 ```
@@ -774,6 +866,8 @@ Leibniz and yin/yang preserve binary as generative running distinction.
 Gell-Mann shows that a messy catalog can hide state grammar; for Z0_AsBinary,
 he may be central because the initial spark was quark-facing catalog compression.
 Accelerators and detectors show that particle catalogs are prepared, read, and stabilized through EM fields, material boundary responses, and detector records.
+Boltzmann and Gibbs show that entropy is logarithmic state-counting, which becomes bits by unit conversion.
+Lloyd, Vedral, Seife, and Gleick keep the entropy-information-computation bridge visible.
 The additional closure ledger adds symmetry/conservation, energy-flow, quantum phase/correlation, entropy/information, physical-computation, and scale/coarse-graining audits.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
@@ -874,10 +968,11 @@ The completion program is open-ended but disciplined:
 7. Treat hits as Zurek-style receipts requiring custody, not as proof.
 8. Ask Shannon-style whether a pattern is payload, key, index, trigger, or
    admissibility selector.
-9. Add controls against random artifact, post-selection, and description-choice
+9. Ask Boltzmann/Gibbs-style what the ensemble is: what is W?
+10. Add controls against random artifact, post-selection, and description-choice
    dependence.
-10. Translate surviving structure into Mead/Maxwell language only after the
-    controls justify that translation.
+11. Translate surviving structure into Mead/Maxwell language only after the
+   controls justify that translation.
 
 For the current repo, that open program begins with a concrete implementation:
 
@@ -887,7 +982,9 @@ For the current repo, that open program begins with a concrete implementation:
 4. Add randomized bitstrings with matched length and density.
 5. Add shuffled-catalog and shuffled-bit controls.
 6. Add precision-cut and unit-translation controls.
-7. Add symmetry/conservation, entropy/information, physical-computation, and
+7. Add explicit entropy/information ensemble tests: what is W, and how many bits
+   does the observed receipt select?
+8. Add symmetry/conservation, entropy/information, physical-computation, and
    scale/coarse-graining audits from the additional closure receipt layer.
 
 ---
@@ -902,12 +999,14 @@ that binary is a running generative distinction, not only stored difference;
 Gell-Mann may be central because the initial Z0_AsBinary spark was quark-facing
 catalog compression; accelerators and detectors remind us that particle catalogs
 are prepared and read through EM fields, material boundary responses, and stable
-records; the additional closure ledger adds conservation, energy-flow, quantum,
-entropy/information, computation, and scale audits; the BBQ gold-star lineup
-tells us what a real answer must preserve; Z0_AsBinary is the first concrete
-closure-receipt search that started this investigation, but the Maxwell
-completion program remains open to any method that can expose the running
-machine and survive controls.
+records; Boltzmann and Gibbs show that entropy is already logarithmic state-counting
+and converts directly to bits; Lloyd, Vedral, Seife, and Gleick keep the
+information-physics bridge visible; the additional closure ledger adds
+conservation, energy-flow, quantum, entropy/information, computation, and scale
+audits; the BBQ gold-star lineup tells us what a real answer must preserve;
+Z0_AsBinary is the first concrete closure-receipt search that started this
+investigation, but the Maxwell completion program remains open to any method
+that can expose the running machine and survive controls.
 ```
 
 ---
@@ -931,16 +1030,16 @@ machine and survive controls.
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
 - [Computational Process Lineage](computational-process-lineage.md)
 - [Fundamental Pi](fundamentalPi.md)
-- Gottfried Wilhelm Leibniz, "Explication de l'Arithmétique Binaire," 1703.
-- Albert Einstein, "On a Heuristic Point of View Concerning the Production and Transformation of Light," 1905.
+- Gottfried Wilhelm Leibniz, `Explication de l'Arithmetique Binaire`, 1703.
+- Albert Einstein, `On a Heuristic Point of View Concerning the Production and Transformation of Light`, 1905.
 - Nobel Prize in Physics 1921, awarded to Einstein especially for the law of the photoelectric effect.
 - Murray Gell-Mann, Nobel Prize in Physics 1969, for classification of elementary particles and their interactions.
-- Murray Gell-Mann, "The Eightfold Way: A Theory of Strong Interaction Symmetry," 1961.
-- Murray Gell-Mann, "A Schematic Model of Baryons and Mesons," 1964.
-- CERN, "Accelerators," describing accelerator use of electromagnetic fields, RF cavities, and magnets.
-- CERN, "How an accelerator works," describing electric fields for acceleration and magnetic fields for steering/focusing.
-- U.S. Department of Energy, "How Particle Accelerators Work," describing electric-field acceleration, magnetic steering/focusing, and detectors recording collision products.
-- U.S. Department of Energy, "DOE Explains... Particle Accelerators," describing accelerators as devices that speed up charged particles.
+- Murray Gell-Mann, `The Eightfold Way: A Theory of Strong Interaction Symmetry`, 1961.
+- Murray Gell-Mann, `A Schematic Model of Baryons and Mesons`, 1964.
+- CERN, `Accelerators`, describing accelerator use of electromagnetic fields, RF cavities, and magnets.
+- CERN, `How an accelerator works`, describing electric fields for acceleration and magnetic fields for steering/focusing.
+- U.S. Department of Energy, `How Particle Accelerators Work`, describing electric-field acceleration, magnetic steering/focusing, and detectors recording collision products.
+- U.S. Department of Energy, `DOE Explains... Particle Accelerators`, describing accelerators as devices that speed up charged particles.
 - Emmy Noether, 1918 papers on invariant variational problems.
 - John Henry Poynting, electromagnetic energy flux / Poynting vector, 1884.
 - Oliver Heaviside's vector reformulation of Maxwellian electromagnetism.
@@ -948,23 +1047,28 @@ machine and survive controls.
 - Hendrik Lorentz, electron theory and Lorentz force law.
 - Max Planck, blackbody radiation and the quantum of action.
 - Louis de Broglie, matter waves.
-- Erwin Schrödinger, wave mechanics.
+- Erwin Schrodinger, wave mechanics.
 - Max Born, probabilistic interpretation of the wavefunction.
 - Paul Dirac, relativistic quantum mechanics and bra-ket notation.
 - Yakir Aharonov and David Bohm, Aharonov-Bohm effect.
 - John Bell, Bell inequalities and quantum correlation constraints.
-- Ludwig Boltzmann, statistical mechanics and entropy formula `S = k log W`.
+- Ludwig Boltzmann, statistical mechanics and entropy formula `S = k_B ln W`.
 - J. Willard Gibbs, ensemble methods and statistical mechanics.
-- John Archibald Wheeler, "It from bit" / yes-no question framing.
+- Claude Shannon, information entropy.
+- Seth Lloyd, `Programming the Universe` and physical limits / computational capacity of the universe.
+- Vlatko Vedral, `Decoding Reality: The Universe as Quantum Information`.
+- Charles Seife, `Decoding the Universe: How the New Science of Information Is Explaining Everything in the Cosmos, from Our Brains to Black Holes`.
+- James Gleick, `The Information: A History, a Theory, a Flood`.
+- John Archibald Wheeler, `It from bit` / yes-no question framing.
 - Rolf Landauer, information erasure and physical cost.
 - Charles Bennett, reversible computation.
 - Leo Kadanoff, scaling and block-spin ideas.
 - Kenneth Wilson, renormalization group and critical phenomena.
-- Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
-- Carver A. Mead, *Collective Electrodynamics: Quantum Foundations of Electromagnetism*, MIT Press, 2000.
-- Lee Smolin, *Time Reborn*, Houghton Mifflin Harcourt, 2013.
-- Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics*, 2003.
-- Claude E. Shannon, "A Mathematical Theory of Communication," *Bell System Technical Journal*, 1948.
-- Hermann Weyl, *Space-Time-Matter*, 1918.
-- Stephen Wolfram, *A New Kind of Science*, Wolfram Media, 2002.
-- Gerard 't Hooft, *The Cellular Automaton Interpretation of Quantum Mechanics*, Springer, 2016.
+- Carver A. Mead, `Collective electrodynamics I`, Proceedings of the National Academy of Sciences, 1997.
+- Carver A. Mead, `Collective Electrodynamics: Quantum Foundations of Electromagnetism`, MIT Press, 2000.
+- Lee Smolin, `Time Reborn`, Houghton Mifflin Harcourt, 2013.
+- Wojciech H. Zurek, `Decoherence, einselection, and the quantum origins of the classical`, Reviews of Modern Physics, 2003.
+- Claude E. Shannon, `A Mathematical Theory of Communication`, Bell System Technical Journal, 1948.
+- Hermann Weyl, `Space-Time-Matter`, 1918.
+- Stephen Wolfram, `A New Kind of Science`, Wolfram Media, 2002.
+- Gerard 't Hooft, `The Cellular Automaton Interpretation of Quantum Mechanics`, Springer, 2016.
