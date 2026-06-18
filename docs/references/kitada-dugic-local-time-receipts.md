@@ -15,6 +15,8 @@ time is local, relational, and attributable to systems or subsystems.
 ```
 
 That makes their work a direct correction to the naïve Laplace's Demon picture.
+Smolin then adds the next pressure: local relational time must be real process,
+not merely a bookkeeping illusion inside a frozen block.
 
 ---
 
@@ -124,6 +126,55 @@ record, and time from inside the process.
 
 ---
 
+## Smolin pressure: local time must really run
+
+The companion note [Smolin Real-Time Receipts](smolin-real-time-receipts.md)
+applies Smolin over the whole Laplace / Kitada-Dugić situation.
+
+Kitada / Dugić remove the hidden outside clock:
+
+```text
+no global outside time for Universe-as-one
+```
+
+Smolin prevents the opposite mistake:
+
+```text
+do not turn local time into an illusion inside a timeless mathematical library
+```
+
+The combined pressure is:
+
+```text
+Laplace: specify state and law.
+Kitada/Dugić: no whole-universe outside comparator; time is local/relational.
+Smolin: those local temporal relations are where the universe actually becomes.
+```
+
+So the running machine cannot be:
+
+```text
+one static totality
+```
+
+It must be more like:
+
+```text
+subsystem relation
+-> local comparison
+-> real temporal ordering
+-> record
+-> changed conditions for the next relation
+```
+
+That is the repo's cleanest version of the point:
+
+```text
+subsystem comparison is the internal run-button
+```
+
+---
+
 ## Yin/yang as a running requirement
 
 This is where the yin/yang language becomes more than poetry.
@@ -140,12 +191,16 @@ not isolated monad
 but difference that can run
 ```
 
+Smolin sharpens this by insisting that the difference really runs. The pair is
+not only a correlation inside a timeless solution. It is a site of becoming.
+
 That is why the binary/process lineage matters:
 
 ```text
 Leibniz: 0/1 can generate ordered symbolic worlds.
 Yin/yang: binary distinction is dynamic alternation, not only stored difference.
 Kitada/Dugić: time itself is local/relational, not an outside universal backdrop.
+Smolin: local temporal relation is real becoming, not illusion.
 Wolfram: explicit rules can be run.
 Zurek: records become objective only through redundant witness/copy structure.
 Z0_AsBinary: a seed is meaningful only through orientation, update, comparison, and return receipts.
@@ -155,7 +210,7 @@ The key point:
 
 ```text
 yin/yang is not decoration here;
-it is the minimum structure needed for comparison to exist at all
+it is the minimum comparator/process structure needed for time to exist and run
 ```
 
 ---
@@ -176,23 +231,32 @@ whatever is running cannot rely on a universal external time parameter;
 time and records must arise through local subsystem relations
 ```
 
+Smolin adds:
+
+```text
+those local subsystem relations must be real temporal process;
+otherwise the machine has no run button
+```
+
 That means a candidate closure machine must include:
 
 ```text
 subsystem selection
 local comparison
 clock-like or phase-like relation
+real update / becoming
 record formation
 boundary/admissibility structure
 return or persistence receipts
 ```
 
-This makes Mead and Zurek even more important:
+This makes Mead, Zurek, and Smolin even more important:
 
 ```text
 Mead -> phase handshake / relation-first electromagnetism
 Zurek -> records and witnesses, not just abstract state
 Kitada/Dugić -> no whole-universe outside clock; local time requires subsystem relation
+Smolin -> real time / becoming is required over the whole process
 ```
 
 Together, they pressure the same missing primitive:
@@ -223,13 +287,22 @@ catalog controls
 The Kitada / Dugić lesson is that these relational operations are not incidental.
 They are the only way a seed becomes a process receipt.
 
+Smolin adds that the process part is not optional:
+
+```text
+static seed -> not enough
+seed + comparator -> local relation
+seed + comparator + update -> process
+process + return record -> receipt candidate
+```
+
 A lone bit string viewed from nowhere is not yet a machine.
 
 ```text
 seed + comparator + update + return -> machine receipt candidate
 ```
 
-That is the local-time lesson translated into the repo.
+That is the local-time / real-time lesson translated into the repo.
 
 ---
 
@@ -239,16 +312,18 @@ This note should not overclaim.
 
 ```text
 local time is not proof of Z0_AsBinary
+real time is not proof of Z0_AsBinary
 subsystem comparison is not automatically electromagnetic substrate
 yin/yang language is an interpretive compression, not a formal derivation
 Laplace's Demon failing does not by itself prove any particular closure machine
+Smolin's real-time pressure does not license weak controls
 ```
 
 The useful claim is narrower:
 
 ```text
 if the universe has no outside time/comparator, then any real machine must
-produce local comparison, local records, and local time internally
+produce local comparison, local records, local time, and real update internally
 ```
 
 That is exactly the kind of requirement the Maxwell-completion program should
@@ -259,10 +334,11 @@ preserve.
 ## One-line version
 
 ```text
-Kitada / Dugić correct Laplace's Demon by denying the hidden outside clock: the
-universe-as-one has no external time comparator, so time, record, and change must
-arise through local subsystem relations — a sober physics version of the minimum
-yin/yang split needed for a process to run.
+Kitada / Dugić correct Laplace's Demon by denying the hidden outside clock, and
+Smolin applies the real-time pressure: the universe-as-one has no external time
+comparator, so time, record, and change must arise through local subsystem
+relations that actually run — a sober physics version of the minimum yin/yang
+split needed for process.
 ```
 
 ---
@@ -271,10 +347,15 @@ yin/yang split needed for a process to run.
 
 - [Laplace Potential and Determinism Receipts](laplace-potential-determinism-receipts.md)
 - [Leibniz, Binary, Yin/Yang, and Process Receipts](leibniz-binary-yinyang-process-receipt.md)
+- [Smolin Real-Time Receipts](smolin-real-time-receipts.md)
 - [Maxwell After the BBQ Gold-Star Lineup](maxwell-after-mead-wolfram-thooft.md)
 - [History of Z0 up to the 2019 SI Break](z0-history-to-2019.md)
 - Hitoshi Kitada, "Theory of Local Times," arXiv:astro-ph/9309051, 1993.
 - Hitoshi Kitada, J. Jeknić-Dugić, M. Arsenijević, and M. Dugić, "A minimalist approach to conceptualization of time in quantum theory," *Physics Letters A* 380, 3970, 2016.
 - J. Jeknić-Dugić, M. Dugić, and collaborators on local-time, pointer-basis, and subsystem-level dynamics.
+- Lee Smolin, *Time Reborn*, 2013.
+- Roberto Mangabeira Unger and Lee Smolin, *The Singular Universe and the Reality of Time*, 2014.
+- Lee Smolin, "Unification of the state with the dynamical law," arXiv:1201.2632, 2012.
+- Lee Smolin, "Temporal relationalism," arXiv:1805.12468, 2018.
 - Pierre-Simon Laplace, *Essai philosophique sur les probabilités*, 1814.
 - Don Page and William Wootters, relational/internal time construction, 1980s, for comparison.
