@@ -90,7 +90,7 @@ What prevents pointer relations from dangling?
 
 ---
 
-## 3. What this means for Characteristic Impedance Python
+## 3. What this means for Z0_AsBinary
 
 `Z0`, the characteristic impedance of vacuum, is usually treated as:
 
@@ -122,7 +122,7 @@ That reframes the project as a receipt test:
 Mead: EM is phase handshake, not photon projectile.
 Fundamental Pi: phase requires a physical return/closure operation.
 Pointer-swap model: entanglement relations cannot dangle; they close by swap/rebinding.
-Characteristic Impedance Python: pre-2019 Z0 may preserve an information trace of the vacuum phase-matching closure condition.
+Z0_AsBinary: pre-2019 Z0 may preserve an information trace of the vacuum phase-matching closure condition.
 ```
 
 Compact line:
@@ -180,7 +180,7 @@ space/waves/photons render as observer receipts
 
 This gives the repo a more defensible physical story:
 
-> Characteristic Impedance Python is not looking for magic digits. It is testing whether the published pre-2019 `Z0` information object preserves a closure signature of the electromagnetic phase-handshake machine.
+> Z0_AsBinary is not looking for magic digits. It is testing whether the published pre-2019 `Z0` information object preserves a closure signature of the electromagnetic phase-handshake machine.
 
 ---
 
@@ -188,4 +188,4 @@ This gives the repo a more defensible physical story:
 
 - Carver Mead, *Collective Electrodynamics: Quantum Foundations of Electromagnetism*, MIT Press, 2000.
 - Carver Mead, "Collective Electrodynamics", CaltechAUTHORS record.
-- Related project notes: [`fundamentalPi.md`](fundamentalPi.md), [`process-first-physics.md`](process-first-physics.md), [`maxwell-machine-completion-note.md`](maxwell-machine-completion-note.md).
+- Related project notes: [`fundamentalPi.md`](fundamentalPi.md), [`process-first-physics.md`](process-first-physics.md), [`maxwell-machine-completion-note.md`](maxwell-machine-completion-note.md), [`maxwell-after-mead-wolfram-thooft.md`](maxwell-after-mead-wolfram-thooft.md).
