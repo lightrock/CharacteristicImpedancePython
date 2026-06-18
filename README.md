@@ -5,7 +5,7 @@
 
 A fundamental observation of the pre-2019 CODATA value for the Characteristic Impedance of Vacuum is very intereseting and has opened up can of worms.
 
-As a running process, wouldn't the "chromodynamics machine" be considered "an observer"? How is everybody seeming to still miss that observation, while we're here...
+One portion of the can of worms can ask such qeustions as "As a running process, wouldn't the "chromodynamics machine" be considered "an observer"? How is everybody seeming to still miss that observation."
 
 ## What This Repo Is
 
