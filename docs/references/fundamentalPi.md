@@ -6,6 +6,20 @@ This is a research-position note for replacing primitive pi in phase,
 amplitude, and probability language with lower-level closure machines before
 attempting to derive ordinary spatial geometry.
 
+The upfront question is deliberately blunt:
+
+```text
+Why does Pi appear in all our attempted fundamental physics maths?
+What's the machine or what are the machines that cause that?
+```
+
+This note treats `pi` not as a magic decimal, and not as a primitive symbol to
+sprinkle into equations, but as a receipt. If `pi` keeps appearing in phase,
+spin, waves, Fourier analysis, path integrals, gauge loops, horizons, diffusion,
+and geometry, then something physical or pre-geometric is repeatedly producing
+closure, return, isotropy, or comparison. The job is to identify those machines
+and separate them from the public notation that already assumes `pi`.
+
 Core thesis:
 
 ```text
