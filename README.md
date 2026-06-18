@@ -191,6 +191,3 @@ source code unless GitHub Pages or another static host is used.
 - BIPM, [The International System of Units (SI)](https://www.bipm.org/en/measurement-units).
 - NIST, [SI Redefinition](https://www.nist.gov/si-redefinition).
 - Pierre Fayet, [Completing the International System of units with c = hbar = mu0 = epsilon0 = kB = NA = 1](https://arxiv.org/abs/1906.05123), arXiv:1906.05123.
-- Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
-- Stephen Wolfram, [Wolfram Science](https://www.wolfram.com/wolfram-science/).
-- Gerard 't Hooft, *The Cellular Automaton Interpretation of Quantum Mechanics*, Springer, 2016.
