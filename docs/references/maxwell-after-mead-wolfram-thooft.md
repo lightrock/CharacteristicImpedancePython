@@ -2,11 +2,15 @@
 
 ## Status
 
-This is a research-position note for `Z0_AsBinary`. It is not a claim that
-Maxwell, Mead, Smolin, Zurek, Shannon, Weyl, Wolfram, or 't Hooft already proved
-the project's hypothesis.
+This is a general research-position note for completing Maxwell's machine
+question. It lives in `Z0_AsBinary` because that repo produced the first concrete
+shovel: the pre-2019 `Z0` binary/XOR exploration.
 
-The purpose is narrower:
+It is not a claim that Maxwell, Mead, Smolin, Zurek, Shannon, Weyl, Wolfram, or
+`t Hooft already proved the project's hypothesis. It is also not a claim that
+binary exploration of `Z0` is the only possible path.
+
+The purpose is broader:
 
 ```text
 Use Maxwell's unfinished machine question as the target.
@@ -17,7 +21,8 @@ Use Zurek for pointer states, einselection, and receipt-copying.
 Use Shannon for information discipline, while refusing to mistake payload for substrate.
 Use Weyl for gauge/reference bookkeeping, while refusing to mistake gauge for substrate.
 Use Wolfram and 't Hooft as executable-rule / update-engine support.
-Then test whether Z0 behaves like a closure receipt, rather than declaring that it does.
+Then find any inspectable way to expose the closure machine.
+Z0_AsBinary is one such way, and it is the way that started this investigation.
 ```
 
 ---
@@ -51,11 +56,67 @@ look inevitable to observers inside the rendered model
 
 ---
 
+## Implementation-neutral posture
+
+This note should not trap the Maxwell completion program inside one experiment,
+one encoding, one constant, one automaton, or one repo.
+
+The open instruction is:
+
+```text
+however you can do it, find the machine receipts
+```
+
+A candidate path is useful if it can produce:
+
+```text
+explicit starting object or physical setup
+explicit transformation / interaction rule
+observable return, closure, or persistence behavior
+receipts that survive description changes
+controls against artifact and post-selection
+translation back into electromagnetic language only after the receipts earn it
+```
+
+`Z0_AsBinary` is the first concrete implementation because it supplies:
+
+```text
+published Z0 information object
+binary seed with provenance
+small executable update rule
+known period-4095 closure result
+catalog-wide comparison target
+randomized-control roadmap
+```
+
+But the completion program is allowed to proceed through other routes:
+
+```text
+phase experiments
+vector-potential / holonomy receipts
+impedance and boundary-condition tests
+quantum coherence / collective-electrodynamic systems
+cellular or graph update models
+simulation-first closure searches
+catalog-level information scans
+hardware experiments
+mathematical derivations that produce testable receipts
+```
+
+The rule is not "use Z0 or stop." The rule is:
+
+```text
+show the running closure, preserve the receipts, and survive controls
+```
+
+---
+
 ## The BBQ gold-star repair lenses
 
 The BBQ file does not give one guru to worship. It gives a control-room lineup.
 Each gold-star person preserves one part of the missing machine question, and
-each still leaves a gap that `Z0_AsBinary` must not hand-wave away.
+each still leaves a gap that the Maxwell completion program must not hand-wave
+away.
 
 The compact map is:
 
@@ -89,16 +150,17 @@ macroscopic quantum systems before classroom Maxwell rendering
 continuity of wave function as an electromagnetic clue
 ```
 
-For this project, Mead does not prove pointer-swap closure. He does something
+For this program, Mead does not prove pointer-swap closure. He does something
 more specific and more valuable: he makes it respectable to ask whether the
 observable electromagnetic surface is a phase-coupling receipt rather than a
 little-object traffic report.
 
-Project translation:
+Translation:
 
 ```text
 Mead: EM exchange is phase-handshake behavior.
-Z0_AsBinary: Z0 may be the catalog-visible impedance receipt of the phase-matching rule.
+Maxwell completion: find the admissibility rule that makes phase-handshakes real.
+Z0_AsBinary: one possible receipt search is whether Z0 encodes the phase-matching impedance rule.
 ```
 
 The gap Mead leaves open:
@@ -128,10 +190,11 @@ background independence matters
 physics should not be timeless mathematical object worship
 ```
 
-Project translation:
+Translation:
 
 ```text
 Smolin: do not replace running physics with timeless structure.
+Maxwell completion: whatever the machine is, it must be process, not just library.
 Z0_AsBinary: an orbit, a period, and a closure receipt are process facts before they are pretty math.
 ```
 
@@ -162,10 +225,11 @@ environment can act as witness
 records are not optional decoration
 ```
 
-Project translation:
+Translation:
 
 ```text
 Zurek: reality-for-observers requires stable copied receipts.
+Maxwell completion: any proposed machine must explain how records become stable.
 Z0_AsBinary: token hits, period closure, and catalog reconstruction must be treated as receipts requiring custody.
 ```
 
@@ -177,7 +241,7 @@ pointer basis selection still depends on decomposition
 records are downstream of closure, not the root machine
 ```
 
-So Zurek supplies the receipt discipline. The project still has to ask what
+So Zurek supplies the receipt discipline. The program still has to ask what
 closure process selects the system, the pointer basis, and the admissible records
 before those records multiply.
 
@@ -197,10 +261,11 @@ measure payload uncertainty cleanly
 keep the information object inspectable
 ```
 
-Project translation:
+Translation:
 
 ```text
 Shannon: count the bits cleanly.
+Maxwell completion: preserve evidence species and do not confuse payload with substrate.
 Z0_AsBinary: preserve the exact published significant digits, conversion rule, seed, orbit, and controls.
 ```
 
@@ -220,11 +285,12 @@ entropy measure is not the process engine
 receiver ignorance is not physical nonexistence
 ```
 
-So Shannon supplies evidence hygiene. `Z0_AsBinary` asks the next question:
+So Shannon supplies evidence hygiene. The broader completion program asks:
 
 ```text
-If the Z0 bit pattern is not merely payload, what already-running physical grammar
-could it select, confirm, or unlock?
+If a bit pattern, phase relation, boundary condition, or experimental trace is
+not merely payload, what already-running physical grammar could it select,
+confirm, or unlock?
 ```
 
 ---
@@ -244,10 +310,11 @@ connection as comparison bookkeeping
 gauge-invariant quantities as surviving receipts
 ```
 
-Project translation:
+Translation:
 
 ```text
 Weyl: fake label motion must cancel.
+Maxwell completion: description choices must be audited before being treated as physics.
 Z0_AsBinary: orientation, complement, unit, precision, and encoding choices must be audited as descriptions, not silently promoted to ontology.
 ```
 
@@ -260,7 +327,7 @@ connection is not yet the pointer-swap machine
 loop receipts still need a pre-geometric closure derivation
 ```
 
-So Weyl supplies the comparison discipline. The project still has to derive
+So Weyl supplies the comparison discipline. The program still has to derive
 adjacency, comparison, transport, loop receipts, and closure/admissibility before
 calling the result a smooth field or force law.
 
@@ -268,8 +335,9 @@ calling the result a smooth field or force law.
 
 ## What Wolfram adds: executable-rule seriousness
 
-Wolfram is not listed in the BBQ gold-star block, but he remains essential to
-this file because `Z0_AsBinary` begins by running a very small rule.
+Wolfram is not listed in the BBQ gold-star block, but he remains useful because
+one path to Maxwell completion may be to run small rules until closure receipts
+become visible.
 
 The useful Wolfram pressure is:
 
@@ -279,18 +347,18 @@ some behavior must be run, not guessed
 computation can be a scientific object, not merely an implementation detail
 ```
 
-That matters because `Z0_AsBinary` does not begin with a grand symbolic physics
-model. It begins with a small rule:
+`Z0_AsBinary` uses this exact instinct:
 
 ```text
 binary seed -> circular XOR update -> orbit -> closure / period / token receipts
 ```
 
-The Wolfram-compatible move is:
+But the broader instruction is not limited to that rule. It is:
 
 ```text
-Do not dismiss a small rule because it looks too small.
-Run it, compare it, control it, and see what it actually produces.
+Do not dismiss a small rule, simulation, circuit, experiment, or derivation
+because it looks too small. Run it, compare it, control it, and see what it
+actually produces.
 ```
 
 The Wolfram gap is equally important:
@@ -301,8 +369,8 @@ possible computation is not physical selection
 ruliad / universal walk is not closure by itself
 ```
 
-So Wolfram supplies the executable-rule instinct, but `Z0_AsBinary` still needs
-pruning, admissibility, provenance, and controls.
+So Wolfram supplies the executable-rule instinct, but the completion program
+still needs pruning, admissibility, provenance, and controls.
 
 ---
 
@@ -320,7 +388,7 @@ deterministic update as a serious candidate underneath
 cellular automata / cogwheel-style models as possible sub-quantum scaffolding
 ```
 
-For this project, the value is not a commitment to superdeterminism or any
+For this program, the value is not a commitment to superdeterminism or any
 specific 't Hooft model. The value is the permission structure:
 
 ```text
@@ -336,7 +404,7 @@ update order is not closure depth
 determinism alone does not give admissibility, persistence, phase, or observer rendering
 ```
 
-So 't Hooft supplies the update-engine instinct, but the project still needs the
+So 't Hooft supplies the update-engine instinct, but the program still needs the
 closure/admissibility machine.
 
 ---
@@ -355,10 +423,23 @@ Shannon demands clean information handling without mistaking information for sub
 Weyl demands reference/gauge comparison discipline without mistaking gauge for substrate.
 Wolfram says small executable rules can generate serious structure.
 't Hooft says quantum formalism may be a description layer over a deeper update.
-Z0_AsBinary tests whether Z0 behaves like an impedance receipt of EM closure.
+Z0_AsBinary is one concrete receipt search, not the whole completion program.
 ```
 
-The working answer is not a substance and not a geometry. It is a process stack:
+The working answer is not a substance and not a geometry. It is a process target:
+
+```text
+candidate physical or information object
+-> explicit state grammar
+-> explicit transformation / interaction rule
+-> return comparison
+-> closure / persistence behavior
+-> receipts preserved across description changes
+-> controls against artifact and post-selection
+-> only then: electromagnetic interpretation
+```
+
+`Z0_AsBinary` instantiates that target in one specific way:
 
 ```text
 published Z0 information object
@@ -383,11 +464,12 @@ Do not worship the number.
 Do not worship the information measure.
 Do not worship the record-copying layer.
 Find out what can actually run, what closes, and what receipts survive controls.
+However you can do that, do that.
 ```
 
 ---
 
-## Why Z0 is the right suspect
+## Why Z0 is still the right first suspect
 
 `Z0` is not interesting because ohms are sacred. It is interesting because it is
 the vacuum-facing impedance relation between electric and magnetic field
@@ -406,11 +488,36 @@ information object because the 2019 SI revision changed the exact/measured
 status of the vacuum electromagnetic constants. That does not make the old value
 holy. It makes it a clean artifact with provenance.
 
+So the correct scope is:
+
+```text
+Z0_AsBinary started this investigation and remains a concrete test harness.
+It is not a restriction on the Maxwell completion program.
+If another route exposes stronger closure receipts, use it.
+```
+
 ---
 
 ## Immediate research program
 
-The completion program is executable:
+The completion program is open-ended but disciplined:
+
+1. State the candidate machine question clearly.
+2. Identify the physical, mathematical, experimental, or information object being tested.
+3. Preserve provenance and description choices.
+4. Define the transformation, interaction, update, or derivation rule explicitly.
+5. Look for return, closure, persistence, phase, impedance, boundary, or record receipts.
+6. Track orientation, complement, encoding, gauge, unit, and precision choices as
+   descriptions, not hidden assumptions.
+7. Treat hits as Zurek-style receipts requiring custody, not as proof.
+8. Ask Shannon-style whether a pattern is payload, key, index, trigger, or
+   admissibility selector.
+9. Add controls against random artifact, post-selection, and description-choice
+   dependence.
+10. Translate surviving structure into Mead/Maxwell language only after the
+    controls justify that translation.
+
+For the current repo, that open program begins with a concrete implementation:
 
 1. Preserve the pre-2019 `Z0` significant-digit record and conversion rule.
 2. Run the circular-XOR orbit and preserve the known period result.
@@ -418,25 +525,16 @@ The completion program is executable:
 4. Add randomized bitstrings with matched length and density.
 5. Add shuffled-catalog and shuffled-bit controls.
 6. Add precision-cut and unit-translation controls.
-7. Track orientation, complement, encoding, and unit choices as Weyl-style
-   description choices, not hidden assumptions.
-8. Treat token hits as Zurek-style receipts requiring custody, not as proof.
-9. Ask Shannon-style whether a bit pattern is payload, key, index, trigger, or
-   admissibility selector.
-10. Try adjacent rule families only after preregistering why they belong.
-11. Translate surviving structure into Mead/Maxwell language only after the
-    controls justify that translation.
 
 ---
 
 ## One-line version
 
 ```text
-Maxwell wanted the engine; Mead points to phase handshake; Smolin demands a real
-running process; Zurek demands receipt custody; Shannon demands information
-hygiene; Weyl demands comparison discipline; Wolfram and 't Hooft make executable
-substructure respectable; Z0_AsBinary tests whether the vacuum impedance constant
-left a binary closure receipt.
+Maxwell wanted the engine; the BBQ gold-star lineup tells us what a real answer
+must preserve; Z0_AsBinary is the first concrete closure-receipt search that
+started this investigation, but the Maxwell completion program remains open to
+any method that can expose the running machine and survive controls.
 ```
 
 ---
