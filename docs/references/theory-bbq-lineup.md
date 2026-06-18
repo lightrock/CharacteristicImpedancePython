@@ -437,17 +437,37 @@ Compact line:
 
 > LQG found the discrete receipt layer and risked mistaking it for the machine.
 
-### Wolfram
+### Wolfram - qualified double gold star
 
 Longer note: [`computational-process-lineage.md`](computational-process-lineage.md)
 
-Win:
+Double-gold-star reason:
 
 ```text
 process/computation-first instinct
 simple rules generate rich worlds
-observer samples a slice of larger rule/process space
 ruliad as universal walk through possibility
+observer theory
+computationally bounded observers
+observer persistence and equivalencing/coarse-graining
+computational irreducibility as why time cannot be skipped
+time as progressive computation / rendered observer experience
+```
+
+Why two gold stars:
+
+```text
+Gold star 1: Wolfram gives the everything-generator / universal walk instead of passive spacetime-as-stage.
+Gold star 2: newer observer-theory and time work moves toward rendered observer physics rather than rule generation alone.
+```
+
+Newer observer/time receipt:
+
+```text
+Observer Theory (2023) makes the observer part of the law-rendering problem.
+On the Nature of Time (2024) makes time depend on computational irreducibility plus bounded observers.
+Metaphysics and the Ruliad (2026) shows the same program pushing toward explicit ruliad ontology.
+Useful, but dangerous: the ruliad must not become another everything-landscape without physical admissibility.
 ```
 
 Gap:
@@ -455,13 +475,17 @@ Gap:
 ```text
 generates too much
 ruliad is maximal possibility
+observer slice is not admissibility proof
+observer equivalencing is not closure derivation
+computational boundedness is not the tick generator
+persistent observer assumption is not persistence derivation
 universal walk is not physical closure by itself
 needs physical pruning, closure depth, and admissibility
 ```
 
 Compact line:
 
-> Wolfram gives the universal walk. Fundamental Pi supplies early closure before full classical pi.
+> Wolfram gets two gold stars: one for the universal generator, one for observer-rendered time. Fundamental Pi supplies early closure, and QLF/PFEM must still supply the admissibility rule that prunes possibility into physical receipts.
 
 ### 't Hooft
 
@@ -1048,7 +1072,7 @@ Compact line:
 
 ## Master compact line
 
-> Wolfram gives the universal walk; Fundamental Pi gives early closure before classical pi.
+> Wolfram gets two gold stars: the universal generator plus observer-rendered time; Fundamental Pi supplies early closure, while QLF/PFEM must still supply physical admissibility.
 >
 > 't Hooft gives hidden clockwork; Fundamental Pi gives closure depth and quantum-before-classical recovery.
 >
