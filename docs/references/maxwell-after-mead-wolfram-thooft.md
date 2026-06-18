@@ -23,7 +23,8 @@ Use Boltzmann and Gibbs for the exact entropy-to-bits bridge and ensemble contro
 Use Lloyd, Vedral, Seife, and Gleick as information-physics receipt trail markers.
 Use Shannon for information discipline, while refusing to mistake payload for substrate.
 Use Weyl for gauge/reference bookkeeping, while refusing to mistake gauge for substrate.
-Use Wolfram and 't Hooft as executable-rule / update-engine support.
+Use Wolfram for the universal generator, observer-rendered time, and computational irreducibility.
+Use 't Hooft for update-engine seriousness and quantum-as-description pressure.
 Then find any inspectable way to expose the closure machine.
 Z0_AsBinary is one such way, and it is the way that started this investigation.
 ```
@@ -252,7 +253,7 @@ The useful lineage is:
 Leibniz: 0/1 can generate an ordered universe of number.
 Yin/yang: binary opposition can be understood as change-process.
 Shannon: bits can be measured cleanly as information.
-Wolfram: small executable rules can generate serious structure.
+Wolfram: small executable rules can generate serious structure and observer-rendered time.
 Z0_AsBinary: a physical constant's binary form can be tested as runnable closure candidate.
 ```
 
@@ -588,13 +589,14 @@ Zurek           -> pointer records / environment as witness
 Boltzmann/Gibbs -> entropy-to-bits state-counting, what-is-W ensemble discipline
 Shannon         -> information discipline, not ontology
 Weyl            -> reference/gauge comparison bookkeeping
+Wolfram         -> universal generator plus observer-rendered time / computational irreducibility
 ```
 
 Together they point toward the same missing primitive:
 
 ```text
 running closure with admissibility, persistence, receipts, ensemble discipline,
-and rendered observer geometry/time
+observer-bounded rendering, and rendered observer geometry/time
 ```
 
 ---
@@ -796,11 +798,12 @@ calling the result a smooth field or force law.
 
 ---
 
-## What Wolfram adds: executable-rule seriousness
+## What Wolfram adds: universal generator and observer-rendered time
 
-Wolfram is not listed in the BBQ gold-star block, but he remains useful because
-one path to Maxwell completion may be to run small rules until closure receipts
-become visible.
+Wolfram now belongs in the BBQ repair lens as a qualified double gold star, not
+merely as a generic executable-rule influence. The companion note
+[Computational Process Lineage](computational-process-lineage.md) keeps the
+longer repair beside 't Hooft.
 
 The useful Wolfram pressure is:
 
@@ -808,32 +811,59 @@ The useful Wolfram pressure is:
 very small executable rules can generate unexpectedly rich behavior
 some behavior must be run, not guessed
 computation can be a scientific object, not merely an implementation detail
+ruliad / universal walk as maximal process possibility
+observer theory as a law-rendering problem
+computationally bounded observers cannot jump ahead of irreducible process
+time as progressive computation / rendered observer experience
 ```
 
-`Z0_AsBinary` uses this exact instinct:
+`Z0_AsBinary` uses the first part of this instinct directly:
 
 ```text
 binary seed -> circular XOR update -> orbit -> closure / period / token receipts
 ```
 
-But the broader instruction is not limited to that rule. It is:
+But the newer Wolfram receipt matters more broadly. It says the observer is not
+just a spectator looking at a finished rule output. Observer boundedness,
+persistence, equivalencing/coarse-graining, and computational irreducibility help
+shape what physics and time look like from inside the process.
+
+Relevant Wolfram receipts:
 
 ```text
-Do not dismiss a small rule, simulation, circuit, experiment, or derivation
-because it looks too small. Run it, compare it, control it, and see what it
-actually produces.
+Stephen Wolfram, Observer Theory (2023)
+Stephen Wolfram, On the Nature of Time (2024)
+Stephen Wolfram, What Ultimately Is There? Metaphysics and the Ruliad (2026)
+```
+
+Translation:
+
+```text
+Wolfram: run the generator; observer limits help render law/time.
+Maxwell completion: a real machine must run from the inside and produce observer-facing receipts.
+Z0_AsBinary: small-rule closure is a test harness, while observer-rendered time is a guardrail against treating the orbit as timeless decoration.
 ```
 
 The Wolfram gap is equally important:
 
 ```text
 simple rules generate too much
-possible computation is not physical selection
-ruliad / universal walk is not closure by itself
+ruliad / universal walk is maximal possibility, not physical selection
+observer slice is not admissibility proof
+observer equivalencing is not closure derivation
+computational boundedness is not the tick generator
+persistent observer assumption is not persistence derivation
 ```
 
-So Wolfram supplies the executable-rule instinct, but the completion program
-still needs pruning, admissibility, provenance, and controls.
+So Wolfram supplies two control-room repairs:
+
+```text
+Gold star 1: the universal generator / executable-rule instinct.
+Gold star 2: observer-rendered time through computational boundedness and irreducibility.
+```
+
+The completion program still needs pruning, admissibility, provenance, controls,
+and a derivation of persistence and records.
 
 ---
 
@@ -894,7 +924,7 @@ Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
 Shannon demands clean information handling without mistaking information for substrate.
 Weyl demands reference/gauge comparison discipline without mistaking gauge for substrate.
-Wolfram says small executable rules can generate serious structure.
+Wolfram supplies the universal generator plus observer-rendered-time pressure.
 't Hooft says quantum formalism may be a description layer over a deeper update.
 Z0_AsBinary is one concrete receipt search, not the whole completion program.
 ```
@@ -938,7 +968,7 @@ Do not worship the information measure.
 Do not worship the record-copying layer.
 Do not worship the classification.
 Do not worship the detector reconstruction.
-Do not worship entropy, computation, or scale language.
+Do not worship entropy, computation, observer slicing, or scale language.
 Find out what can actually run, what closes, and what receipts survive controls.
 However you can do that, do that.
 ```
@@ -1126,4 +1156,7 @@ not the house.
 - Claude E. Shannon, `A Mathematical Theory of Communication`, Bell System Technical Journal, 1948.
 - Hermann Weyl, `Space-Time-Matter`, 1918.
 - Stephen Wolfram, `A New Kind of Science`, Wolfram Media, 2002.
+- Stephen Wolfram, `Observer Theory`, Stephen Wolfram Writings, 2023.
+- Stephen Wolfram, `On the Nature of Time`, Stephen Wolfram Writings, 2024.
+- Stephen Wolfram, `What Ultimately Is There? Metaphysics and the Ruliad`, Stephen Wolfram Writings, 2026.
 - Gerard 't Hooft, `The Cellular Automaton Interpretation of Quantum Mechanics`, Springer, 2016.
