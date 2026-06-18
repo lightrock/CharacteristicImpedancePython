@@ -307,7 +307,7 @@ controls and a running machine.
 Particle accelerators and detectors belong here as apparatus receipts. The
 companion note [Accelerator and Detector EM Receipts](accelerator-detector-em-receipts.md)
 keeps the useful point sober: particle physics is not reducible to
- electromagnetism, but the experimental write/read layer is deeply electromagnetic.
+electromagnetism, but the experimental write/read layer is deeply electromagnetic.
 
 The sober contribution is:
 
@@ -360,6 +360,49 @@ then EM boundary behavior is one of the main languages of those records
 
 ---
 
+## Additional closure receipt layer
+
+The companion ledger [Additional Closure Receipts Ledger](additional-closure-receipts-ledger.md)
+collects the major receipt species that were still missing from the first pass.
+It adds the people and audit layers that keep the Maxwell-completion program from
+promoting a striking pattern too early.
+
+Compactly:
+
+```text
+Noether -> symmetry / conservation custody
+Poynting / Heaviside / Hertz / Lorentz -> EM API, energy flow, wave apparatus, charge-field coupling
+Planck / de Broglie / Schrödinger / Born / Dirac / Aharonov-Bohm / Bell -> quantum exchange, state, phase, correlation
+Boltzmann / Gibbs / Wheeler / Landauer / Bennett -> entropy, information, physical computation
+Wilson / Kadanoff -> scale, coarse-graining, effective law
+```
+
+For `Z0_AsBinary`, this adds a necessary audit stack:
+
+```text
+what survives transformations?
+where does energy flow?
+what is apparatus-visible?
+what respects quantum phase and correlation?
+what is the entropy/information ensemble?
+what information operations have physical cost?
+what survives scale change or coarse-graining?
+```
+
+Boltzmann is especially important here because he translates physical entropy
+into state-multiplicity language, giving the bridge toward Shannon-style
+information entropy:
+
+```text
+macrostate hides many compatible microstates
+entropy measures multiplicity behind a visible description
+information entropy measures uncertainty across possible messages/states
+```
+
+That makes entropy a receipt problem, not merely a heat problem.
+
+---
+
 ## Implementation-neutral posture
 
 This note should not trap the Maxwell completion program inside one experiment,
@@ -404,6 +447,9 @@ cellular or graph update models
 simulation-first closure searches
 catalog-level information scans
 accelerator / detector receipt audits
+symmetry / conservation audits
+entropy / information / computation audits
+scale / coarse-graining audits
 hardware experiments
 mathematical derivations that produce testable receipts
 ```
@@ -728,6 +774,7 @@ Leibniz and yin/yang preserve binary as generative running distinction.
 Gell-Mann shows that a messy catalog can hide state grammar; for Z0_AsBinary,
 he may be central because the initial spark was quark-facing catalog compression.
 Accelerators and detectors show that particle catalogs are prepared, read, and stabilized through EM fields, material boundary responses, and detector records.
+The additional closure ledger adds symmetry/conservation, energy-flow, quantum phase/correlation, entropy/information, physical-computation, and scale/coarse-graining audits.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -777,6 +824,7 @@ Do not worship the information measure.
 Do not worship the record-copying layer.
 Do not worship the classification.
 Do not worship the detector reconstruction.
+Do not worship entropy, computation, or scale language.
 Find out what can actually run, what closes, and what receipts survive controls.
 However you can do that, do that.
 ```
@@ -839,6 +887,8 @@ For the current repo, that open program begins with a concrete implementation:
 4. Add randomized bitstrings with matched length and density.
 5. Add shuffled-catalog and shuffled-bit controls.
 6. Add precision-cut and unit-translation controls.
+7. Add symmetry/conservation, entropy/information, physical-computation, and
+   scale/coarse-graining audits from the additional closure receipt layer.
 
 ---
 
@@ -852,10 +902,12 @@ that binary is a running generative distinction, not only stored difference;
 Gell-Mann may be central because the initial Z0_AsBinary spark was quark-facing
 catalog compression; accelerators and detectors remind us that particle catalogs
 are prepared and read through EM fields, material boundary responses, and stable
-records; the BBQ gold-star lineup tells us what a real answer must preserve;
-Z0_AsBinary is the first concrete closure-receipt search that started this
-investigation, but the Maxwell completion program remains open to any method
-that can expose the running machine and survive controls.
+records; the additional closure ledger adds conservation, energy-flow, quantum,
+entropy/information, computation, and scale audits; the BBQ gold-star lineup
+tells us what a real answer must preserve; Z0_AsBinary is the first concrete
+closure-receipt search that started this investigation, but the Maxwell
+completion program remains open to any method that can expose the running
+machine and survive controls.
 ```
 
 ---
@@ -868,6 +920,12 @@ that can expose the running machine and survive controls.
 - [Leibniz, Binary, Yin/Yang, and Process Receipts](leibniz-binary-yinyang-process-receipt.md)
 - [Gell-Mann Classification Receipts](gell-mann-classification-receipts.md)
 - [Accelerator and Detector EM Receipts](accelerator-detector-em-receipts.md)
+- [Additional Closure Receipts Ledger](additional-closure-receipts-ledger.md)
+- [Noether Symmetry and Conservation Receipts](noether-symmetry-conservation-receipts.md)
+- [Poynting / Heaviside / Hertz / Lorentz EM Receipts](poynting-heaviside-hertz-lorentz-em-receipts.md)
+- [Quantum Phase, State, and Correlation Receipts](quantum-phase-state-correlation-receipts.md)
+- [Boltzmann / Gibbs / Wheeler / Landauer / Bennett Receipts](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md)
+- [Wilson / Kadanoff Scale Receipts](wilson-kadanoff-scale-receipts.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
@@ -883,6 +941,25 @@ that can expose the running machine and survive controls.
 - CERN, "How an accelerator works," describing electric fields for acceleration and magnetic fields for steering/focusing.
 - U.S. Department of Energy, "How Particle Accelerators Work," describing electric-field acceleration, magnetic steering/focusing, and detectors recording collision products.
 - U.S. Department of Energy, "DOE Explains... Particle Accelerators," describing accelerators as devices that speed up charged particles.
+- Emmy Noether, 1918 papers on invariant variational problems.
+- John Henry Poynting, electromagnetic energy flux / Poynting vector, 1884.
+- Oliver Heaviside's vector reformulation of Maxwellian electromagnetism.
+- Heinrich Hertz, experimental generation/detection of electromagnetic waves, 1880s.
+- Hendrik Lorentz, electron theory and Lorentz force law.
+- Max Planck, blackbody radiation and the quantum of action.
+- Louis de Broglie, matter waves.
+- Erwin Schrödinger, wave mechanics.
+- Max Born, probabilistic interpretation of the wavefunction.
+- Paul Dirac, relativistic quantum mechanics and bra-ket notation.
+- Yakir Aharonov and David Bohm, Aharonov-Bohm effect.
+- John Bell, Bell inequalities and quantum correlation constraints.
+- Ludwig Boltzmann, statistical mechanics and entropy formula `S = k log W`.
+- J. Willard Gibbs, ensemble methods and statistical mechanics.
+- John Archibald Wheeler, "It from bit" / yes-no question framing.
+- Rolf Landauer, information erasure and physical cost.
+- Charles Bennett, reversible computation.
+- Leo Kadanoff, scaling and block-spin ideas.
+- Kenneth Wilson, renormalization group and critical phenomena.
 - Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
 - Carver A. Mead, *Collective Electrodynamics: Quantum Foundations of Electromagnetism*, MIT Press, 2000.
 - Lee Smolin, *Time Reborn*, Houghton Mifflin Harcourt, 2013.
