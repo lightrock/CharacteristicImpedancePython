@@ -4,8 +4,7 @@
 
 This is a research-position note, not a historical or physical proof.
 
-The purpose is to preserve a specific orientation for the Characteristic
-Impedance Python project:
+The purpose is to preserve a specific orientation for the `Z0_AsBinary` project:
 
 ```text
 Meet Maxwell at the machine question, then complete the question with testable
@@ -147,6 +146,39 @@ Audit Heaviside by separating physical cycles from their continuum/radian render
 Test Z0 as a possible receipt left by the electromagnetic closure machine.
 ```
 
+## What Mead, Wolfram, And 't Hooft Add
+
+The companion synthesis note [Maxwell After Mead, Wolfram, and 't Hooft](maxwell-after-mead-wolfram-thooft.md)
+turns the BBQ lineup into the direct Maxwell-completion frame.
+
+The compact answer is:
+
+```text
+Maxwell asks for the machine.
+Heaviside gives the public electromagnetic API.
+Mead restores phase-handshake behavior to the center.
+Wolfram says small executable rules can generate serious structure.
+'t Hooft says quantum formalism may be a description layer over a deeper update.
+Z0_AsBinary tests whether Z0 behaves like an impedance receipt of EM closure.
+```
+
+That answer is useful only if the evidence species stay separate:
+
+```text
+Mead phase-handshake picture != proof of pointer-swap substrate
+Wolfram-style executable rule != physical selection by itself
+'t Hooft-style update engine != closure/admissibility by itself
+Z0 circular-XOR period != proof of ontology
+```
+
+The project-level claim is narrower and testable:
+
+```text
+If Z0 is a vacuum-facing impedance receipt of electromagnetic phase closure,
+then the pre-2019 Z0 information object may behave differently from ordinary
+constants under simple closure-like transformations and proper controls.
+```
+
 ## Open Gap Receipts
 
 The obvious gaps between Maxwell's machine question and the Heaviside rendering
@@ -233,9 +265,9 @@ To complete Maxwell, in this project's vocabulary, is not to restore his old
 mechanical model. It is to search for a lower-level information machine that can
 make the compact electromagnetic interface look inevitable.
 
-For Characteristic Impedance Python, that means testing whether the `Z0` bit
-structure behaves like a privileged seed in the catalog of constants, rather
-than merely asserting that it does.
+For `Z0_AsBinary`, that means testing whether the `Z0` bit structure behaves like
+a privileged seed in the catalog of constants, rather than merely asserting that
+it does.
 
 The completion program is:
 
@@ -250,8 +282,8 @@ The completion program is:
 ## Working Slogan
 
 ```text
-Heaviside preserved the equations.
-Maxwell preserved the machine question.
+Maxwell wanted the engine.
+Mead points back to phase handshake.
 Z0 may preserve a machine receipt.
 ```
 
@@ -265,8 +297,9 @@ A future report may say:
 
 ```text
 The Z0 bit-structure experiment is motivated by Maxwell's unfinished machine
-question and by the possibility that characteristic impedance preserves an
-information-level receipt of the electromagnetic interface.
+question, Mead's phase-first electromagnetic pressure, and the possibility that
+characteristic impedance preserves an information-level receipt of the
+electromagnetic interface.
 ```
 
 A future report should not say:
@@ -280,10 +313,20 @@ The difference matters. The first can be tested. The second is rhetoric.
 ## References For Context
 
 - [How Could the Universe Produce Pi When It Needs It?](fundamentalPi.md).
+- [Maxwell After Mead, Wolfram, and 't Hooft](maxwell-after-mead-wolfram-thooft.md).
+- [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md).
+- [Theory BBQ Lineup](theory-bbq-lineup.md).
 - James Clerk Maxwell, "On Physical Lines of Force" (1861-1862).
 - James Clerk Maxwell, "A Dynamical Theory of the Electromagnetic Field" (1865).
 - James Clerk Maxwell, "A Treatise on Electricity and Magnetism" (1873).
 - Oliver Heaviside, later vector-calculus reformulation of electromagnetic
   theory.
+- Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National
+  Academy of Sciences*, 1997.
+- Carver A. Mead, *Collective Electrodynamics: Quantum Foundations of
+  Electromagnetism*, MIT Press, 2000.
+- Stephen Wolfram, *A New Kind of Science*, Wolfram Media, 2002.
+- Gerard 't Hooft, *The Cellular Automaton Interpretation of Quantum Mechanics*,
+  Springer, 2016.
 - D. P. Hampshire, "A derivation of Maxwell's equations using the Heaviside
   notation," Philosophical Transactions A, 2018.
