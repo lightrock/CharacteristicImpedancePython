@@ -19,8 +19,8 @@ look like a list of facts, but sometimes the list is a surface trace of an
 underlying grammar.
 
 For `Z0_AsBinary`, Gell-Mann may be more than a background reference. He may be
-one of the most important ancestors of the initial observation, because the first
-spark of the project was not merely:
+the most interesting origin receipt for the initial observation, because the
+first spark of the project was not merely:
 
 ```text
 Z0 has interesting bits
@@ -35,7 +35,9 @@ receipt surface.
 ```
 
 That is exactly Gell-Mann territory: the moment when a messy catalog starts to
-look like hidden grammar.
+look like hidden grammar. In this repo, he is not just another famous name; he is
+one of the cleanest historical precedents for taking the original observation
+seriously without mistaking it for proof.
 
 ---
 
@@ -100,7 +102,7 @@ CODATA constants / legacy token catalog
 
 So if Mead is the strongest electromagnetic phase-handshake bridge, Gell-Mann may
 be the strongest catalog/classification bridge for the observation that started
-this project.
+this project — possibly the most interesting ancestor of the first spark itself.
 
 ---
 
@@ -242,10 +244,10 @@ controls.
 ## One-line version
 
 ```text
-Gell-Mann may be central to Z0_AsBinary because the project began when a quark-facing
-catalog pattern seemed to appear inside the Z0 binary receipt surface; his lesson
-is to treat that as classification pressure, then demand controls and a running
-machine.
+Gell-Mann may be the most interesting origin receipt for Z0_AsBinary because the
+project began when a quark-facing catalog pattern seemed to appear inside the Z0
+binary receipt surface; his lesson is to treat that as classification pressure,
+then demand controls and a running machine.
 ```
 
 ---
