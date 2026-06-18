@@ -144,6 +144,49 @@ fantasy land.
 
 ---
 
+## Einstein as photoelectric boundary-transfer receipt
+
+Einstein also belongs here, but specifically as photoelectric-effect Einstein,
+not as the GR metric Einstein. The companion note [Einstein Photoelectric
+Transfer Receipt](einstein-photoelectric-transfer-receipt.md) preserves that
+focused contribution.
+
+The sober contribution is:
+
+```text
+Einstein did not replace Maxwell's electromagnetic wave interface.
+Einstein exposed that electromagnetic energy transfer at a material boundary is
+not continuously divisible in the classical wave sense.
+```
+
+Through this lens:
+
+```text
+photoelectric threshold -> matter accepts EM transfer only above an admissible energy/frequency boundary
+E = h nu               -> transfer quantum scales with frequency
+K_max = h nu - phi     -> emitted electron keeps only the energy left after material work function is paid
+intensity              -> changes count/rate of events, not maximum energy per event
+photoelectron          -> receipt of successful boundary-transfer closure
+```
+
+Einstein's useful place in the Maxwell-completion sequence is:
+
+```text
+Maxwell gives the field interface.
+Tesla makes field phase/resonance run in apparatus.
+Einstein shows that field-to-matter transfer is quantized and thresholded.
+Mead later helps reinterpret exchange as phase-handshake rather than projectile folklore.
+Z0_AsBinary asks whether an impedance-facing closure receipt is visible in the constants catalog.
+```
+
+That makes the photoelectric effect a hard machine clue:
+
+```text
+What running closure rule decides when electromagnetic relation becomes transfer?
+```
+
+---
+
 ## Implementation-neutral posture
 
 This note should not trap the Maxwell completion program inside one experiment,
@@ -506,6 +549,7 @@ Maxwell asks for the machine.
 Heaviside gives the public electromagnetic API.
 Pre-Maxwell experimenters expose the receipts Maxwell must preserve.
 Tesla makes phase, induction, resonance, impedance, and boundary behavior run in apparatus.
+Einstein exposes quantized threshold transfer at the matter/light boundary.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -622,7 +666,8 @@ For the current repo, that open program begins with a concrete implementation:
 
 ```text
 Maxwell wanted the engine; the pre-Maxwell experimenters exposed the receipts;
-Tesla made phase and resonance run as apparatus; the BBQ gold-star lineup tells
+Tesla made phase and resonance run as apparatus; Einstein exposed quantized
+threshold transfer at the matter/light boundary; the BBQ gold-star lineup tells
 us what a real answer must preserve; Z0_AsBinary is the first concrete
 closure-receipt search that started this investigation, but the Maxwell
 completion program remains open to any method that can expose the running
@@ -635,11 +680,14 @@ machine and survive controls.
 
 - [Pre-Maxwell Electromagnetic Receipt Ledger](pre-maxwell-electromagnetic-receipt-ledger.md)
 - [Tesla Apparatus Receipts](tesla-apparatus-receipts.md)
+- [Einstein Photoelectric Transfer Receipt](einstein-photoelectric-transfer-receipt.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
 - [Computational Process Lineage](computational-process-lineage.md)
 - [Fundamental Pi](fundamentalPi.md)
+- Albert Einstein, "On a Heuristic Point of View Concerning the Production and Transformation of Light," 1905.
+- Nobel Prize in Physics 1921, awarded to Einstein especially for the law of the photoelectric effect.
 - Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
 - Carver A. Mead, *Collective Electrodynamics: Quantum Foundations of Electromagnetism*, MIT Press, 2000.
 - Lee Smolin, *Time Reborn*, Houghton Mifflin Harcourt, 2013.
