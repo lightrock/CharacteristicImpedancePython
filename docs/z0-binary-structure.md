@@ -6,6 +6,9 @@ Extraction and clarification of the 2019 observation in *The Fundamental Constan
 
 Source material: legacy 2019 PDF/RTF research notes from the binary constants investigation. The core source range is the “QUARKS”, “CHARACTERISTIC IMPEDANCE OF VACUUM”, “GLUONS”, and “Atom from 39 bits” section.
 
+For the historical chain that makes this a pre-2019 metrological artifact rather
+than the modern moving CODATA value, see [History of Z0 up to the 2019 SI Break](references/z0-history-to-2019.md).
+
 ## Claim Being Preserved
 
 The document is not claiming that the unit ohm is sacred. It is claiming that the published significant digits of a mature physical constant are an information object. When the pre-2019 characteristic impedance value is reduced to significant digits and encoded in binary, the resulting bit string appears to contain the quark mass signatures as intact words.
