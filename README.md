@@ -1,6 +1,6 @@
 # Z0_AsBinary
 
-> The so called "Characteristic Impedance of Vacuum... however that's not what it appears to say about itself in its own words.
+> The so called "Characteristic Impedance of Vacuum"... however that's not what it appears to say about itself in its own words.
 > Meanwhile, physics often treats a successful predictive formalism as though it were the machine itself. Shouldn't we know better than to allow that?
 
 A fundamental observation of the pre-2019 CODATA value for the Characteristic Impedance of Vacuum is very intereseting and has opened up can of worms.
