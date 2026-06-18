@@ -30,9 +30,6 @@ It currently provides:
 - Interesting so far, "quark data compression" of fundamental constants:
   [Z0 Quark GeneZip Compression](https://lightrock.github.io/Z0_AsBinary/z0-genezip-compression.html).
 
-- An initial attempt to "run" Z0 as software/hardware:
-  [Known Verified Result](#known-verified-result).
-
 - For the evidence files, read [Evidence Chain](#evidence-chain).
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
