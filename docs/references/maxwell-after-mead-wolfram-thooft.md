@@ -302,6 +302,64 @@ controls and a running machine.
 
 ---
 
+## Accelerators and detectors as EM read/write receipts
+
+Particle accelerators and detectors belong here as apparatus receipts. The
+companion note [Accelerator and Detector EM Receipts](accelerator-detector-em-receipts.md)
+keeps the useful point sober: particle physics is not reducible to
+ electromagnetism, but the experimental write/read layer is deeply electromagnetic.
+
+The sober contribution is:
+
+```text
+high-energy particle physics is operationally built on electromagnetic write/read machinery
+```
+
+Accelerators use electric fields to add energy to charged particles and magnetic
+fields to steer, focus, bend, and store beams. Detectors then reconstruct events
+mostly from electromagnetic/material consequences: ionization, excitation,
+scintillation, Cherenkov light, electron-hole pairs, calorimeter showers,
+magnetic curvature, induced signals, timing, and conservation-law bookkeeping.
+
+Through this lens:
+
+```text
+electric fields       -> controlled energy injection
+magnetic fields       -> steering, focusing, curvature, momentum bookkeeping
+RF cavities           -> phase-synchronized acceleration
+beam/collision setup  -> controlled boundary for high-energy interaction
+tracking detectors    -> charged-particle path receipts
+calorimeters          -> energy deposition / shower receipts
+silicon/scintillators -> material response converted to electrical/light signals
+missing energy        -> invisible-state inference from visible record custody
+```
+
+This matters for `Z0_AsBinary` because the original quark-facing catalog surprise
+sits near a real historical fact about particle physics:
+
+```text
+particle catalogs are built from detector receipts,
+and detector receipts are largely electromagnetic/material boundary receipts
+```
+
+The guardrail is essential:
+
+```text
+EM readout is not proof of EM substrate
+accelerator control fields are not the whole event dynamics
+detector traces are not the particle itself
+reconstruction is not ontology
+```
+
+But the receipt remains powerful:
+
+```text
+if the machine of physics speaks to us through stable records,
+then EM boundary behavior is one of the main languages of those records
+```
+
+---
+
 ## Implementation-neutral posture
 
 This note should not trap the Maxwell completion program inside one experiment,
@@ -345,6 +403,7 @@ quantum coherence / collective-electrodynamic systems
 cellular or graph update models
 simulation-first closure searches
 catalog-level information scans
+accelerator / detector receipt audits
 hardware experiments
 mathematical derivations that produce testable receipts
 ```
@@ -668,6 +727,7 @@ Einstein exposes quantized threshold transfer at the matter/light boundary.
 Leibniz and yin/yang preserve binary as generative running distinction.
 Gell-Mann shows that a messy catalog can hide state grammar; for Z0_AsBinary,
 he may be central because the initial spark was quark-facing catalog compression.
+Accelerators and detectors show that particle catalogs are prepared, read, and stabilized through EM fields, material boundary responses, and detector records.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -716,6 +776,7 @@ Do not worship the number.
 Do not worship the information measure.
 Do not worship the record-copying layer.
 Do not worship the classification.
+Do not worship the detector reconstruction.
 Find out what can actually run, what closes, and what receipts survive controls.
 However you can do that, do that.
 ```
@@ -789,10 +850,12 @@ Tesla made phase and resonance run as apparatus; Einstein exposed quantized
 threshold transfer at the matter/light boundary; Leibniz and yin/yang remind us
 that binary is a running generative distinction, not only stored difference;
 Gell-Mann may be central because the initial Z0_AsBinary spark was quark-facing
-catalog compression; the BBQ gold-star lineup tells us what a real answer must
-preserve; Z0_AsBinary is the first concrete closure-receipt search that started
-this investigation, but the Maxwell completion program remains open to any
-method that can expose the running machine and survive controls.
+catalog compression; accelerators and detectors remind us that particle catalogs
+are prepared and read through EM fields, material boundary responses, and stable
+records; the BBQ gold-star lineup tells us what a real answer must preserve;
+Z0_AsBinary is the first concrete closure-receipt search that started this
+investigation, but the Maxwell completion program remains open to any method
+that can expose the running machine and survive controls.
 ```
 
 ---
@@ -804,6 +867,7 @@ method that can expose the running machine and survive controls.
 - [Einstein Photoelectric Transfer Receipt](einstein-photoelectric-transfer-receipt.md)
 - [Leibniz, Binary, Yin/Yang, and Process Receipts](leibniz-binary-yinyang-process-receipt.md)
 - [Gell-Mann Classification Receipts](gell-mann-classification-receipts.md)
+- [Accelerator and Detector EM Receipts](accelerator-detector-em-receipts.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
@@ -815,6 +879,10 @@ method that can expose the running machine and survive controls.
 - Murray Gell-Mann, Nobel Prize in Physics 1969, for classification of elementary particles and their interactions.
 - Murray Gell-Mann, "The Eightfold Way: A Theory of Strong Interaction Symmetry," 1961.
 - Murray Gell-Mann, "A Schematic Model of Baryons and Mesons," 1964.
+- CERN, "Accelerators," describing accelerator use of electromagnetic fields, RF cavities, and magnets.
+- CERN, "How an accelerator works," describing electric fields for acceleration and magnetic fields for steering/focusing.
+- U.S. Department of Energy, "How Particle Accelerators Work," describing electric-field acceleration, magnetic steering/focusing, and detectors recording collision products.
+- U.S. Department of Energy, "DOE Explains... Particle Accelerators," describing accelerators as devices that speed up charged particles.
 - Carver A. Mead, "Collective electrodynamics I," *Proceedings of the National Academy of Sciences*, 1997.
 - Carver A. Mead, *Collective Electrodynamics: Quantum Foundations of Electromagnetism*, MIT Press, 2000.
 - Lee Smolin, *Time Reborn*, Houghton Mifflin Harcourt, 2013.
