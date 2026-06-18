@@ -18,7 +18,7 @@ This note extends [`process-first-physics.md`](process-first-physics.md): the ma
 
 ---
 
-## 1. Wolfram: the generator storm
+## 1. Wolfram: the generator storm and observer-time repair
 
 Wolfram's important win is that he is clearly in the process-first camp.
 
@@ -56,6 +56,82 @@ this process is only formal exhaust
 ```
 
 Without that rule, the ruliad risks becoming the computational version of the string landscape: powerful, enormous, and under-selected.
+
+### Newer Wolfram receipt: observer theory and time
+
+The useful newer Wolfram move is not merely more rule generation. It is the explicit attempt to make the observer part of the physics-rendering problem.
+
+Relevant Wolfram receipts:
+
+```text
+Stephen Wolfram, "Observer Theory" (2023)
+https://writings.stephenwolfram.com/2023/12/observer-theory/
+
+Stephen Wolfram, "On the Nature of Time" (2024)
+https://writings.stephenwolfram.com/2024/10/on-the-nature-of-time/
+
+Stephen Wolfram, "What Ultimately Is There? Metaphysics and the Ruliad" (2026)
+https://writings.stephenwolfram.com/2026/02/what-ultimately-is-there-metaphysics-and-the-ruliad/
+```
+
+The upgraded win is:
+
+```text
+observer theory
+computationally bounded observers
+observer persistence assumptions
+equivalencing / coarse-graining / collimation
+law as observer-rendered regularity from ruliad sampling
+time as progressive computation under computational irreducibility
+bounded observers cannot jump ahead of irreducible process
+multiple threads of time / multiway causal structure
+```
+
+This is closer to the closure-machine program than old NKS alone.
+
+Older Wolfram says:
+
+```text
+simple rules generate complex worlds
+```
+
+Newer Wolfram adds:
+
+```text
+observer structure helps determine which laws/time are experienced
+```
+
+That matters because the Maxwell completion program also refuses the idea that physics is a dead equation-object viewed from nowhere. A machine must run, observers must be rendered from within it, and time must not be replaced by a timeless index.
+
+Closure correction:
+
+```text
+observer equivalencing is not yet closure/admissibility
+computational boundedness is not yet the tick generator
+persistent observer assumption is not yet persistence derivation
+ruliad sampling is not yet physical selection
+computational irreducibility explains why time cannot be skipped, but not which events become physical receipts
+```
+
+The sharp repair is:
+
+```text
+Wolfram observer theory -> rendered observer/time layer
+closure/admissibility    -> physical selection and receipt layer
+Fundamental Pi           -> closure-depth test for early quantum and late classical rendering
+```
+
+So Wolfram now deserves to be kept closer to the controls than the old "too much generator" critique alone implied. The newer work earns a qualified double gold star:
+
+```text
+Gold star 1: process/computation-first generator instinct.
+Gold star 2: observer/time rendering via bounded observers and computational irreducibility.
+Qualification: still needs closure/admissibility to prune possibility into physical receipt.
+```
+
+Compact update:
+
+> Newer Wolfram gets closer: observer-bounded sampling and computational irreducibility help explain rendered time. Closure still has to supply the admissibility rule that decides what physically persists and records.
 
 ### Fundamental Pi repair: early closure in the universal walk
 
@@ -106,7 +182,7 @@ classical physics = late rendered closure after full-cycle accounting
 
 Compact repair:
 
-> Wolfram supplies the generator. Fundamental Pi supplies early closure. Quantum appears before classical because closure can happen before the full rendered cycle.
+> Wolfram supplies the generator and the observer-time rendering problem. Fundamental Pi supplies early closure. Quantum appears before classical because closure can happen before the full rendered cycle.
 
 ---
 
@@ -198,13 +274,13 @@ They should be handled separately at the gap level:
 
 | Thinker | Strong move | Main gap |
 |---|---|---|
-| Wolfram | all-rule computational generation | too much possibility, insufficient physical pruning |
+| Wolfram | all-rule computational generation plus observer-rendered physics/time | too much possibility; observer sampling still needs physical pruning |
 | 't Hooft | underlying deterministic machine instinct | update machinery without a full closure/rendering bridge |
 
 In compact form:
 
 ```text
-Wolfram: all possible processes, insufficient physical pruning.
+Wolfram: all possible processes plus observer-time rendering, insufficient physical pruning.
 't Hooft: deterministic underlying process, insufficient closure/admissibility/rendering bridge.
 Fundamental Pi: early return/closure classes can recover quantum before classical geometry.
 PFEM/QLF/Fundamental Pi: process must generate receipts, closure, persistence, and rendered geometry/time.
@@ -222,6 +298,8 @@ For Wolfram:
 raw generator space != physical universe
 all possible rules != realized physics
 observer slice != admissibility proof
+observer equivalencing != closure derivation
+computational boundedness != tick generator
 computational richness != receipt of physical selection
 universal walk != physical closure by itself
 ```
@@ -267,6 +345,7 @@ The upgraded repair move is:
 
 ```text
 Wolfram's generator needs ZFA-style pruning and Fundamental Pi closure-depth testing.
+Wolfram's observer/time theory needs a physical derivation of persistence and admissible records.
 't Hooft's clockwork needs early closure, admissibility, and observer rendering.
 Both need PFEM-style evidence separation.
 ```
@@ -284,6 +363,8 @@ classical geometry can be recovered as late closure / full-cycle rendered accoun
 ## 6. The compact attack
 
 Wolfram found the everything-generator.
+
+Newer Wolfram found the observer-time rendering pressure.
 
 `t Hooft found the machine-instinct.
 
@@ -310,6 +391,9 @@ A stronger version of this note should eventually do four things:
    branchial graph -> observer-facing relation graph
    rulial space -> generator-space coordinate system
    observer slice -> rendered internal perspective
+   observer equivalencing -> coarse-grained rendering operation, not yet closure
+   computational boundedness -> why time cannot be skipped by observers
+   computational irreducibility -> process must be run; no outside shortcut
    causal graph -> process accounting trace
    early closure -> quantum receipt before classical geometry
    ```
@@ -336,6 +420,7 @@ A stronger version of this note should eventually do four things:
    What renders geometry and time?
    What distinguishes physical universe from formal possibility space?
    Where does early closure become quantum rather than classical?
+   What derives the observer rather than merely assuming observer equivalencing?
    ```
 
 4. Connect this note to the doctrine cluster:
