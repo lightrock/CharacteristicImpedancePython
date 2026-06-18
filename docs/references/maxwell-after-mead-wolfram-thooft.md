@@ -56,6 +56,52 @@ look inevitable to observers inside the rendered model
 
 ---
 
+## The pre-Maxwell receipt pile
+
+Maxwell did not start with an empty bench. Before him, experimentalists and
+mathematical physicists had already exposed a pile of machine receipts. The
+companion ledger [Pre-Maxwell Electromagnetic Receipt Ledger](pre-maxwell-electromagnetic-receipt-ledger.md)
+itemizes the major ones.
+
+Through this lens:
+
+```text
+Gilbert      -> repeatable electric/magnetic material behavior
+Franklin     -> polarity bookkeeping and lightning as electrical discharge
+Coulomb      -> calibrated static charge force
+Galvani      -> electricity couples to organized living tissue
+Volta        -> sustained current source
+Ørsted       -> current has a magnetic face
+Ampère       -> currents act on currents
+Biot/Savart  -> current leaves local magnetic accounting
+Ohm          -> materials regulate current through resistance
+Faraday      -> changing relations induce current; field lines are physical receipts
+Henry        -> circuits have electromagnetic memory
+Lenz         -> induced currents preserve energy custody by opposing change
+Gauss        -> boundary/flux accounting exposes source structure
+Kirchhoff    -> circuits obey node and loop closure bookkeeping
+```
+
+The point is not that all of these people already had Maxwell's theory. They did
+not. The point is that Maxwell inherited enough receipts to see a single machine
+trying to show itself.
+
+Maxwell's completion task was therefore:
+
+```text
+preserve charge, current, resistance, magnetic action, induction, field memory,
+energy custody, boundary accounting, and loop closure inside one electromagnetic
+interface
+```
+
+The modern question is deeper:
+
+```text
+what running closure process makes those receipts appear together at all?
+```
+
+---
+
 ## Implementation-neutral posture
 
 This note should not trap the Maxwell completion program inside one experiment,
@@ -416,6 +462,7 @@ The synthesis is:
 ```text
 Maxwell asks for the machine.
 Heaviside gives the public electromagnetic API.
+Pre-Maxwell experimenters expose the receipts Maxwell must preserve.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -531,16 +578,18 @@ For the current repo, that open program begins with a concrete implementation:
 ## One-line version
 
 ```text
-Maxwell wanted the engine; the BBQ gold-star lineup tells us what a real answer
-must preserve; Z0_AsBinary is the first concrete closure-receipt search that
-started this investigation, but the Maxwell completion program remains open to
-any method that can expose the running machine and survive controls.
+Maxwell wanted the engine; the pre-Maxwell experimenters exposed the receipts;
+the BBQ gold-star lineup tells us what a real answer must preserve; Z0_AsBinary
+is the first concrete closure-receipt search that started this investigation,
+but the Maxwell completion program remains open to any method that can expose
+the running machine and survive controls.
 ```
 
 ---
 
 ## References for context
 
+- [Pre-Maxwell Electromagnetic Receipt Ledger](pre-maxwell-electromagnetic-receipt-ledger.md)
 - [Maxwell Machine Completion Note](maxwell-machine-completion-note.md)
 - [Carver Mead, Pointer-Swap Closure, and Z0](mead-pointer-swap-z0.md)
 - [Theory BBQ Lineup](theory-bbq-lineup.md)
