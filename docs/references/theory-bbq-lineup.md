@@ -22,6 +22,7 @@ Longer companion notes already exist for several entries:
 - [`quantum-structures-hydrogen-atom.md`](quantum-structures-hydrogen-atom.md)
 - [`fundamentalPi.md`](fundamentalPi.md)
 - [`boltzmann-gibbs-wheeler-landauer-bennett-receipts.md`](boltzmann-gibbs-wheeler-landauer-bennett-receipts.md)
+- [`boscovich-point-force-receipts.md`](boscovich-point-force-receipts.md)
 
 ---
 
@@ -552,6 +553,47 @@ The deeper machine is the closure process that makes a system possible before it
 ---
 
 ## Next targets
+
+### Boscovich / Bošković
+
+Longer note: [`boscovich-point-force-receipts.md`](boscovich-point-force-receipts.md)
+
+Win:
+
+```text
+anti-hard-marble matter instinct
+non-extended point centers rather than primitive solid corpuscles
+distance-dependent attraction/repulsion
+matter as force relation before modern field language
+pre-field pressure toward relation-first physics
+```
+
+Gap:
+
+```text
+force law is not closure/admissibility
+point centers plus forces are not yet fields, quantum mechanics, gauge theory, or records
+relation is still written against an already-given distance/background
+stable particles, spectra, measurement, and observer geometry are not derived
+```
+
+Compact line:
+
+> Boscovich killed the hard marble early: matter becomes point centers plus force relations. Closure still has to explain how relation stabilizes as particles, fields, and records.
+
+Reference hook:
+
+```text
+Roger Joseph Boscovich / Ruđer Josip Bošković,
+Theoria philosophiae naturalis redacta ad unicam legem virium in natura existentium,
+1758; revised edition 1763.
+
+BBQ stance:
+Boscovich is not a hidden modern field theorist.
+He is the pre-field warning that visible stable matter need not be primitive
+little hard stuff. The repair is to derive how relation-patterns become stable
+matter, fields, particles, and observer records.
+```
 
 ### Wheeler
 
@@ -1097,21 +1139,22 @@ Compact line:
 ## Recommended BBQ order
 
 ```text
-1. Bohr / Copenhagen + Von Neumann together
-2. Landauer + Zeilinger together, after the Shannon trigger/index correction
-3. Bell separately
-4. Bekenstein + Hawking + Susskind together
-5. Maldacena + Witten together
-6. E8 / exceptional unification separately, beautiful but dangerous
-7. Wheeler + Tegmark together
-8. Everett + Deutsch + Zeh together
-9. Einstein / General Relativity separately and carefully
-10. Sorkin / causal sets separately
-11. Jacobson + Verlinde + Padmanabhan together
-12. Kitada / Dugić + Kitada, friendly and carefully
-13. Rovelli separately
-14. Gell-Mann separately
-15. Feynman separately, carefully, because he is dangerous in a good way
+1. Boscovich separately, as the pre-field anti-hard-marble / point-force relation ancestor
+2. Bohr / Copenhagen + Von Neumann together
+3. Landauer + Zeilinger together, after the Shannon trigger/index correction
+4. Bell separately
+5. Bekenstein + Hawking + Susskind together
+6. Maldacena + Witten together
+7. E8 / exceptional unification separately, beautiful but dangerous
+8. Wheeler + Tegmark together
+9. Everett + Deutsch + Zeh together
+10. Einstein / General Relativity separately and carefully
+11. Sorkin / causal sets separately
+12. Jacobson + Verlinde + Padmanabhan together
+13. Kitada / Dugić + Kitada, friendly and carefully
+14. Rovelli separately
+15. Gell-Mann separately
+16. Feynman separately, carefully, because he is dangerous in a good way
 ```
 
 ---
@@ -1139,6 +1182,8 @@ Compact line:
 > Shannon gets half a gold star: he measures payload uncertainty exactly, while closure asks what one bit can trigger when the receiving structure is already physically instantiated.
 >
 > Weyl gives gauge/reference bookkeeping; closure must derive pointer adjacency before "local gauge" means anything.
+>
+> Boscovich kills the hard marble early: matter becomes point centers plus force relations; closure must explain how relation stabilizes as particles, fields, and records.
 >
 > Wheeler gives the slogan.
 >
