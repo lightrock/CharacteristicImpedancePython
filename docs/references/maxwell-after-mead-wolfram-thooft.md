@@ -7,9 +7,9 @@ question. It lives in `Z0_AsBinary` because that repo produced the first concret
 shovel: the pre-2019 `Z0` binary/XOR exploration.
 
 It is not a claim that Maxwell, Boscovich, Mead, Smolin, Zurek, Shannon, Weyl,
-Wolfram, `t Hooft, Boltzmann, Gibbs, Lloyd, Vedral, Seife, or Gleick already
-proved the project's hypothesis. It is also not a claim that binary exploration
-of `Z0` is the only possible path.
+Wilson, Kadanoff, Wolfram, `t Hooft, Boltzmann, Gibbs, Lloyd, Vedral, Seife, or
+Gleick already proved the project's hypothesis. It is also not a claim that
+binary exploration of `Z0` is the only possible path.
 
 The purpose is broader:
 
@@ -24,6 +24,8 @@ Use Boltzmann and Gibbs for the exact entropy-to-bits bridge and ensemble contro
 Use Lloyd, Vedral, Seife, and Gleick as information-physics receipt trail markers.
 Use Shannon for information discipline, while refusing to mistake payload for substrate.
 Use Weyl for gauge/reference bookkeeping, while refusing to mistake gauge for substrate.
+Use Wilson and Kadanoff for scale custody, coarse-graining, running couplings,
+and information horizons of relative rates.
 Use Wolfram for the universal generator, observer-rendered time, and computational irreducibility.
 Use 't Hooft for update-engine seriousness and quantum-as-description pressure.
 Then find any inspectable way to expose the closure machine.
@@ -450,7 +452,7 @@ Noether -> symmetry / conservation custody
 Poynting / Heaviside / Hertz / Lorentz -> EM API, energy flow, wave apparatus, charge-field coupling
 Planck / de Broglie / Schrodinger / Born / Dirac / Aharonov-Bohm / Bell -> quantum exchange, state, phase, correlation
 Boltzmann / Gibbs / Shannon / Lloyd / Vedral / Seife / Gleick / Wheeler / Landauer / Bennett -> entropy, information, physical computation
-Wilson / Kadanoff -> scale, coarse-graining, effective law
+Wilson / Kadanoff -> scale, coarse-graining, effective law, relative-rate horizons
 ```
 
 For `Z0_AsBinary`, this adds a necessary audit stack:
@@ -463,6 +465,7 @@ what respects quantum phase and correlation?
 what is the entropy/information ensemble?
 what information operations have physical cost?
 what survives scale change or coarse-graining?
+what survives relative-rate translation across an information horizon?
 ```
 
 Boltzmann is especially important here because he translates physical entropy
@@ -547,6 +550,77 @@ require physical closure, cost, records, and controls before metaphysics
 
 ---
 
+## Wilson/Kadanoff rate-horizon receipt
+
+The detailed companion note is [Wilson / Kadanoff Scale Receipts](wilson-kadanoff-scale-receipts.md).
+This main paper must carry the receipt because scale is not a side issue. It is
+one of the strongest warnings that the observer-facing law is not automatically
+the machine.
+
+The sober contribution is:
+
+```text
+Wilson made scale custody honest.
+Kadanoff gave the block/coarse-graining picture.
+Effective laws change with probe scale.
+Couplings run.
+Fixed points and universality organize what survives scale translation.
+```
+
+Through the rates lens:
+
+```text
+fast / fine / inaccessible relation updates
+-> information horizon for a slower or coarser observer
+-> unresolved closure work is integrated out
+-> visible parameters become effective rate receipts
+-> couplings appear to run with scale
+```
+
+This is the useful repair to the user's phrase that Wilson may be observing run
+speed:
+
+```text
+Wilson may be reading relative rates, not separate machines.
+```
+
+More carefully:
+
+```text
+renormalization flow may be the observer-facing trace of hidden closure work
+being compressed across information horizons of relative rates.
+```
+
+For `Z0_AsBinary`, the audit consequence is immediate:
+
+```text
+if the little thingy works at any scale,
+it must survive scale translation and relative-rate translation,
+and it must reproduce the ordinary receipts Wilson demands:
+beta functions, running couplings, fixed points, universality classes,
+effective-theory domains, and known failure modes.
+```
+
+Guardrail:
+
+```text
+rate language is not proof
+scale invariance is not proof
+fixed points are receipts, not the engine
+universality can hide many different micro-machines
+calling a coupling a visible rate does not derive the beta function
+```
+
+The repair is:
+
+```text
+use Wilson as the scale/rate audit:
+what changes, what survives, what is hidden beyond the information horizon,
+and which effective constants are only observer-facing receipts of relative rates?
+```
+
+---
+
 ## Implementation-neutral posture
 
 This note should not trap the Maxwell completion program inside one experiment,
@@ -594,6 +668,7 @@ accelerator / detector receipt audits
 symmetry / conservation audits
 entropy / information / computation audits
 scale / coarse-graining audits
+relative-rate / information-horizon audits
 hardware experiments
 mathematical derivations that produce testable receipts
 ```
@@ -642,6 +717,7 @@ Zurek           -> pointer records / environment as witness
 Boltzmann/Gibbs -> entropy-to-bits state-counting, what-is-W ensemble discipline
 Shannon         -> information discipline, not ontology
 Weyl            -> reference/gauge comparison bookkeeping
+Wilson/Kadanoff -> scale custody, running couplings, information horizons of relative rates
 Wolfram         -> universal generator plus observer-rendered time / computational irreducibility
 ```
 
@@ -649,7 +725,7 @@ Together they point toward the same missing primitive:
 
 ```text
 running closure with admissibility, persistence, receipts, ensemble discipline,
-observer-bounded rendering, and rendered observer geometry/time
+rate-horizon discipline, observer-bounded rendering, and rendered observer geometry/time
 ```
 
 ---
@@ -851,6 +927,67 @@ calling the result a smooth field or force law.
 
 ---
 
+## What Wilson adds: rates across scale horizons
+
+Kenneth Wilson is useful here because he makes scale custody non-negotiable. The
+companion note [Wilson / Kadanoff Scale Receipts](wilson-kadanoff-scale-receipts.md)
+keeps the longer repair with Kadanoff.
+
+The useful Wilson pressure is:
+
+```text
+renormalization group
+scale-dependent effective law
+couplings that run with probe scale
+fixed points
+universality classes
+coarse-graining discipline
+```
+
+Through the process-first rates language:
+
+```text
+relative rates matter
+not every update is visible to every observer or effective description
+unresolved fast/fine/internal closure work becomes an information horizon
+visible constants can become rate receipts after hidden work is integrated out
+```
+
+Translation:
+
+```text
+Wilson: observer-facing laws and constants change with scale.
+Maxwell completion: the electromagnetic API may be a scale/rate-rendered interface, not the substrate.
+Z0_AsBinary: a 39-bit closure candidate must survive scale, grouping, and relative-rate audits.
+```
+
+The stronger possibility is:
+
+```text
+the little thingy may work across scales,
+while Wilson observes how its effective rates render through information horizons
+of relative rates.
+```
+
+The Wilson gap:
+
+```text
+RG flow is not substrate
+beta functions are not the engine
+fixed points are receipts, not the machine
+universality can hide many different micro-machines
+rate-horizon language must reproduce ordinary RG receipts or it is only metaphor
+```
+
+So Wilson gets a qualified double gold star:
+
+```text
+Gold star 1: scale custody / effective-law discipline.
+Gold star 2: fixed points and universality as information horizons of relative rates.
+```
+
+---
+
 ## What Wolfram adds: universal generator and observer-rendered time
 
 Wolfram now belongs in the BBQ repair lens as a qualified double gold star, not
@@ -972,7 +1109,8 @@ he may be central because the initial spark was quark-facing catalog compression
 Accelerators and detectors show that particle catalogs are prepared, read, and stabilized through EM fields, material boundary responses, and detector records.
 Boltzmann and Gibbs show that entropy is logarithmic state-counting, which becomes bits by unit conversion.
 Lloyd, Vedral, Seife, and Gleick keep the entropy-information-computation bridge visible.
-The additional closure ledger adds symmetry/conservation, energy-flow, quantum phase/correlation, entropy/information, physical-computation, and scale/coarse-graining audits.
+Wilson and Kadanoff show that effective laws, constants, and couplings are scale/rate-facing receipts across coarse-graining and information horizons of relative rates.
+The additional closure ledger adds symmetry/conservation, energy-flow, quantum phase/correlation, entropy/information, physical-computation, scale/coarse-graining, and relative-rate audits.
 Mead restores phase-handshake behavior to the center.
 Smolin insists the machine must actually run in real process-time.
 Zurek demands receipt custody through pointer records and environment witnesses.
@@ -992,6 +1130,7 @@ candidate physical or information object
 -> return comparison
 -> closure / persistence behavior
 -> receipts preserved across description changes
+-> scale / rate-horizon receipts preserved across admissible coarse-graining
 -> controls against artifact and post-selection
 -> only then: electromagnetic interpretation
 ```
@@ -1008,6 +1147,7 @@ published Z0 information object
 -> period closure
 -> token / reconstruction receipts
 -> catalog-wide and randomized controls
+-> scale / grouping / relative-rate audits
 -> only then: electromagnetic interpretation
 ```
 
@@ -1023,7 +1163,7 @@ Do not worship the information measure.
 Do not worship the record-copying layer.
 Do not worship the classification.
 Do not worship the detector reconstruction.
-Do not worship entropy, computation, observer slicing, or scale language.
+Do not worship entropy, computation, observer slicing, scale language, or rate language.
 Find out what can actually run, what closes, and what receipts survive controls.
 However you can do that, do that.
 ```
@@ -1135,7 +1275,17 @@ boundary-transfer admissibility
 record stability
 ```
 
-Reject any proposed solution that cannot produce all four.
+Reject any proposed solution that cannot produce all four, and reject any
+scale-universal claim that cannot survive Wilson's audit:
+
+```text
+running couplings
+beta functions
+fixed points
+universality classes
+effective-theory domains
+information horizons of relative rates
+```
 
 ---
 
@@ -1144,9 +1294,9 @@ Reject any proposed solution that cannot produce all four.
 ```text
 Electromagnetism is phase-consistent recordable closure: Maxwell is the smooth-field
 interface, the machine underneath is an admissibility process over comparisons,
-and Z0, photons, detector events, vector-potential phase, gauge invariance, and
-impedance are different receipts of that same closure machinery. Z0 is a door,
-not the house.
+and Z0, photons, detector events, vector-potential phase, gauge invariance,
+impedance, running couplings, and scale/rate horizons are different receipts of
+that same closure machinery. Z0 is a door, not the house.
 ```
 
 ---
