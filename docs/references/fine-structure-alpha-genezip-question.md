@@ -18,6 +18,20 @@ Alpha may be the knob on the door.
 GeneZip has been trying to compress the knob as if it were a brick.
 ```
 
+Magnified warning:
+
+```text
+The familiar 1/137 alpha is not the whole machine.
+It is the low-energy / on-shell catalog receipt of a coupling that runs.
+Near the Z-boson scale, the effective electromagnetic coupling is closer to
+1/128.95, not 1/137.
+```
+
+So the word `constant` is dangerous here. Alpha is dimensionless and historically
+cataloged as a fundamental constant, but in quantum field theory the effective
+coupling depends on probe scale, renormalization convention, and what degrees of
+freedom have been integrated into the observed interaction.
+
 ## What alpha is
 
 The fine-structure constant is usually written as `alpha` or `α`.
@@ -99,11 +113,60 @@ Modern CODATA values give approximately:
 α⁻¹ ≈ 137.035999177
 ```
 
+That is the familiar low-energy constants-catalog value.
+
 For this repo, however, there is an extra historical wrinkle: the main evidence
 chain is built around the pre-2019 CODATA 2014 constants catalog, because the
 2019 SI revision changed the definitional status of `μ0` and `Z0`. Alpha is not
 just another decimal in that story. After 2019, `Z0` is tied to the measured
 fine-structure constant rather than being exact in the old SI sense.
+
+## The variable part: alpha runs
+
+This is the part GeneZip must not flatten away.
+
+In low-energy atomic physics, alpha is usually treated as:
+
+```text
+α(0) ≈ 1 / 137.035999...
+```
+
+But in quantum field theory, the electromagnetic coupling is scale-dependent.
+Virtual charged-particle loops polarize the vacuum. The charge seen by a probe is
+therefore not exactly the same at every distance / energy scale. As the probe
+energy rises and the distance scale shrinks, the effective electromagnetic
+coupling increases.
+
+A typical high-energy reference point is the Z-boson mass scale:
+
+```text
+α⁻¹(M_Z) ≈ 128.95
+α(M_Z)   ≈ 1 / 128.95
+```
+
+That is the earlier `closer to 1/128` remark. It does not mean alpha is drifting
+minute-by-minute in the lab. It means the number called alpha is an effective
+coupling receipt that depends on the scale and scheme of the question.
+
+In process language:
+
+```text
+low-energy alpha  -> slow / coarse / screened EM coupling receipt
+high-energy alpha -> shorter-distance / less-screened / different-rate receipt
+running alpha     -> observer-facing trace of unresolved internal relation work
+```
+
+So, for GeneZip:
+
+```text
+alpha is not one frozen brick.
+alpha is a scale-labeled coupling function sampled into catalog rows.
+```
+
+A flat bitstring for `α(0)` is only one receipt. A flat bitstring for `α(M_Z)` is
+another receipt. The machine question is whether the compression grammar can
+explain the relation between those receipts, not merely compress either decimal
+string by itself.
 
 ## What alpha does exactly
 
@@ -123,9 +186,9 @@ running electromagnetic coupling with energy scale
 ```
 
 In Feynman-diagram language, alpha is the small coupling tax paid when charged
-particles exchange photons. Because alpha is about `1/137`, QED perturbation
-series are unusually well behaved compared with interactions whose couplings are
-larger.
+particles exchange photons. Because low-energy alpha is about `1/137`, QED
+perturbation series are unusually well behaved compared with interactions whose
+couplings are larger.
 
 In this project's process language:
 
@@ -166,6 +229,8 @@ vacuum impedance
 quantum Hall resistance
 renormalized EM coupling
 measurement scale
+probe energy / distance scale
+renormalization scheme
 ```
 
 So partial compression makes sense. Full compression may fail because the current
@@ -183,13 +248,19 @@ It is more like:
 alpha = boundary coupling token
       = Z0 / (2 R_K)
       = charge-action-vacuum impedance ratio
+      = scale-labeled EM coupling receipt
 ```
 
-Also, alpha runs with energy scale in quantum field theory. The familiar
-`1/137` value is the low-energy electromagnetic coupling. At much higher energy,
-such as near the electroweak scale, the effective electromagnetic coupling is
-not the same number. So if GeneZip treats alpha as one eternal frozen bitstring,
-it is already flattening a scale-dependent receipt into one catalog row.
+The key failure mode is this:
+
+```text
+GeneZip treats alpha as one frozen CODATA decimal.
+Physics treats low-energy alpha as one catalog value of a running coupling.
+Those are not the same object.
+```
+
+So if GeneZip treats alpha as one eternal frozen bitstring, it is already
+flattening a scale-dependent receipt into one catalog row.
 
 ## The real diagnosis
 
@@ -202,7 +273,7 @@ is the vacuum impedance seed structurally special?
 
 alpha compression asks:
 can the same machinery explain the coupling rate between charge/action and
-vacuum impedance?
+vacuum impedance, including the fact that this coupling runs with scale?
 ```
 
 That second question is harder.
@@ -213,6 +284,7 @@ The next move is to add an alpha-specific rule family:
 α = Z0 e² / (2h)
 α = Z0 / (2 R_K)
 Z0 = 2 α R_K
+α = α(scale, scheme)
 ```
 
 Then test whether GeneZip compression improves when alpha is treated as an
@@ -224,24 +296,28 @@ bitstring.
 1. Test alpha as a flat significant-digit bitstring, exactly as the current
    GeneZip harness does.
 2. Test inverse alpha separately, because `α⁻¹ ≈ 137.035999...` is the historically
-   famous catalog object and may expose different token structure.
+   famous low-energy catalog object and may expose different token structure.
 3. Test `Z0 / (2 R_K)` as a derived token relation, not merely as two unrelated
    constants.
 4. Compare pre-2019 CODATA 2014 alpha against post-2019 CODATA alpha values, so
    the historical catalog break is not erased.
 5. Add running-coupling controls: low-energy alpha should not be silently treated
    as the same information object as alpha at high-energy scales.
-6. Require ablation controls: if alpha only compresses after the dictionary is
-   allowed to smuggle in `Z0`, `R_K`, `h`, or `e`, the improvement must be reported
-   as relational compression, not independent discovery.
+6. Add a second alpha target, such as `α(M_Z)`, and ask whether GeneZip compresses
+   the relation between `α(0)` and `α(M_Z)`, not merely the two flat strings.
+7. Require ablation controls: if alpha only compresses after the dictionary is
+   allowed to smuggle in `Z0`, `R_K`, `h`, `e`, or a chosen scale token, the
+   improvement must be reported as relational compression, not independent
+   discovery.
 
 ## One-line version
 
 ```text
-Alpha is the EM coupling knob: the dimensionless ratio where vacuum impedance,
-charge quantum, action, and measurement scale rub together. GeneZip probably did
-not fully reduce it because it was treated like a flat constant instead of a
-boundary-coupling relation.
+Alpha is the EM coupling knob, but not one frozen knob setting. Low-energy alpha
+is the familiar 1/137 catalog receipt; high-energy alpha runs toward about
+1/128.95 near the Z scale. GeneZip probably did not fully reduce it because it
+was treated like a flat constant instead of a scale-labeled boundary-coupling
+relation.
 ```
 
 ## References
@@ -252,3 +328,5 @@ boundary-coupling relation.
 - Michelson, A. A. and Morley, E. W., [On a Method of Making the Wave-Length of Sodium Light the Actual and Practical Standard of Length](https://archive.org/details/londonedinburgh5341887lond/page/280/mode/2up), Philosophical Magazine, 1887.
 - von Klitzing, K., Dorda, G., and Pepper, M., [New Method for High-Accuracy Determination of the Fine-Structure Constant Based on Quantized Hall Resistance](https://doi.org/10.1103/PhysRevLett.45.494), Physical Review Letters, 1980.
 - Aoyama, T., Hayakawa, M., Kinoshita, T., and Nio, M., [Tenth-Order QED Contribution to the Electron g-2 and an Improved Value of the Fine Structure Constant](https://arxiv.org/abs/1205.5368), 2012.
+- F. Jegerlehner, [The running fine structure constant alpha(E) via the Adler function](https://arxiv.org/abs/0807.4206), 2008.
+- Particle Data Group, review material on running couplings and electroweak-scale effective electromagnetic coupling.
