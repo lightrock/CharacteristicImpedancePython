@@ -34,6 +34,8 @@ It currently provides:
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
+- We are asking this question next in the quark GeneZip compression work:
+  [Fine-Structure Constant Alpha and GeneZip](docs/references/fine-structure-alpha-genezip-question.md).
 - For the runnable `Z0`/`π` return-sampler report, read [Z0/Pi Return Sampler](https://lightrock.github.io/Z0_AsBinary/reports/z0-pi-return-sampler.html).
 - For the Maxwell/Mead/Wolfram/'t Hooft synthesis, read [Maxwell After Mead, Wolfram, and 't Hooft](docs/references/maxwell-after-mead-wolfram-thooft.md).
 
