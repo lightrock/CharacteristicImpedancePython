@@ -33,6 +33,7 @@ It currently provides:
 - For the evidence files, read [Evidence Chain](#evidence-chain).
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
+- For the new chromodyne/electron gold-star addendum, read [Chromodyne / Electron Lineage Gold Stars](docs/references/chromodyne-electron-lineage-gold-stars.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
 - We are asking this question next in the quark GeneZip compression work:
   [Fine-Structure Constant Alpha and GeneZip](docs/references/fine-structure-alpha-genezip-question.md).
@@ -121,6 +122,10 @@ is structurally special under simple computational tests.
   connects Mead's phase-handshake electrodynamics to the pointer-swap closure
   model and reframes `Z0` as a possible catalog-visible impedance receipt of EM
   phase-matching, not as a sacred ohm value.
+- [Chromodyne / Electron Lineage Gold Stars](docs/references/chromodyne-electron-lineage-gold-stars.md)
+  keeps Pati-Salam, Harari-Shupe, Bilson-Thompson, Furey, Wheeler, 't Hooft,
+  and Susskind attached to the electron/chromodyne question without collapsing
+  the claim into the false statement that electrons carry QCD color.
 
 ### Process / Closure Doctrine
 
@@ -152,6 +157,9 @@ is structurally special under simple computational tests.
   of process-first critiques and repairs across string theory, LQG, Wolfram,
   't Hooft, Wheeler, Tegmark, Everett, Einstein/GR, causal sets, thermodynamic
   gravity, Kitada/Dugić, Friston, Feynman, and related approaches.
+- [Chromodyne / Electron Lineage Gold Stars](docs/references/chromodyne-electron-lineage-gold-stars.md)
+  is the BBQ addendum for the electron/chromodyne lineage: Pati-Salam,
+  Harari-Shupe, Bilson-Thompson, Furey, Wheeler, 't Hooft, and Susskind.
 - [String Theory, Holography, and the Closure Machine](docs/references/string-theory-closure-machine.md)
   argues that string/M-theory is best repaired as a holographic/geometric
   rendering language for finite closure, not as the substrate itself.
