@@ -48,13 +48,38 @@ not every possible window is a successful return
 
 The usable pi signal appears only after selecting a relation-walk reading of the orbit and counting the returning windows. In other words, the Z0 Machine is not continuously shouting pi. It is sparsely leaving closure receipts that can be counted.
 
-This is the same lesson as the firebreak/hash-table result in computer science:
+## 3. Elastic hashing / hash-table firebreak issue
+
+This point must be explicit because it is now part of the actual doctrine, not a side analogy.
+
+Elastic hashing broke the naive assumption that a nearly full table must become slow merely because it is nearly full. The important move is non-greedy placement: do not take every locally available slot if doing so destroys future reachability. Preserve firebreaks.
+
+For Z0_AsBinary, the parallel is:
 
 ```text
-greedy occupancy is not the machine
-empty structure can be functional
-spacing can preserve reachability
-non-events are part of the layout
+greedy hash table:
+    fill the first available slot
+    form clusters
+    future lookup degrades
+
+elastic / firebreak hash table:
+    skip some locally available slots
+    preserve spacing
+    future lookup remains reachable
+
+Z0 sparse pi machine:
+    do not force every bit/window/tap to mean something immediately
+    preserve gaps, failed returns, skipped windows, and null receipts
+    let the return census expose closure structure
+```
+
+The blunt version:
+
+```text
+Greedy occupancy is not the machine.
+Empty structure can be functional.
+Spacing can preserve reachability.
+Non-events are part of the layout.
 ```
 
 For Z0_AsBinary:
@@ -65,7 +90,15 @@ unspoken bits / skipped windows / failed returns / sparse taps
 
 are not merely absence. They are part of the statistical closure environment that lets return counts mean something.
 
-## 3. Z0 as a finite pi-return sampler
+The hash-table lesson is therefore not just computer-science color. It is the operational warning against the wrong interpretation of Z0:
+
+```text
+Do not greedily interpret every occupied bit as a payload.
+Do not throw away gaps as meaningless.
+Measure the sparse closure layout.
+```
+
+## 4. Z0 as a finite pi-return sampler
 
 The already-preserved result in `fundamentalPi.md` is:
 
@@ -89,7 +122,7 @@ Is Z0 merely a typical finite bit source under this closure sampler,
 or does it separate from controls as an impedance-facing pi machine?
 ```
 
-## 4. Why this belongs in Fundamental Pi
+## 5. Why this belongs in Fundamental Pi
 
 `fundamentalPi.md` asks what physical or pre-geometric machine makes pi appear before we silently import radians, circles, or continuum geometry.
 
@@ -123,7 +156,7 @@ The correct language is:
 Z0 can act as a sparse finite pi machine.
 ```
 
-## 5. Relationship to QLF / ZFA closure census
+## 6. Relationship to QLF / ZFA closure census
 
 Jim's QLF claim is stronger on the formal side: the ZFA closure census `C(2n,n)` is the substrate count that can generate pi-like and Apéry/ζ(3)-like period receipts through known constructions.
 
@@ -154,7 +187,7 @@ Not:
 Z0 already proves the whole QLF closure census.
 ```
 
-## 6. What sparse buys us conceptually
+## 7. What sparse buys us conceptually
 
 A dense, greedy reading of a bit machine asks every symbol to mean something immediately. That is the wrong instinct.
 
@@ -187,7 +220,7 @@ running pi estimator
 
 The finite process supplies a scale-dependent receipt. Continuum pi is the asymptotic rendering.
 
-## 7. Experimental / computational tests
+## 8. Experimental / computational tests
 
 The Z0 sparse-pi claim needs controls. The next tests are:
 
@@ -200,6 +233,7 @@ compare forward / reverse / inverse / inverse-reverse orientations
 compare alternate bit-pair channel maps
 measure return counts, drift, variance, convergence, finite-period artifacts
 measure how sparse the successful return windows are
+measure whether the gaps/firebreaks have non-random placement structure
 ```
 
 The crucial metric is not only whether pi-like values appear. They should appear in many unbiased samplers. The real test is whether Z0 has an unusual closure profile:
@@ -210,15 +244,16 @@ lower drift
 distinct finite-depth structure
 orientation-specific asymmetry
 non-random sparse return distribution
+functional firebreak/gap structure
 ```
 
-## 8. Compact doctrine line
+## 9. Compact doctrine line
 
 ```text
-The Z0 Machine is a sparse pi machine: a finite impedance-facing circular-XOR process whose selected return windows can produce pi-like closure estimators without storing pi, drawing circles, or importing radians. Its blank spaces, failed returns, and sparse taps are not waste; they are part of the closure layout. The open question is whether Z0 separates from controls strongly enough to be treated as a physical impedance receipt of the deeper closure-census machine.
+The Z0 Machine is a sparse pi machine: a finite impedance-facing circular-XOR process whose selected return windows can produce pi-like closure estimators without storing pi, drawing circles, or importing radians. Its blank spaces, failed returns, skipped windows, and sparse taps are not waste; they are firebreak-like parts of the closure layout. The open question is whether Z0 separates from controls strongly enough to be treated as a physical impedance receipt of the deeper closure-census machine.
 ```
 
-## 9. Brutal version
+## 10. Brutal version
 
 ```text
 Z0 is not a pi decimal.
@@ -227,6 +262,8 @@ Z0 is a running sparse closure sampler.
 
 The machine does not say pi everywhere.
 It leaves enough return receipts that pi can be recovered by the right census.
+The gaps are not trash.
+The gaps may be the firebreaks.
 
 Do not worship the digits.
 Do not worship the empty slots.
