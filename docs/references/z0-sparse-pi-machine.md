@@ -8,6 +8,8 @@ This note preserves the sharper interpretation requested after the Elastic Hashi
 The Z0 Machine is a Pi machine, but it is doing the job sparsely.
 ```
 
+It now also points at the Zip/Unzip doctrine -- possibly quark genetic unzip from the Z0 itself -- preserved in [`zip-unzip-firebreak-occam.md`](zip-unzip-firebreak-occam.md).
+
 That means the Z0 circular-XOR orbit should not be described as a decimal pi encoder, a stored circle, or a literal square-lattice substrate. The stronger and safer statement is that Z0 behaves as a finite deterministic closure sampler whose return statistics can produce pi-like estimators without inserting pi as a primitive.
 
 ## 1. The object under discussion
@@ -98,7 +100,45 @@ Do not throw away gaps as meaningless.
 Measure the sparse closure layout.
 ```
 
-## 4. Z0 as a finite pi-return sampler
+## 4. Zip/Unzip firebreak issue -- possibly quark genetic unzip from the Z0 itself
+
+The Zip/Unzip doctrine asks the same thing from the compression side:
+
+```text
+Does Z0 merely receive compression,
+or can Z0 itself run as an Unzip machine -- possibly quark genetic unzip from the Z0 itself?
+```
+
+The word "Unzip" here does not mean an ordinary file-format claim. It means a compact executable seed expanding into readable receipts while preserving parseability.
+
+A greedy Unzip would expand into unreadable possibility soup. A sparse/firebreak Unzip preserves seams, stop points, null windows, and reachable receipts.
+
+For Z0_AsBinary, that gives the updated chain:
+
+```text
+Z0 seed
+-> circular XOR orbit
+-> sparse firebreak layout
+-> possible quark genetic Unzip from the Z0 itself
+-> relation-window receipts
+-> return census
+-> closure statistics
+```
+
+The compact doctrine line is:
+
+```text
+The firebreak is what lets the machine Unzip without becoming unreadable.
+```
+
+And the Z0-specific line is:
+
+```text
+Do not only ask what compresses into Z0.
+Ask what can Unzip from Z0 -- possibly quark genetic unzip from the Z0 itself.
+```
+
+## 5. Z0 as a finite pi-return sampler
 
 The already-preserved result in `fundamentalPi.md` is:
 
@@ -122,7 +162,7 @@ Is Z0 merely a typical finite bit source under this closure sampler,
 or does it separate from controls as an impedance-facing pi machine?
 ```
 
-## 5. Why this belongs in Fundamental Pi
+## 6. Why this belongs in Fundamental Pi
 
 `fundamentalPi.md` asks what physical or pre-geometric machine makes pi appear before we silently import radians, circles, or continuum geometry.
 
@@ -156,7 +196,7 @@ The correct language is:
 Z0 can act as a sparse finite pi machine.
 ```
 
-## 6. Relationship to QLF / ZFA closure census
+## 7. Relationship to QLF / ZFA closure census
 
 Jim's QLF claim is stronger on the formal side: the ZFA closure census `C(2n,n)` is the substrate count that can generate pi-like and Apéry/ζ(3)-like period receipts through known constructions.
 
@@ -173,6 +213,7 @@ Z0_AsBinary:
     circular-XOR closure orbit
     sparse return-window sampler
     possible physical/catalog receipt of the same kind of closure generator
+    possible Zip/Unzip seed -- possibly quark genetic unzip from the Z0 itself
 ```
 
 So the bridge claim is:
@@ -187,7 +228,7 @@ Not:
 Z0 already proves the whole QLF closure census.
 ```
 
-## 7. What sparse buys us conceptually
+## 8. What sparse buys us conceptually
 
 A dense, greedy reading of a bit machine asks every symbol to mean something immediately. That is the wrong instinct.
 
@@ -200,6 +241,7 @@ phase gaps
 firebreaks
 null receipts
 pre-asymptotic closure ratios
+Zip/Unzip seams -- possibly quark genetic unzip from the Z0 itself
 ```
 
 This matters because finite closure does not have to look like complete continuum geometry at microscopic scale. A local machine may close exactly while its return statistics only approach continuum pi through scale.
@@ -216,56 +258,4 @@ and:
 ```text
 running pi estimator
 != changed mathematical pi
-```
-
-The finite process supplies a scale-dependent receipt. Continuum pi is the asymptotic rendering.
-
-## 8. Experimental / computational tests
-
-The Z0 sparse-pi claim needs controls. The next tests are:
-
-```text
-compare Z0 to random same-length seeds
-compare Z0 to shuffled Z0 seeds
-compare Z0 to same-density seeds
-compare Z0 to other CODATA constants
-compare forward / reverse / inverse / inverse-reverse orientations
-compare alternate bit-pair channel maps
-measure return counts, drift, variance, convergence, finite-period artifacts
-measure how sparse the successful return windows are
-measure whether the gaps/firebreaks have non-random placement structure
-```
-
-The crucial metric is not only whether pi-like values appear. They should appear in many unbiased samplers. The real test is whether Z0 has an unusual closure profile:
-
-```text
-stronger convergence
-lower drift
-distinct finite-depth structure
-orientation-specific asymmetry
-non-random sparse return distribution
-functional firebreak/gap structure
-```
-
-## 9. Compact doctrine line
-
-```text
-The Z0 Machine is a sparse pi machine: a finite impedance-facing circular-XOR process whose selected return windows can produce pi-like closure estimators without storing pi, drawing circles, or importing radians. Its blank spaces, failed returns, skipped windows, and sparse taps are not waste; they are firebreak-like parts of the closure layout. The open question is whether Z0 separates from controls strongly enough to be treated as a physical impedance receipt of the deeper closure-census machine.
-```
-
-## 10. Brutal version
-
-```text
-Z0 is not a pi decimal.
-Z0 is not a circle.
-Z0 is a running sparse closure sampler.
-
-The machine does not say pi everywhere.
-It leaves enough return receipts that pi can be recovered by the right census.
-The gaps are not trash.
-The gaps may be the firebreaks.
-
-Do not worship the digits.
-Do not worship the empty slots.
-Find the sparse machine.
 ```
