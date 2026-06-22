@@ -32,6 +32,7 @@ It currently provides:
 
 - For the evidence files, read [Evidence Chain](#evidence-chain).
 - For the process-first doctrine, read [Process-First Physics](docs/references/process-first-physics.md).
+- For the speculative observer/open-closed question, read [Speculative Observer Question: Built-In Open/Closed Horizons](docs/references/observer-built-in-open-closed.md).
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the new chromodyne/electron gold-star addendum, read [Chromodyne / Electron Lineage Gold Stars](docs/references/chromodyne-electron-lineage-gold-stars.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
@@ -71,6 +72,29 @@ Greedy occupancy is not the machine.
 Firebreaks can be functional structure.
 A sparse closure layout can preserve reachability.
 ```
+
+### Speculative observer/open-closed question
+
+```text
+Speculative? Observer is built-in and is naturally open/closed. Question mark.
+```
+
+This is not a claim that a human mind creates physics. The question is whether
+the massively parallel process-first chromodyne / closure universe is already
+observer-like because it generates, bounds, stabilizes, limits, compares, and
+preserves information receipts.
+
+In that framing, local minds are finite-capacity information horizons inside a
+larger process. Open/closed may be an asymptotic limit state under rate,
+coupling, locality, and information-capacity limits, not a primitive binary
+metaphysical switch.
+
+```text
+Observation is bounded closure, not eyeballs.
+Small brain cannot model large brain all at once.
+```
+
+Longer note: [Speculative Observer Question: Built-In Open/Closed Horizons](docs/references/observer-built-in-open-closed.md).
 
 ## Evidence Chain
 
@@ -125,6 +149,10 @@ is structurally special under simple computational tests.
   makes the elastic-hashing / hash-table firebreak issue explicit: sparse gaps,
   failed returns, and skipped windows can preserve reachability and may be part
   of the closure layout rather than waste.
+- [Speculative Observer Question: Built-In Open/Closed Horizons](docs/references/observer-built-in-open-closed.md)
+  asks whether observerhood is built into the massively parallel chromodyne /
+  closure process, with local observers acting as finite information horizons
+  and open/closed treated as rate/capacity-relative limit behavior.
 - [Fundamental Pi: QLF Apéry Carryback](docs/references/fundamental-pi-qlf-apery-carryback.md)
   records Jim Whitescarver's QLF-side update: `Z0_AsBinary` has been carried into
   `Physical_Pi.md` as another closure-process machine, while QLF's
