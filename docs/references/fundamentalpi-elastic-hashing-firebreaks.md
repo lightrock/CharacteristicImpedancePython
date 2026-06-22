@@ -6,6 +6,20 @@ This note exists because the hash-table / elastic-hashing issue must be named di
 
 It now also carries the Zip/Unzip frame -- possibly quark genetic unzip from the Z0 itself -- because compression alone is not the full question. The stronger question is what a compact `Z0` seed can expand into while preserving parseability and closure.
 
+## 0. Literalism guardrail
+
+This note does not claim that the universe is literally a hash table, sorting records into buckets, or performing database lookups.
+
+The hash-table result is a computer-science receipt for a broader process lesson:
+
+```text
+local availability != global admissibility
+```
+
+The Zip/Unzip frame -- possibly quark genetic unzip from the Z0 itself -- is also not a literal file-format claim. It is a lens for asking how compact structure expands into recoverable receipts without losing seams, gaps, stop points, or closure.
+
+The analogy is about recoverability under expansion, not literal hash tables or literal lookups.
+
 ## 1. The computer-science anchor
 
 The elastic-hashing lesson is:
@@ -16,7 +30,7 @@ non-greedy spacing can preserve future reachability
 empty slots can be functional firebreaks
 ```
 
-A hash table that grabs every locally available slot can form clusters and degrade lookup. A sparse/firebreak strategy intentionally avoids some locally available placements so the structure remains searchable near saturation.
+A hash table that grabs every locally available slot can form clusters and degrade access. A sparse/firebreak strategy intentionally avoids some locally available placements so the structure remains searchable near saturation.
 
 The crucial correction is:
 
@@ -53,7 +67,7 @@ The Zip/Unzip frame asks a deeper version of the same question:
 
 ```text
 What does the compact seed expand into,
-and what firebreaks keep that expansion decodable?
+and what firebreaks keep that expansion recoverable?
 ```
 
 For `Z0_AsBinary`, every Zip/Unzip reference here means:
@@ -62,11 +76,11 @@ For `Z0_AsBinary`, every Zip/Unzip reference here means:
 possibly quark genetic unzip from the Z0 itself
 ```
 
-The point is not ordinary file format behavior. The point is that a compressed stream, a sparse hash table, and a finite closure sampler all need boundaries that preserve future recovery.
+The point is not ordinary file format behavior. The point is that a compact stream, a sparse hash-table lesson, and a finite closure sampler all expose the same warning: boundaries can preserve future recovery.
 
 ```text
-Hash-table firebreaks preserve lookup reachability.
-Zip/Unzip firebreaks preserve decode reachability.
+Hash-table firebreaks preserve access reachability in hash tables.
+Zip/Unzip firebreaks preserve decode/recovery reachability in the Zip/Unzip lens.
 Z0 sparse-closure firebreaks may preserve closure reachability.
 ```
 
