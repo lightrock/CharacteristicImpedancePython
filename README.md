@@ -89,9 +89,19 @@ larger process. Open/closed may be an asymptotic limit state under rate,
 coupling, locality, and information-capacity limits, not a primitive binary
 metaphysical switch.
 
+Grover's algorithm is a useful speculative machine analogy here, but not because
+the universe is literally searching a database. Read from the machine side,
+Grover is admissibility-marking plus closure amplification: superpose
+possibilities, phase-mark what can close, then globally amplify the surviving
+receipt. The oracle is not a little observer; the oracle is the boundary
+condition or admissibility rule that marks closure.
+
 ```text
 Observation is bounded closure, not eyeballs.
 Small brain cannot model large brain all at once.
+Grover is search only from the outside.
+From the machine side, it is closure amplification.
+The universe does not search; it phase-marks what can close.
 ```
 
 Longer note: [Speculative Observer Question: Built-In Open/Closed Horizons](docs/references/observer-built-in-open-closed.md).
