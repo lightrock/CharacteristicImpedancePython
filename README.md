@@ -44,6 +44,7 @@ It currently provides:
   [Electron as Minimal Stable Charged Spinor Closure](https://lightrock.github.io/Z0_AsBinary/references/electron-minimal-stable-charged-spinor-closure.html).
 - For the runnable `Z0`/`π` return-sampler report, read [Z0/Pi Return Sampler](https://lightrock.github.io/Z0_AsBinary/reports/z0-pi-return-sampler.html).
 - For the Maxwell/Mead/Wolfram/'t Hooft synthesis, read [Maxwell After Mead, Wolfram, and 't Hooft](docs/references/maxwell-after-mead-wolfram-thooft.md).
+- For the hydrogen/source-side Maxwell consequence, read [Quantum Structures of the Hydrogen Atom](docs/references/quantum-structures-hydrogen-atom.md).
 
 
 ## Thesis
@@ -213,7 +214,9 @@ is structurally special under simple computational tests.
 - [Quantum Structures of the Hydrogen Atom](docs/references/quantum-structures-hydrogen-atom.md)
   records the Dugić/Francom/Arsenijević structure-selection point: hydrogen is
   not merely electron plus proton in space, but a case where environment,
-  operation, and access select the physically usable quantum structure.
+  operation, and access select the physically usable quantum structure; this now
+  also preserves the bounded Maxwell consequence that hydrogen helps with the
+  source-side machine while `Z0` still asks the field/impedance-side question.
 
 ### Theory BBQ / Critique Notes
 
