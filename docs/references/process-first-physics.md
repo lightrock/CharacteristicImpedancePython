@@ -251,7 +251,50 @@ See [`qgp-boundary-receipts.md`](qgp-boundary-receipts.md).
 
 ---
 
-## 7. Time as the first process axiom
+## 7. Boundary theorems as receipt printers
+
+Classical vector calculus gives a useful prototype for receipt-first thinking.
+
+The Fundamental Theorem of Line Integrals, Green's Theorem, the Divergence Theorem, and Stokes' Theorem all have the same broad flavor:
+
+```text
+interior derivative / local change
+-> integrated over a domain
+-> boundary flux / circulation / endpoint receipt
+```
+
+That is valuable because it shows how a well-formed interior process can sometimes be audited at the boundary. The observer does not always need every micro-step inside the region. If the structure is valid, the boundary can carry the checkable accounting.
+
+So these theorems are friendly to the process-first program, but only at the right level.
+
+They are not pre-spatial machine laws. They already assume a domain, a boundary, orientation, smoothness, differentiability, and a space in which derivatives make sense. In process-first language, they belong to the rendered accounting layer after a space-like interface already exists.
+
+The useful lesson is:
+
+```text
+interior process
+-> coherent accounting structure
+-> boundary receipt
+```
+
+The dangerous mistake is:
+
+```text
+boundary theorem
+-> therefore the boundary formalism is the machine
+```
+
+No. The boundary theorem is not the runner. It is the audit trail left when the runner is already expressible in spatial terms.
+
+The compact rule:
+
+> Stokes, Green, and Divergence are not the run button. They are the receipt printer.
+
+This also helps read Maxwell and Heaviside. Boundary/interface equations can be powerful, predictive, and elegant without exposing the primitive process that made the interface possible in the first place.
+
+---
+
+## 8. Time as the first process axiom
 
 A second staging error is treating time as something that results only after entropy, coarse-graining, or macroscopic disorder has already appeared.
 
@@ -306,7 +349,7 @@ The machine cannot wait for entropy to grant permission to run. The machine must
 
 ---
 
-## 8. Compact form
+## 9. Compact form
 
 The short version:
 
@@ -328,6 +371,10 @@ The receipt version:
 
 > Do not inflate the receipt into a hidden object and then worship the object as substrate.
 
+The boundary-theorem version:
+
+> Do not mistake a perfect boundary audit for the machine that made a boundary possible.
+
 The math-disease version:
 
 > Beautiful math is not a run button.
@@ -338,7 +385,7 @@ The time version:
 
 ---
 
-## 9. Follow-up work
+## 10. Follow-up work
 
 A stronger version of this note should eventually do four things:
 
@@ -364,6 +411,7 @@ A stronger version of this note should eventually do four things:
    LQG receipt graph -> lqg-closure-machine.md
    hydrogen structure selection -> quantum-structures-hydrogen-atom.md
    QGP boundary receipts -> qgp-boundary-receipts.md
+   boundary theorem receipt layer -> process-first geometry/audit doctrine
    Z0/XOR orbit -> characteristic impedance seed behavior
    ```
 
@@ -377,6 +425,7 @@ A stronger version of this note should eventually do four things:
    recover spectral dimension from return statistics
    recover effective distance from delay/reachability
    distinguish receipts from reconstructed geometry
+   do not mistake boundary integrals for substrate execution
    ```
 
 4. Separate levels cleanly:
