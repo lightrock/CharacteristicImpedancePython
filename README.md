@@ -36,6 +36,7 @@ It currently provides:
 - For the theory critique map, read [Theory BBQ Lineup](docs/references/theory-bbq-lineup.md).
 - For the new chromodyne/electron gold-star addendum, read [Chromodyne / Electron Lineage Gold Stars](docs/references/chromodyne-electron-lineage-gold-stars.md).
 - For the closure question behind `π`, read [Fundamental Pi](docs/references/fundamentalPi.md).
+- For Khinchin's constant as a clean example of a statistical closure receipt from a generative number expansion, read [Khinchin's Constant as a Closure Receipt](docs/references/khinchin-constant-closure-note.md).
 - For the Z0 sparse `π` machine and the explicit elastic-hashing / hash-table firebreak analogy, read [Z0 Machine as a Sparse Pi Machine](docs/references/z0-sparse-pi-machine.md).
 - For Jim/QLF's Apéry-period carryback into Fundamental Pi, read [Fundamental Pi: QLF Apéry Carryback](docs/references/fundamental-pi-qlf-apery-carryback.md).
 - We are asking this question next in the quark GeneZip compression work:
@@ -58,6 +59,26 @@ just another constant in that catalog. It may be the impedance boundary between
 physical measurement and symbolic compression: a compact seed whose simple
 binary evolution reconstructs or intersects an unusually large fraction of the
 other published constant bit patterns.
+
+### Khinchin warning: constants can be generative receipts
+
+Khinchin's constant belongs near the front of this project because it is the
+clean number-theory reminder not to worship infinite-looking digits. In simple
+continued fractions, almost all real numbers have coefficient geometric means
+that converge to the same constant:
+
+```text
+lim (a1 * a2 * ... * an)^(1/n) = K0 ~= 2.6854520010...
+```
+
+That does not mean all irrationals are secretly the same number, and it does
+not prove that `Z0` is special. It does show that a finite generative expansion
+rule can render a stable statistical receipt across a huge space of inputs. That
+is exactly the distinction this repo cares about: the magic is not a completed
+continuum object; the interesting thing is the running generator, the surviving
+census, and the invariant it renders.
+
+Longer note: [Khinchin's Constant as a Closure Receipt](docs/references/khinchin-constant-closure-note.md).
 
 ### Sparse/firebreak warning
 
@@ -156,6 +177,10 @@ is structurally special under simple computational tests.
 - [Fundamental Pi](docs/references/fundamentalPi.md) asks what physical machine
   produces the closure represented by `π`, `2π`, phase, rotation, and emergent
   geometry, without treating the symbol as the substrate.
+- [Khinchin's Constant as a Closure Receipt](docs/references/khinchin-constant-closure-note.md)
+  keeps the continued-fraction reminder close to the project front door: stable
+  constants can emerge as statistical receipts of finite generative expansion
+  rules, without treating completed continuum objects as physical substrate.
 - [Z0 Machine as a Sparse Pi Machine](docs/references/z0-sparse-pi-machine.md)
   makes the elastic-hashing / hash-table firebreak issue explicit: sparse gaps,
   failed returns, and skipped windows can preserve reachability and may be part
